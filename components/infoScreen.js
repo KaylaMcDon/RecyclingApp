@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {View, Text } from "react-native";
 
 
-export default function infoScreen() {
+export default function InfoScreen() {
   return (
     <View>
       <Text>About Screen</Text>
