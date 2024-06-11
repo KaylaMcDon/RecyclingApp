@@ -2,25 +2,25 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from "@react-navigation/native"
 //Add the screens
-import location from './components/location';
-import infoScreen from './components/infoScreen';
+import Location from './components/Location';
+import InfoScreen from './components/InfoScreen';
 
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
       <NavigationContainer>
-          <Stack.Navigator initialRouteName='location'>
+          <Stack.Navigator initialRouteName='Location'>
               <Stack.Screen
                   name="Info"
-                  component={infoScreen}
+                  component={InfoScreen}
               />
               <Stack.Screen
-                  name="location"
-                  component={location}
+                  name="Location"
+                  component={Location}
               />
           </Stack.Navigator>
       </NavigationContainer>
