@@ -7,6 +7,7 @@ const data = [
   { label: 'City', value: '1' },
   { label: 'County', value: '2' },
 ];
+chosenRegionDecision = "city"
 
 export default function Location({ navigation }) {
   const [value, setValue] = useState(null);
@@ -35,7 +36,6 @@ export default function Location({ navigation }) {
         inputSearchStyle={styles.inputSearchStyle}
         iconStyle={styles.iconStyle}
         data={data}
-        search
         maxHeight={300}
         labelField="label"
         valueField="value"
@@ -45,7 +45,7 @@ export default function Location({ navigation }) {
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
         onChange={item => {
-          setValue(item.value);
+          chosenRegionDecision = item
           setIsFocus(false);
         }}
         renderLeftIcon={() => (
@@ -58,8 +58,9 @@ export default function Location({ navigation }) {
         )}
       />
     </View>
+        
       <Button
-        title="Go to info"
+        title="Finish"
         onPress={() => navigation.navigate("Info")}
       />
     </View>
