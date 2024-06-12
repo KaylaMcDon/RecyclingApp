@@ -4,6 +4,7 @@ import { reqDivType, reqCityName, reqCountyName } from "./Location";
 
 
 export default function InfoScreen() {
+  
   return (
     <View>
       <Text>City or County: {reqDivType}</Text>
