@@ -80,21 +80,7 @@ export default function Location({ navigation }) {
       </View>}
       <Button
         title="Get Recycling Laws"
-        onPress={() => {
-          if (divOptValue === "city") {
-            const locationRequest = createContext({
-              divisionType: divOptValue,
-              divisionName: cityValue,
-            });
-          }
-          else if (divOptValue === "county") {
-            const locationRequest = createContext({
-              divisionType: divOptValue,
-              divisionName: countyValue,
-            });
-          }
-          navigation.navigate("Info");
-        }}
+        onPress={() => navigation.navigate("Info")}
       />
     </View>
   );
