@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { StyleSheet, Button, View, Text } from "react-native";
+import { StyleSheet, Button, View, } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
-// import AntDesign from '@expo/vector-icons/AntDesign';
 
 export default function Location({ navigation }) {
   const [divOptValue, setDivOptValue] = useState(null);
