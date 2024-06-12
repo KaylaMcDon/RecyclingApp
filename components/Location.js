@@ -6,9 +6,10 @@ import { Dropdown } from 'react-native-element-dropdown';
 export default function Location({ navigation }) {
   const [divOptValue, setDivOptValue] = useState(null);
   const [divOptIsFocus, setDivOptIsFocus] = useState(false);
-  const [divisionValue, setDivisionValue] = useState(null);
-  const [divisionIsFocus, setDivisionIsFocus] = useState(false);
-  const [divisionData, setDivisionData] = useState(null);
+  const [cityValue, setCityValue] = useState(null);
+  const [cityIsFocus, setCityIsFocus] = useState(false);
+  const [countyValue, setCountyValue] = useState(null);
+  const [countyIsFocus, setCountyIsFocus] = useState(false);
 
   return (
     < View >
@@ -29,33 +30,53 @@ export default function Location({ navigation }) {
           onChange={item => {
             setDivOptValue(item.value);
             setDivOptIsFocus(false);
-            if (item.value === '1') {setDivisionData(cityData);}
-            else {setDivisionData(countyData);}
           }}
         />
       </View>
-      {divisionData === null ? <View></View>
+      {divOptValue === null ? <View></View>
       :<View style={styles.container}>
-        <Dropdown
-          style={[styles.dropdown, divisionIsFocus && { borderColor: 'blue' }]}
-          placeholderStyle={styles.placeholderStyle}
-          selectedTextStyle={styles.selectedTextStyle}
-          inputSearchStyle={styles.inputSearchStyle}
-          data={divisionData}
-          maxHeight={300}
-          labelField="label"
-          valueField="value"
-          placeholder={!divisionIsFocus ? 'Select division' : '...'}
-          search
-          searchPlaceholder="Search..."
-          value={divisionValue}
-          onFocus={() => setDivisionIsFocus(true)}
-          onBlur={() => setDivisionIsFocus(false)}
-          onChange={item => {
-            setDivisionValue(item.value);
-            setDivisionIsFocus(false);
-          }}
-        />
+        {divOptValue === '1' ?
+          <Dropdown
+            style={[styles.dropdown, cityIsFocus && { borderColor: 'blue' }]}
+            placeholderStyle={styles.placeholderStyle}
+            selectedTextStyle={styles.selectedTextStyle}
+            inputSearchStyle={styles.inputSearchStyle}
+            data={cityData}
+            maxHeight={300}
+            labelField="label"
+            valueField="value"
+            placeholder={!cityIsFocus ? 'Select city' : '...'}
+            search
+            searchPlaceholder="Search..."
+            value={cityValue}
+            onFocus={() => setCityIsFocus(true)}
+            onBlur={() => setCityIsFocus(false)}
+            onChange={item => {
+              setCityValue(item.value);
+              setCityIsFocus(false);
+            }}
+          /> :
+          <Dropdown
+            style={[styles.dropdown, countyIsFocus && { borderColor: 'blue' }]}
+            placeholderStyle={styles.placeholderStyle}
+            selectedTextStyle={styles.selectedTextStyle}
+            inputSearchStyle={styles.inputSearchStyle}
+            data={countyData}
+            maxHeight={300}
+            labelField="label"
+            valueField="value"
+            placeholder={!countyIsFocus ? 'Select county' : '...'}
+            search
+            searchPlaceholder="Search..."
+            value={countyValue}
+            onFocus={() => setCountyIsFocus(true)}
+            onBlur={() => setCountyIsFocus(false)}
+            onChange={item => {
+              setCountyValue(item.value);
+              setCountyIsFocus(false);
+            }}
+          />
+        }
       </View>}
       <Button
         title="Get Recycling Laws"
