@@ -80,11 +80,21 @@ export default function Location({ navigation }) {
       </View>}
       <Button
         title="Get Recycling Laws"
-        onPress={() => navigation.navigate("Info")}
+        onPress={() => {
+          reqDivType = divOptValue;
+          reqCityName = cityValue;
+          reqCountyName = countyValue;
+          navigation.navigate("Info");
+        }}
       />
     </View>
   );
 }
+
+let reqDivType;
+let reqCityName;
+let reqCountyName;
+export {reqDivType, reqCityName, reqCountyName};
 
 const styles = StyleSheet.create({
   container: {
