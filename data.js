@@ -1,4 +1,4 @@
-const CountyData = [
+const CountyFullData = [
     {
       CO_NAME: 'PITT',
       'Material Recovery Facility Name': 'ECVC',
@@ -600,7 +600,7 @@ const CountyData = [
     }
   ]
   
-  const cityData = [
+  const CityFullData = [
     {
       'Local Government Name': 'Aberdeen',
       'Materials Recovery Facility Name': 'Pratt',
@@ -3464,5 +3464,5 @@ const CountyData = [
     }
   ]
 
-export {CountyData};
-export {cityData};
+export {CountyFullData};
+export {CityFullData};
