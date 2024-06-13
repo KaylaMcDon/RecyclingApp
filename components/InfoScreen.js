@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import {View, Text, Button } from "react-native";
-import { CountyFullData } from "../data";
-import { CityFullData } from "../data";
+import { CountyFullData, CityFullData } from "../data";
+import { reqDivType, reqCityName, reqCountyName } from "./Location";
 
 
 export default function InfoScreen() {
   
   return (
     <View>
-      <Text>About Screen</Text>
-      <Button
-      title="Click me"
-      onPress={()=>console.log(CityData.length)}
-      />
+      <Text>City or County: {reqDivType}</Text>
+      <Text>Name: {reqDivType === "city" ? reqCityName : reqCountyName}</Text>
     </View>
   );
 }

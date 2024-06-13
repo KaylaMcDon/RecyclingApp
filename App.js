@@ -13,13 +13,13 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
       <NavigationContainer>
-          <Stack.Navigator initialRouteName='Location'>
+          <Stack.Navigator initialRouteName='Select Location'>
               <Stack.Screen
                   name="Info"
                   component={InfoScreen}
               />
               <Stack.Screen
-                  name="Location"
+                  name="Select Location"
                   component={Location}
               />
           </Stack.Navigator>
