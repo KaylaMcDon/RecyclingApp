@@ -82,13 +82,13 @@ export default function Location({ navigation }) {
       <Button
         title="Get Recycling Laws"
         onPress={() => {
-          if ((cityValue !== null && divOptValue === "city") || (countyValue !== null && divOptValue === "county")) {
-            reqDivType = divOptValue;
-            reqCityName = cityValue;
-            reqCountyName = countyValue;
-            navigation.navigate("Info");
-          } else {
+          if ((divOptValue === "city" && cityValue === null) || (divOptValue === "county" && countyValue === null)) {
             setErrorMessage("Please select a city/county");
+          } else {
+            reqDivType = divOptValue;
+            if (divOptValue === "city") {reqDivName = cityValue;}
+            else if (divOptValue === "county") {reqDivName = countyValue;}
+            navigation.navigate("Info");
           }
         }}
       />
@@ -99,9 +99,8 @@ export default function Location({ navigation }) {
 }
 
 let reqDivType;
-let reqCityName;
-let reqCountyName;
-export {reqDivType, reqCityName, reqCountyName};
+let reqDivName;
+export {reqDivType, reqDivName};
 
 const styles = StyleSheet.create({
   container: {
