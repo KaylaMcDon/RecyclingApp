@@ -10,7 +10,7 @@ export default function Location({ navigation }) {
   const [cityIsFocus, setCityIsFocus] = useState(false);
   const [countyValue, setCountyValue] = useState(null);
   const [countyIsFocus, setCountyIsFocus] = useState(false);
-  const [ErrorMesage, setErrorMessage] = useState("");
+  const [errorMesage, setErrorMessage] = useState("");
 
   return (
     <View>
@@ -92,7 +92,7 @@ export default function Location({ navigation }) {
           }
         }}
       />
-      <Text>{ErrorMesage}</Text>
+      <Text>{errorMesage}</Text>
 
     </View>
   );
