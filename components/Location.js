@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Button, View, } from "react-native";
+import { StyleSheet, Button, View, Text } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
 
 export default function Location({ navigation }) {
@@ -9,6 +9,7 @@ export default function Location({ navigation }) {
   const [cityIsFocus, setCityIsFocus] = useState(false);
   const [countyValue, setCountyValue] = useState(null);
   const [countyIsFocus, setCountyIsFocus] = useState(false);
+  const [ErrorMesage, setErrorMessage] = useState("");
 
   return (
     < View >
@@ -80,12 +81,18 @@ export default function Location({ navigation }) {
       <Button
         title="Get Recycling Laws"
         onPress={() => {
-          reqDivType = divOptValue;
-          reqCityName = cityValue;
-          reqCountyName = countyValue;
-          navigation.navigate("Info");
+          if ((cityValue !== null && divOptValue === "city") || (countyValue !== null && divOptValue === "county")) {
+            reqDivType = divOptValue;
+            reqCityName = cityValue;
+            reqCountyName = countyValue;
+            navigation.navigate("Info");
+          } else {
+            setErrorMessage("Please select a city/county");
+          }
         }}
       />
+      <Text>{ErrorMesage}</Text>
+
     </View>
   );
 }

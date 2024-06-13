@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {View, Text, Button } from "react-native";
 import { CountyFullData, CityFullData } from "../data";
 import { reqDivType, reqCityName, reqCountyName } from "./Location";
