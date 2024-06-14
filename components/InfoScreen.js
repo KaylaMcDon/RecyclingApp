@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, StyleSheet, FlatList, ScrollView } from "react-native";
 import { countyData, cityData, recyclingData } from "../data";
 import { reqDivType, reqDivName } from "./Location";
 
@@ -51,23 +51,49 @@ export default function InfoScreen() {
     //allow for countys/cities with no recycling info
   } 
   
-    let Plastic = FacilityObject["Plastic"]
-    let Metal = FacilityObject["Metal"]
-    let Glass = FacilityObject["Glass"]
-    let Paper = FacilityObject["Paper"]
-    let OtherBanned = FacilityObject["Other banned"]
+  let Plastic = FacilityObject["Plastic"]
+  let Metal = FacilityObject["Metal"]
+  let Glass = FacilityObject["Glass"]
+  let Paper = FacilityObject["Paper"]
+  let OtherBanned = FacilityObject["Other banned"]
+  
+  
+  
+  //creates an item to display the nonrecyclable items found in "OtherBanned"
+  const Item = ({words}) => (
+    <View>
+      <Text style={styles.infoBox}>{words}</Text>
+    </View>);
 
   return (
-    <View>
+    <ScrollView>
       <Text>City or County: {reqDivType}</Text>
       <Text>Name: {reqDivName}</Text>
       <Text>{FacilityName}</Text>
-      <Text>plastic: {Plastic}</Text>
-      <Text>metal: {Metal}</Text>
-      <Text>glass: {Glass}</Text>
-      <Text>paper: {Paper}</Text>
-      <Text>other banned: {OtherBanned}</Text>
+      <Text style = {styles.infoBox}>Plastic: {Plastic}</Text>
+      <Text style = {styles.infoBox}>Metal: {Metal}</Text>
+      <Text style = {styles.infoBox}>Glass: {Glass}</Text>
+      <Text style = {styles.infoBox}>Paper: {Paper}</Text>
+      {
+      OtherBanned.map((item)=> <Item words={item} />)
+      }
+
     
-    </View>
+    </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  infoBox: {
+    margin: 20,
+    borderColor: 'gray',
+    borderWidth: 0.5,
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  container: {
+    justifyContent: "center"
+  }
+})
