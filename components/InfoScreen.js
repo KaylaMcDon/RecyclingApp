@@ -16,44 +16,58 @@ export default function InfoScreen() {
 
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
   let FacilityName = "";
-  
-  if (reqDivType === "county") {
-    FacilityName = countyData.find(x => x.CO_NAME === reqDivName)["Material Recovery Facility Name"];
-  } else {
-    FacilityName = cityData.find(x => x["Local Government Name"] === reqDivName)["Materials Recovery Facility Name"];
-  };
-  
+  let FacilityObject = {};
 
-  let FacilityObject = null;
-  if (FacilityName.indexOf(" ") === -1) {
-    FacilityObject = recyclingData.find(x => x["Facility Name"] === FacilityName);
-  } else if (FacilityName.indexOf("Sonoco") >= 0) {
-    FacilityObject = recyclingData[11];
-  } else if (FacilityName.indexOf("GFL") >= 0) {
-    FacilityObject = recyclingData[2];
-  } else if (FacilityName.indexOf("High") >= 0) {
-    FacilityObject = recyclingData[3];
-  } else if (FacilityName.indexOf("Meck") >= 0) {
-    FacilityObject = recyclingData[4];
-  } else if (FacilityName.indexOf("North") >= 0) {
-    FacilityObject = recyclingData[5];
-  } else if (FacilityName.indexOf("Conover") >= 0) {
-    FacilityObject = recyclingData[8];
-  } else if (FacilityName.indexOf("Greensboro") >= 0) {
-    FacilityObject = recyclingData[9];
-  } else if (FacilityName.indexOf("Mooresville") >= 0) {
-    FacilityObject = recyclingData[10];
-  } else if (FacilityName.indexOf("TRC") >= 0) {
-    FacilityObject = recyclingData[12];
-  } else if (FacilityName.indexOf("Waste") >= 0) {
-    FacilityObject = recyclingData[13];
+  if (!(Object.hasOwn(FacilityObject, 'Materials Recovery Facility Name') || Object.hasOwn(FacilityObject, 'Material Recovery Facility Name'))) {
+    //Find name of facility if facility has name, and then finds the object in data.js with that name
+    if (reqDivType === "county") {
+      FacilityName = countyData.find(x => x.CO_NAME === reqDivName)["Material Recovery Facility Name"];
+    } else {
+      FacilityName = cityData.find(x => x["Local Government Name"] === reqDivName)["Materials Recovery Facility Name"];
+    };
+
+    if (FacilityName.indexOf(" ") === -1) {
+      FacilityObject = recyclingData.find(x => x["Facility Name"] === FacilityName);
+    } else if (FacilityName.indexOf("Sonoco") >= 0) {
+      FacilityObject = recyclingData[11];
+    } else if (FacilityName.indexOf("GFL") >= 0) {
+      FacilityObject = recyclingData[2];
+    } else if (FacilityName.indexOf("High") >= 0) {
+      FacilityObject = recyclingData[3];
+    } else if (FacilityName.indexOf("Meck") >= 0) {
+      FacilityObject = recyclingData[4];
+    } else if (FacilityName.indexOf("North") >= 0) {
+      FacilityObject = recyclingData[5];
+    } else if (FacilityName.indexOf("Conover") >= 0) {
+      FacilityObject = recyclingData[8];
+    } else if (FacilityName.indexOf("Greensboro") >= 0) {
+      FacilityObject = recyclingData[9];
+    } else if (FacilityName.indexOf("Mooresville") >= 0) {
+      FacilityObject = recyclingData[10];
+    } else if (FacilityName.indexOf("TRC") >= 0) {
+      FacilityObject = recyclingData[12];
+    } else if (FacilityName.indexOf("Waste") >= 0) {
+      FacilityObject = recyclingData[13];
+    } else if (FacilityName === "No recycling program") {
+      return(
+        <View>
+          <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is not a recycling program at this location</Text>
+        </View>
+      )
+    } else if (FacilityName === "Source separated") {
+      return(
+        <View>
+          <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take</Text>
+        </View>
+      )
+    }
   } else {
     return(
       <View>
         <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>We unfortunantly do not have recycling data on this location</Text>
       </View>
       )
-  } 
+  }
   
   if (FacilityObject !== null) {
     //const [errorMesage, setErrorMessage] = useState("");
@@ -153,13 +167,7 @@ export default function InfoScreen() {
     );
   }
 }
-/*
-    const Item = ({words}) => (
-      <View style={[styles.infoBox, { backgroundColor: "red" }]}>
-        <Text style= {styles.title}>{words}</Text>
-        
-      </View>);
-      */
+
   const styles = StyleSheet.create({
     infoBox: {
       margin: 20,
