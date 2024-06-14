@@ -1,5 +1,5 @@
-import React from "react";
-import { View, Text, Button, StyleSheet, FlatList, ScrollView } from "react-native";
+import React, { useState } from "react";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { countyData, cityData, recyclingData } from "../data";
 import { reqDivType, reqDivName } from "./Location";
 
@@ -26,7 +26,7 @@ export default function InfoScreen() {
 
   let FacilityObject = null;
   if (FacilityName.indexOf(" ") === -1) {
-    FacilityObject = recyclingData.find(x => x["Facility Name".toUpperCase()] === FacilityName);
+    FacilityObject = recyclingData.find(x => x["Facility Name"] === FacilityName);
   } else if (FacilityName.indexOf("Sonoco") >= 0) {
     FacilityObject = recyclingData[11];
   } else if (FacilityName.indexOf("GFL") >= 0) {
@@ -48,52 +48,132 @@ export default function InfoScreen() {
   } else if (FacilityName.indexOf("Waste") >= 0) {
     FacilityObject = recyclingData[13];
   } else {
-    //allow for countys/cities with no recycling info
+    return(
+      <View>
+        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>We unfortunantly do not have recycling data on this location</Text>
+      </View>
+      )
   } 
   
-  let Plastic = FacilityObject["Plastic"]
-  let Metal = FacilityObject["Metal"]
-  let Glass = FacilityObject["Glass"]
-  let Paper = FacilityObject["Paper"]
-  let OtherBanned = FacilityObject["Other banned"]
-  
-  
-  
-  //creates an item to display the nonrecyclable items found in "OtherBanned"
-  const Item = ({words}) => (
-    <View>
-      <Text style={styles.infoBox}>{words}</Text>
-    </View>);
-
-  return (
-    <ScrollView>
-      <Text>City or County: {reqDivType}</Text>
-      <Text>Name: {reqDivName}</Text>
-      <Text>{FacilityName}</Text>
-      <Text style = {styles.infoBox}>Plastic: {Plastic}</Text>
-      <Text style = {styles.infoBox}>Metal: {Metal}</Text>
-      <Text style = {styles.infoBox}>Glass: {Glass}</Text>
-      <Text style = {styles.infoBox}>Paper: {Paper}</Text>
-      {
-      OtherBanned.map((item)=> <Item words={item} />)
-      }
-
+  if (FacilityObject !== null) {
+    //const [errorMesage, setErrorMessage] = useState("");
     
-    </ScrollView>
-  );
-}
+    const [Plastic, setPlastic] = useState("More details");
+    const [Metal, setMetal] = useState("More details");
+    const [Paper, setPaper] = useState("More details");
+    const [Glass, setGlass] = useState("More details");
+    
 
-const styles = StyleSheet.create({
-  infoBox: {
-    margin: 20,
-    borderColor: 'gray',
-    borderWidth: 0.5,
-    borderRadius: 8,
-    paddingHorizontal: 8,
-    justifyContent: "center",
-    textAlign: "center",
-  },
-  container: {
-    justifyContent: "center"
+    const OtherBanned = FacilityObject["Other banned"]
+    
+    
+    
+    //creates an item to display the nonrecyclable items found in "OtherBanned"
+    
+    const Item = ({words}) => {
+      const [detailText, setdetailText] = useState("More details");
+      return(<TouchableOpacity onPress={ () => {
+          if (detailText === "More details") { 
+          setdetailText("This item is not recyclable at this location")
+        } else {
+          setdetailText("More details")
+        }}}>
+
+        <View style={[styles.infoBox, { backgroundColor: "red" }]}>
+          <Text style= {styles.title}>{words}</Text>
+          <Text>{detailText}</Text>
+        </View>
+      </TouchableOpacity>)}
+      
+
+    return (
+      <ScrollView>
+        <Text>City or County: {reqDivType}</Text>
+        <Text>Name: {reqDivName}</Text>
+        <Text>{FacilityName}</Text>
+        
+        <TouchableOpacity onPress={ () => {
+            if (Plastic === "More details") { 
+            setPlastic(FacilityObject["Plastic"])
+          } else {
+            setPlastic("More details")
+          }}}>
+
+          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+            <Text style = {styles.title}>Plastic</Text>
+            <Text>{Plastic}</Text>
+          </View>
+        </TouchableOpacity>
+       
+        <TouchableOpacity onPress={ () => {
+            if (Metal === "More details") { 
+            setMetal(FacilityObject["Metal"])
+          } else {
+            setMetal("More details")
+          }}}>
+          
+          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+            <Text style = {styles.title}>Metal</Text>
+            <Text>{Metal}</Text>
+          </View>
+        </TouchableOpacity>
+       
+        <TouchableOpacity onPress={ () => {
+            if (Paper === "More details") { 
+            setPaper(FacilityObject["Paper"])
+          } else {
+            setPaper("More details")
+          }}}>
+
+          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+            <Text style = {styles.title}>Paper</Text>
+            <Text>{Paper}</Text>       
+          </View>
+        </TouchableOpacity>
+       
+        <TouchableOpacity onPress={ () => {
+            if (Glass === "More details") { 
+            setGlass(FacilityObject["Glass"])
+          } else {
+            setGlass("More details")
+          }}}>
+
+          <View style = {[styles.infoBox, Glass!=="Glass is not recyclable at this location" && {backgroundColor: "green"} || {backgroundColor: "red"}]}>
+            <Text style = {styles.title}>Glass</Text>
+            <Text>{Glass}</Text>       
+          </View>
+        </TouchableOpacity>
+        
+        
+        {
+          OtherBanned.map( (item) => <Item words={item} key={item} /> )
+        }
+      
+      </ScrollView>
+    );
   }
-})
+}
+/*
+    const Item = ({words}) => (
+      <View style={[styles.infoBox, { backgroundColor: "red" }]}>
+        <Text style= {styles.title}>{words}</Text>
+        
+      </View>);
+      */
+  const styles = StyleSheet.create({
+    infoBox: {
+      margin: 20,
+      borderColor: 'gray',
+      borderWidth: 0.5,
+      borderRadius: 8,
+      paddingHorizontal: 8,
+      justifyContent: "center",
+      textAlign: "left",
+      borderWidth: 1.3,
+      borderColor: "black",
+    },
+    title: {
+      fontSize: 24
+    }
+  } 
+)
