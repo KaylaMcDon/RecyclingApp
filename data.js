@@ -4128,7 +4128,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "Plastic clamshell", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "Plastic clamshell", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
 ]},
   {
     "Facility Name": "ECVC",
@@ -4144,7 +4144,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "High Point",
@@ -4152,7 +4152,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "MecklenburgCounty",
@@ -4160,7 +4160,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "NorthDavidson",
@@ -4168,7 +4168,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, aseptic cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "Pratt",
@@ -4176,7 +4176,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Glass is not recyclable at this location",
     "Paper": "Paper, cartons,  and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "RDS",
@@ -4184,7 +4184,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Glass is not recyclable at this location",
     "Paper": "Paper, cartons,  and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "RepublicConover",
@@ -4192,7 +4192,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "RepublicGreensboro",
@@ -4200,7 +4200,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nNo metal lids \nEmpty and rinse",
     "Paper": "Paper, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "RepublicMooresville",
@@ -4208,7 +4208,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Glass is not recyclable at this location",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "Sonoco",
@@ -4216,7 +4216,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Aluminnum foil", "Ceramic items", "Clothing or textiles", "Diapers", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Aluminnum foil", "Ceramic items", "Clothing or textiles", "Diapers", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "TFC",
@@ -4224,7 +4224,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
   {
     "Facility Name": "RepublicConover",
@@ -4232,7 +4232,7 @@ const recyclingData = [
     "Metal": "Metal cans \nEmpty and rinse",
     "Glass": "Bottles and jars \nEmpty and rinse",
     "Paper": "Paper, cartons, and cardboard \nFlatten cardboard",
-    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers(cords, hoses, wires, etc.)", "Tires", "Toys",
+    "Other banned": ["Aersol cans", "All batteries (car, lithium, etc.)", "Ceramic items", "Clothing or textiles", "Diapers", "Disposable cups (plastic and paper)", "Electronics", "Food-tainted items", "Hazardous waste", "Household glass", "Medical waste", "Plastic bags/wrap", "containers", "Scrap metal/wood", "Shredded paper", "Styrofoam/peanuts", "Tanglers (cords, hoses, wires, etc.)", "Tires", "Toys",
   ]},
 ]
 

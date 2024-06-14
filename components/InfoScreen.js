@@ -6,14 +6,6 @@ import { reqDivType, reqDivName } from "./Location";
 
 
 export default function InfoScreen() {
-  /*
-  Need functionality
-  No recycling program
-  Source separated
-  “blank”
-  */
-  
-
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
   let FacilityName = "";
   let FacilityObject = {};
@@ -68,38 +60,52 @@ export default function InfoScreen() {
       </View>
       )
   }
-  
+
+
+
+
+
+
+
+
+
   if (FacilityObject !== null) {
-    //const [errorMesage, setErrorMessage] = useState("");
-    
     const [Plastic, setPlastic] = useState("More details");
     const [Metal, setMetal] = useState("More details");
     const [Paper, setPaper] = useState("More details");
     const [Glass, setGlass] = useState("More details");
-    
-
+  
     const OtherBanned = FacilityObject["Other banned"]
-    
-    
     
     //creates an item to display the nonrecyclable items found in "OtherBanned"
     
     const Item = ({words}) => {
       const [detailText, setdetailText] = useState("More details");
+      let notPresent = words.split("(")
+
+
       return(<TouchableOpacity onPress={ () => {
           if (detailText === "More details") { 
-          setdetailText("This item is not recyclable at this location")
+            if (notPresent.length === 1) {
+              setdetailText("This item is not recyclable at this location")
+            } else {
+              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`)
+            }
         } else {
           setdetailText("More details")
         }}}>
 
         <View style={[styles.infoBox, { backgroundColor: "red" }]}>
-          <Text style= {styles.title}>{words}</Text>
+          <Text style= {styles.title}>{words.split('(')[0]}</Text>
           <Text>{detailText}</Text>
         </View>
       </TouchableOpacity>)}
       
 
+
+
+
+      
     return (
       <ScrollView>
         <Text>City or County: {reqDivType}</Text>
