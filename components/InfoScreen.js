@@ -106,7 +106,7 @@ export default function InfoScreen() {
             setPlastic("More details");
           }}}>
 
-          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
             <Text style = {styles.title}>Plastic</Text>
             <Text>{Plastic}</Text>
           </View>
@@ -119,7 +119,7 @@ export default function InfoScreen() {
             setMetal("More details");
           }}}>
           
-          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
             <Text style = {styles.title}>Metal</Text>
             <Text>{Metal}</Text>
           </View>
@@ -132,7 +132,7 @@ export default function InfoScreen() {
             setPaper("More details");
           }}}>
 
-          <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
+          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
             <Text style = {styles.title}>Paper</Text>
             <Text>{Paper}</Text>       
           </View>
