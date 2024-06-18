@@ -60,14 +60,20 @@ export default function InfoScreen() {
       );
   }
 
+
+  
   if (FacilityObject !== null) {
     const [Plastic, setPlastic] = useState("More details");
     const [Metal, setMetal] = useState("More details");
     const [Paper, setPaper] = useState("More details");
     const [Glass, setGlass] = useState("More details");
-  
-    const OtherBanned = FacilityObject["Other banned"];
-    
+
+    var OtherBanned
+    OtherBanned = ""
+      if (FacilityObject.hasOwnProperty("Other banned")) {
+       OtherBanned = FacilityObject["Other banned"];
+      }
+
     const Item = ({words}) => {
       const [detailText, setdetailText] = useState("More details");
       let notPresent = words.split("(");
@@ -152,7 +158,7 @@ export default function InfoScreen() {
         </TouchableOpacity>
         
         {
-          OtherBanned.map( (item) => <Item words={item} key={item}/> )
+          OtherBanned !== "" && OtherBanned.map( (item) => <Item words={item} key={item}/> )
         }
       
       </ScrollView>
