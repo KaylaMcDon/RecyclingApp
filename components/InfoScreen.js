@@ -68,34 +68,34 @@ export default function InfoScreen() {
     const [Paper, setPaper] = useState("More details");
     const [Glass, setGlass] = useState("More details");
 
-    var OtherBanned
-    OtherBanned = ""
-      if (FacilityObject.hasOwnProperty("Other banned")) {
-       OtherBanned = FacilityObject["Other banned"];
-      }
+    let OtherBanned = "";
+    if (FacilityObject.hasOwnProperty("Other banned")) {
+      OtherBanned = FacilityObject["Other banned"];
+    }
 
     const Item = ({words}) => {
-      const [detailText, setdetailText] = useState("More details");
+      const [detailText, setdetailText] = useState("More details...");
       let notPresent = words.split("(");
       return (
-        <TouchableOpacity onPress={ () => {
-          if (detailText === "More details") { 
-            if (notPresent.length === 1) {
-              setdetailText("This item is not recyclable at this location");
+        <TouchableOpacity
+          style={[styles.infoBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
+          onPress={ () => {
+            if (detailText === "More details...") { 
+              if (notPresent.length === 1) {
+                setdetailText("This item is not recyclable at this location");
+              } else {
+                setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
+              }
             } else {
-              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
+              setdetailText("More details...");
             }
-          } else {
-            setdetailText("More details");
-          }}}>
-
-          <View style={[styles.infoBox, { backgroundColor: "red" }]}>
-            <Text style= {styles.title}>{words.split('(')[0]}</Text>
-            <Text>{detailText}</Text>
-          </View>
+          }}
+        >
+          <Text style= {styles.title}>{words.split('(')[0]}</Text>
+          <Text>{detailText}</Text>
         </TouchableOpacity>
-        );
-      }
+      );
+    }
       
     return (
       <ScrollView>
@@ -105,56 +105,63 @@ export default function InfoScreen() {
         </Text>
         <Text style={styles.pageSubtitle}>Recycling Facility: {FacilityName}</Text>
         
-        <TouchableOpacity onPress={ () => {
-            if (Plastic === "More details") { 
-            setPlastic(FacilityObject["Plastic"]);
-          } else {
-            setPlastic("More details");
-          }}}>
-
-          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
-            <Text style = {styles.title}>Plastic</Text>
-            <Text>{Plastic}</Text>
-          </View>
+        <TouchableOpacity
+          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, Plastic !== "More details..." && {padding: 8}]}
+          onPress={ () => {
+            if (Plastic === "More details...") { 
+              setPlastic(FacilityObject["Plastic"]);
+            } else {
+              setPlastic("More details...");
+            }
+          }}
+        >
+          <Text style = {styles.title}>Plastic</Text>
+          <Text>{Plastic}</Text>
         </TouchableOpacity>
        
-        <TouchableOpacity onPress={ () => {
-            if (Metal === "More details") { 
-            setMetal(FacilityObject["Metal"]);
-          } else {
-            setMetal("More details");
-          }}}>
-          
-          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
-            <Text style = {styles.title}>Metal</Text>
-            <Text>{Metal}</Text>
-          </View>
+        <TouchableOpacity
+          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, Metal !== "More details..." && {padding: 8}]}
+          onPress={ () => {
+            if (Metal === "More details...") { 
+              setMetal(FacilityObject["Metal"]);
+            } else {
+              setMetal("More details...");
+            }
+          }}
+        >
+          <Text style = {styles.title}>Metal</Text>
+          <Text>{Metal}</Text>
         </TouchableOpacity>
        
-        <TouchableOpacity onPress={ () => {
-            if (Paper === "More details") { 
-            setPaper(FacilityObject["Paper"]);
-          } else {
-            setPaper("More details");
-          }}}>
-
-          <View style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>
-            <Text style = {styles.title}>Paper</Text>
-            <Text>{Paper}</Text>       
-          </View>
+        <TouchableOpacity
+          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, Paper !== "More details..." && {padding: 8}]}
+          onPress={ () => {
+            if (Paper === "More details...") { 
+              setPaper(FacilityObject["Paper"]);
+            } else {
+              setPaper("More details...");
+            }
+          }}
+        >
+          <Text style = {styles.title}>Paper</Text>
+          <Text>{Paper}</Text>       
         </TouchableOpacity>
        
-        <TouchableOpacity onPress={ () => {
-            if (Glass === "More details") { 
-            setGlass(FacilityObject["Glass"]);
-          } else {
-            setGlass("More details");
-          }}}>
-
-          <View style = {[styles.infoBox, FacilityObject["Glass"]!=="Glass is not recyclable at this location" && {backgroundColor: "lawngreen"} || {backgroundColor: "red"}]}>
-            <Text style = {styles.title}>Glass</Text>
-            <Text>{Glass}</Text>       
-          </View>
+        <TouchableOpacity
+          style = {[
+            styles.infoBox, Glass !== "More details..." && {padding: 8},
+            FacilityObject["Glass"]!=="Glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
+          ]}
+          onPress={ () => {
+            if (Glass === "More details...") { 
+              setGlass(FacilityObject["Glass"]);
+            } else {
+              setGlass("More details...");
+            }
+          }}
+        >
+          <Text style = {styles.title}>Glass</Text>
+          <Text>{Glass}</Text>
         </TouchableOpacity>
         
         {
