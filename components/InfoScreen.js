@@ -4,7 +4,6 @@ import { countyData, cityData, recyclingData } from "../data";
 import { reqDivType, reqDivName } from "./Location";
 
 
-
 export default function InfoScreen() {
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
   let FacilityName = "";
@@ -41,33 +40,25 @@ export default function InfoScreen() {
     } else if (FacilityName.indexOf("Waste") >= 0) {
       FacilityObject = recyclingData[13];
     } else if (FacilityName === "No recycling program") {
-      return(
+      return (
         <View>
           <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is not a recycling program at this location</Text>
         </View>
-      )
+      );
     } else if (FacilityName === "Source separated") {
-      return(
+      return (
         <View>
-          <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take</Text>
+          <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
         </View>
-      )
+      );
     }
   } else {
-    return(
+    return (
       <View>
-        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>We unfortunantly do not have recycling data on this location</Text>
+        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>We unfortunantly do not have recycling data on this location.</Text>
       </View>
-      )
+      );
   }
-
-
-
-
-
-
-
-
 
   if (FacilityObject !== null) {
     const [Plastic, setPlastic] = useState("More details");
@@ -75,48 +66,44 @@ export default function InfoScreen() {
     const [Paper, setPaper] = useState("More details");
     const [Glass, setGlass] = useState("More details");
   
-    const OtherBanned = FacilityObject["Other banned"]
-    
-    //creates an item to display the nonrecyclable items found in "OtherBanned"
+    const OtherBanned = FacilityObject["Other banned"];
     
     const Item = ({words}) => {
       const [detailText, setdetailText] = useState("More details");
-      let notPresent = words.split("(")
-
-
-      return(<TouchableOpacity onPress={ () => {
+      let notPresent = words.split("(");
+      return (
+        <TouchableOpacity onPress={ () => {
           if (detailText === "More details") { 
             if (notPresent.length === 1) {
-              setdetailText("This item is not recyclable at this location")
+              setdetailText("This item is not recyclable at this location");
             } else {
-              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`)
+              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
             }
-        } else {
-          setdetailText("More details")
-        }}}>
+          } else {
+            setdetailText("More details");
+          }}}>
 
-        <View style={[styles.infoBox, { backgroundColor: "red" }]}>
-          <Text style= {styles.title}>{words.split('(')[0]}</Text>
-          <Text>{detailText}</Text>
-        </View>
-      </TouchableOpacity>)}
-      
-
-
-
-
+          <View style={[styles.infoBox, { backgroundColor: "red" }]}>
+            <Text style= {styles.title}>{words.split('(')[0]}</Text>
+            <Text>{detailText}</Text>
+          </View>
+        </TouchableOpacity>
+        );
+      }
       
     return (
       <ScrollView>
-        <Text>City or County: {reqDivType}</Text>
-        <Text>Name: {reqDivName}</Text>
-        <Text>{FacilityName}</Text>
+        <Text style={styles.pageTitle}>
+          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+           : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+        </Text>
+        <Text style={styles.pageSubtitle}>Recycling Facility: {FacilityName}</Text>
         
         <TouchableOpacity onPress={ () => {
             if (Plastic === "More details") { 
-            setPlastic(FacilityObject["Plastic"])
+            setPlastic(FacilityObject["Plastic"]);
           } else {
-            setPlastic("More details")
+            setPlastic("More details");
           }}}>
 
           <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
@@ -127,9 +114,9 @@ export default function InfoScreen() {
        
         <TouchableOpacity onPress={ () => {
             if (Metal === "More details") { 
-            setMetal(FacilityObject["Metal"])
+            setMetal(FacilityObject["Metal"]);
           } else {
-            setMetal("More details")
+            setMetal("More details");
           }}}>
           
           <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
@@ -140,9 +127,9 @@ export default function InfoScreen() {
        
         <TouchableOpacity onPress={ () => {
             if (Paper === "More details") { 
-            setPaper(FacilityObject["Paper"])
+            setPaper(FacilityObject["Paper"]);
           } else {
-            setPaper("More details")
+            setPaper("More details");
           }}}>
 
           <View style = {[styles.infoBox, {backgroundColor: "green"}]}>
@@ -153,9 +140,9 @@ export default function InfoScreen() {
        
         <TouchableOpacity onPress={ () => {
             if (Glass === "More details") { 
-            setGlass(FacilityObject["Glass"])
+            setGlass(FacilityObject["Glass"]);
           } else {
-            setGlass("More details")
+            setGlass("More details");
           }}}>
 
           <View style = {[styles.infoBox, FacilityObject["Glass"]!=="Glass is not recyclable at this location" && {backgroundColor: "green"} || {backgroundColor: "red"}]}>
@@ -164,9 +151,8 @@ export default function InfoScreen() {
           </View>
         </TouchableOpacity>
         
-        
         {
-          OtherBanned.map( (item) => <Item words={item} key={item} /> )
+          OtherBanned.map( (item) => <Item words={item} key={item}/> )
         }
       
       </ScrollView>
@@ -188,6 +174,15 @@ export default function InfoScreen() {
     },
     title: {
       fontSize: 24
+    },
+    pageTitle: {
+      fontSize: 30,
+      padding: 10,
+      textAlign: "center",
+    },
+    pageSubtitle: {
+      fontSize: 20,
+      textAlign: "center",
     }
   } 
 )
