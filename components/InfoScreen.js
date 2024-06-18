@@ -158,7 +158,7 @@ export default function InfoScreen() {
             setGlass("More details")
           }}}>
 
-          <View style = {[styles.infoBox, Glass!=="Glass is not recyclable at this location" && {backgroundColor: "green"} || {backgroundColor: "red"}]}>
+          <View style = {[styles.infoBox, FacilityObject["Glass"]!=="Glass is not recyclable at this location" && {backgroundColor: "green"} || {backgroundColor: "red"}]}>
             <Text style = {styles.title}>Glass</Text>
             <Text>{Glass}</Text>       
           </View>
