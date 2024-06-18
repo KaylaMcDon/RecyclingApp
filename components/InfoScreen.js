@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { countyData, cityData, recyclingData } from "../data";
 import { reqDivType, reqDivName } from "./Location";
-
+import { AntDesign } from '@expo/vector-icons';
 
 export default function InfoScreen() {
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
@@ -63,17 +63,17 @@ export default function InfoScreen() {
 
   
   if (FacilityObject !== null) {
-    const [Plastic, setPlastic] = useState("More details");
-    const [Metal, setMetal] = useState("More details");
-    const [Paper, setPaper] = useState("More details");
-    const [Glass, setGlass] = useState("More details");
+    const [Plastic, setPlastic] = useState("More details...");
+    const [Metal, setMetal] = useState("More details...");
+    const [Paper, setPaper] = useState("More details...");
+    const [Glass, setGlass] = useState("More details...");
 
     let OtherBanned = "";
     if (FacilityObject.hasOwnProperty("Other banned")) {
       OtherBanned = FacilityObject["Other banned"];
     }
 
-    const Item = ({words}) => {
+    const BannedItem = ({words}) => {
       const [detailText, setdetailText] = useState("More details...");
       let notPresent = words.split("(");
       return (
@@ -91,7 +91,12 @@ export default function InfoScreen() {
             }
           }}
         >
-          <Text style= {styles.title}>{words.split('(')[0]}</Text>
+          <View style={styles.infoLabel}>
+            <View style={{paddingRight: 5}}>
+              <AntDesign name="closecircleo" size={24} color="black"/>
+            </View>
+            <Text style = {styles.title}>{words.split('(')[0]}</Text>
+          </View>
           <Text>{detailText}</Text>
         </TouchableOpacity>
       );
@@ -115,7 +120,12 @@ export default function InfoScreen() {
             }
           }}
         >
-          <Text style = {styles.title}>Plastic</Text>
+          <View style={styles.infoLabel}>
+            <View style={{paddingRight: 5}}>
+              <AntDesign name="checkcircleo" size={24} color="black"/>
+            </View>
+            <Text style = {styles.title}>Plastic</Text>
+          </View>
           <Text>{Plastic}</Text>
         </TouchableOpacity>
        
@@ -129,7 +139,12 @@ export default function InfoScreen() {
             }
           }}
         >
-          <Text style = {styles.title}>Metal</Text>
+          <View style={styles.infoLabel}>
+            <View style={{paddingRight: 5}}>
+              <AntDesign name="checkcircleo" size={24} color="black"/>
+            </View>
+            <Text style = {styles.title}>Metal</Text>
+          </View>
           <Text>{Metal}</Text>
         </TouchableOpacity>
        
@@ -143,8 +158,13 @@ export default function InfoScreen() {
             }
           }}
         >
-          <Text style = {styles.title}>Paper</Text>
-          <Text>{Paper}</Text>       
+          <View style={styles.infoLabel}>
+            <View style={{paddingRight: 5}}>
+              <AntDesign name="checkcircleo" size={24} color="black"/>
+            </View>
+            <Text style = {styles.title}>Paper</Text>
+          </View>
+          <Text>{Paper}</Text>
         </TouchableOpacity>
        
         <TouchableOpacity
@@ -160,12 +180,19 @@ export default function InfoScreen() {
             }
           }}
         >
-          <Text style = {styles.title}>Glass</Text>
+          <View style={styles.infoLabel}>
+            <View style={{paddingRight: 5}}>
+              { FacilityObject["Glass"]!=="Glass is not recyclable at this location" ?
+              <AntDesign name="checkcircleo" size={24} color="black"/> :
+              <AntDesign name="closecircleo" size={24} color="black"/> }
+            </View>
+            <Text style = {styles.title}>Glass</Text>
+          </View>
           <Text>{Glass}</Text>
         </TouchableOpacity>
         
         {
-          OtherBanned !== "" && OtherBanned.map( (item) => <Item words={item} key={item}/> )
+          OtherBanned !== "" && OtherBanned.map( (item) => <BannedItem words={item} key={item}/> )
         }
       
       </ScrollView>
@@ -180,10 +207,16 @@ export default function InfoScreen() {
       borderWidth: 0.5,
       borderRadius: 8,
       paddingHorizontal: 8,
+      paddingTop: 8,
       justifyContent: "center",
       textAlign: "left",
       borderWidth: 1.3,
       borderColor: "black",
+    },
+    infoLabel: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
     },
     title: {
       fontSize: 24
