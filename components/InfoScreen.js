@@ -93,9 +93,11 @@ export default function InfoScreen() {
       
     return (
       <ScrollView>
-        <Text style={styles.pageHeader}>
-          {reqDivType === "city" ? <Text>City of {reqDivName}: {FacilityName}</Text> : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} county: {FacilityName}</Text>}
+        <Text style={styles.pageTitle}>
+          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+           : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
+        <Text style={styles.pageSubtitle}>Recycling Facility: {FacilityName}</Text>
         
         <TouchableOpacity onPress={ () => {
             if (Plastic === "More details") { 
@@ -173,10 +175,14 @@ export default function InfoScreen() {
     title: {
       fontSize: 24
     },
-    pageHeader: {
+    pageTitle: {
       fontSize: 30,
       padding: 10,
       textAlign: "center",
     },
+    pageSubtitle: {
+      fontSize: 20,
+      textAlign: "center",
+    }
   } 
 )
