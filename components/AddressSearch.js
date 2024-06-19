@@ -10,15 +10,14 @@ export default function AddressSearch() {
   const testResults = JSON.parse('{"predictions":[{"description":"Durham, NC","matched_substrings":[{"length":3,"offset":0}],"place_id":"ChIJ8WYPEnHkrIkRfvJGionaeuE","reference":"ChIJ8WYPEnHkrIkRfvJGionaeuE","structured_formatting":{"main_text":"Durham","main_text_matched_substrings":[{"length":3,"offset":0}],"secondary_text":"NC"},"terms":[{"offset":0,"value":"Durham"},{"offset":8,"value":"NC"}],"types":["political","geocode","locality"]},{"description":"Durango, CO","matched_substrings":[{"length":3,"offset":0}],"place_id":"ChIJI_yFvaYCPIcRWn6mo4KIK9w","reference":"ChIJI_yFvaYCPIcRWn6mo4KIK9w","structured_formatting":{"main_text":"Durango","main_text_matched_substrings":[{"length":3,"offset":0}],"secondary_text":"CO"},"terms":[{"offset":0,"value":"Durango"},{"offset":9,"value":"CO"}],"types":["locality","geocode","political"]},{"description":"Durham Bulls Athletic Park, Blackwell Street, Durham, NC","matched_substrings":[{"length":3,"offset":0}],"place_id":"ChIJ70wim2zkrIkRPX5-jedLkQ4","reference":"ChIJ70wim2zkrIkRPX5-jedLkQ4","structured_formatting":{"main_text":"Durham Bulls Athletic Park","main_text_matched_substrings":[{"length":3,"offset":0}],"secondary_text":"Blackwell Street, Durham, NC"},"terms":[{"offset":0,"value":"Durham Bulls Athletic Park"},{"offset":28,"value":"Blackwell Street"},{"offset":46,"value":"Durham"},{"offset":54,"value":"NC"}],"types":["establishment","stadium","point_of_interest"]},{"description":"Durango, Mexico","matched_substrings":[{"length":3,"offset":0}],"place_id":"ChIJc9-8GKW3m4YR1EpsOqaO3b8","reference":"ChIJc9-8GKW3m4YR1EpsOqaO3b8","structured_formatting":{"main_text":"Durango","main_text_matched_substrings":[{"length":3,"offset":0}],"secondary_text":"Mexico"},"terms":[{"offset":0,"value":"Durango"},{"offset":9,"value":"Mexico"}],"types":["political","geocode","locality"]},{"description":"Durant, OK","matched_substrings":[{"length":3,"offset":0}],"place_id":"ChIJzwEPr9hfS4YR8qW4QEPxCu0","reference":"ChIJzwEPr9hfS4YR8qW4QEPxCu0","structured_formatting":{"main_text":"Durant","main_text_matched_substrings":[{"length":3,"offset":0}],"secondary_text":"OK"},"terms":[{"offset":0,"value":"Durant"},{"offset":8,"value":"OK"}],"types":["locality","geocode","political"]}],"status":"OK"}');
 
   async function getPredictions(input) {
-    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/autocomplete/" + input));
+    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/autocomplete/" + "NC " + input));
     const predictions = await response.json();
-    console.log(predictions);
     return predictions;
   }
 
   function displayPredictions(predictions) {
     if (predictions.length === 0) {
-      return (<Text>No results!</Text>);
+      return;
     }
 
     let toShow = [];
@@ -29,8 +28,9 @@ export default function AddressSearch() {
           activeOpacity={1}
           underlayColor="#DDDDDD"
           onPress={function() {
+            setSearch(place.description);
+            setResults([]);
             selectedPlaceID = place.place_id;
-            setSearch(place.description)
           }}
         >
           <Text>{place.description}</Text>
@@ -63,7 +63,6 @@ export default function AddressSearch() {
               seen[newText] = predictions.predictions;
             }
             else {
-              console.log(predictions.status);
               setResults("ERROR: " + predictions.status);
             }
           }
