@@ -15,6 +15,33 @@ export default function AddressSearch() {
     return predictions;
   }
 
+  async function getReqRegion(place_id) {
+    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
+    const results = await response.json();
+    const address = results.results[0];
+    console.log(address.address_components);
+    const localityComponent = address.address_components.find(function(component) {
+      console.log(component.types);
+      return component.types.includes("locality");
+    });
+    if (localityComponent !== undefined) {
+      return {
+        type: "city",
+        name: localityComponent.long_name
+      };
+    }
+    const countyComponent = address.address_components.find(function(component) {
+      component.types.includes("administrative_area_level_two");
+    });
+    if (countyComponent !== undefined) {
+      return {
+        type: "county",
+        name: countyComponent.long_name.slice(0, -7).toUpperCase()
+      };
+    }
+    return "UH OH: no region found?";
+  }
+
   function displayPredictions(predictions) {
     if (predictions.length === 0) {
       return;
@@ -27,10 +54,11 @@ export default function AddressSearch() {
           style={styles.result}
           activeOpacity={1}
           underlayColor="#DDDDDD"
-          onPress={function() {
+          onPress={async function() {
             setSearch(place.description);
             setResults([]);
-            selectedPlaceID = place.place_id;
+            [reqDivType, reqDivName] = await getReqRegion(place.place_id);
+            console.log(reqRegion);
           }}
         >
           <Text>{place.description}</Text>
@@ -75,8 +103,9 @@ export default function AddressSearch() {
 
 let seen = {};
 
-let selectedPlaceID = null;
-export { selectedPlaceID };
+let reqDivType;
+let reqDivName;
+export { reqDivType, reqDivName };
 
 const styles = StyleSheet.create({
   input: {
