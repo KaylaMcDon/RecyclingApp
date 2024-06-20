@@ -19,7 +19,6 @@ export default function AddressSearch() {
     if (predictions.length === 0) {
       return;
     }
-
     let toShow = [];
     for (let place of predictions) {
       if (place.description === search) {
@@ -48,6 +47,7 @@ export default function AddressSearch() {
       <TextInput
         style={styles.input}
         value={search}
+        placeholder="Search a place..."
         onChangeText={async function(newText) {
           setSearch(newText);
           reqPlaceId = null;
@@ -95,4 +95,4 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "white",
   }
-})
+});
