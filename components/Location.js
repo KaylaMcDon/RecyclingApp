@@ -18,8 +18,6 @@ export default function Location({ navigation }) {
         onPress={() => {
           switch (searchMethod) {
             case "division":
-              console.log("division");
-              console.log(reqDiv, reqCity, reqCounty);
               if (reqDiv === null || (reqDiv === "city" && reqCity === null) || (reqDiv === "county" && reqCounty === null)) {
                 setErrorMessage("Please select a city/county");
               } else {
@@ -30,7 +28,6 @@ export default function Location({ navigation }) {
               }
               break;
             case "address":
-              console.log("address");
               if (reqPlaceId === null) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
