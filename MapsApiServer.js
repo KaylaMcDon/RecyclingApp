@@ -1,10 +1,5 @@
 require('dotenv').config();
-// const searchRegion = require("@googlemaps/region-lookup");
-// const RegionSearchValue = require("@googlemaps/region-lookup");
-// const SearchRegionRequestData = require("@googlemaps/region-lookup");
-// const SearchRegionResponse = require("@googlemaps/region-lookup");
 const express = require('express');
-
 const app = express();
 const port = 80;
 

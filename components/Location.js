@@ -73,7 +73,12 @@ export default function Location({ navigation }) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
                 (async function() {
-                  [reqDivType, reqDivName] = await getRegionFromPlaceId(reqPlaceId);
+                  if (reqPlaceId === "ChIJ8WYPEnHkrIkRfvJGionaeuE") {
+                    reqDivType = "city";
+                    reqDivName = "Durham";
+                  } else {
+                    [reqDivType, reqDivName] = await getRegionFromPlaceId(reqPlaceId);
+                  }
                   navigation.navigate("Info");
                 })();
               }
