@@ -5,6 +5,7 @@ import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
 export default function InfoScreen() {
+  console.log(reqDivType, reqDivName);
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
   let FacilityName = "";
   let FacilityObject = {};
