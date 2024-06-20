@@ -43,12 +43,20 @@ export default function InfoScreen() {
     } else if (FacilityName === "No recycling program") {
       return (
         <View>
+          <Text style={styles.pageTitle}>
+            {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+            : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          </Text>
           <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is not a recycling program at this location</Text>
         </View>
       );
     } else if (FacilityName === "Source separated") {
       return (
         <View>
+          <Text style={styles.pageTitle}>
+            {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+            : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          </Text>
           <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
         </View>
       );
@@ -56,6 +64,10 @@ export default function InfoScreen() {
   } else {
     return (
       <View>
+        <Text style={styles.pageTitle}>
+          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+           : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+        </Text>
         <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>We unfortunantly do not have recycling data on this location.</Text>
       </View>
       );

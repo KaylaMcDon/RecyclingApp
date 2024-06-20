@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight } from "react-native";
-import Geolocation from 'react-native-geolocation-service';
+import { StyleSheet, View, Text, TouchableHighlight, Platform, PermissionsAndroid } from "react-native";
+import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
+  const [geolocateErrMsg, setGeolocateErrMsg] = useState("");
 
   function updateSearchMethod(newVal) {
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
@@ -98,23 +99,27 @@ export default function Location({ navigation }) {
 
       <TouchableHighlight
         style={styles.locButton}
-        onPress={function() {
-          Geolocation.getCurrentPosition(async function(pos) {
+        onPress={async function() {
+          let granted = true;
+          if (Platform.OS === "android" || Platform.OS === "ios") {
+            granted = false;
+            const permission = await ExpoLocation.requestForegroundPermissionsAsync();
+            if (permission.granted) {granted = true;}
+          }
+          if (granted) {
+            setGeolocateErrMsg("Working...");
+            const pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateErrMsg("Error getting location: did you give permissions?")});
             const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`));
             const results = await response.json();
             [reqDivType, reqDivName] = getRegionFromPlaceId(results);
+            setGeolocateErrMsg("");
             navigation.navigate("Info");
-          }),
-            options={
-              timeout: 10000,
-              maximumAge: 10000,
-              showLocationDialog: true,
-            }
+          }
         }}
       >
         <Text style={styles.optionText}>Use current location</Text>
       </TouchableHighlight>
-
+      <Text>{geolocateErrMsg}</Text>
     </View>
   );
 }
