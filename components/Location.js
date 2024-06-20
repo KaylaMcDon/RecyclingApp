@@ -19,20 +19,17 @@ export default function Location({ navigation }) {
   }
 
   async function getRegionFromPlaceId(place_id) {
-    console.log(place_id);
     const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
     const results = await response.json();
     const address = results.results[0];
-    console.log(address.address_components);
     const localityComponent = address.address_components.find(function(component) {
-      console.log(component.types);
       return component.types.includes("locality");
     });
     if (localityComponent !== undefined) {
       return ["city", localityComponent.long_name];
     }
     const countyComponent = address.address_components.find(function(component) {
-      component.types.includes("administrative_area_level_two");
+      return component.types.includes("administrative_area_level_2");
     });
     if (countyComponent !== undefined) {
       return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
@@ -135,7 +132,6 @@ export default function Location({ navigation }) {
         onPress={() => {
           switch (searchMethod) {
             case "division":
-              console.log("division");
               if (divOptValue === null || (divOptValue === "city" && cityValue === null) || (divOptValue === "county" && countyValue === null)) {
                 setErrorMessage("Please select a city/county");
               } else {
@@ -146,13 +142,11 @@ export default function Location({ navigation }) {
               }
               break;
             case "address":
-              console.log("address");
               if (reqPlaceId === null) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
                 (async function() {
                   [reqDivType, reqDivName] = await getRegionFromPlaceId(reqPlaceId);
-                  console.log(reqDivType, reqDivName);
                   navigation.navigate("Info");
                 })();
               }
