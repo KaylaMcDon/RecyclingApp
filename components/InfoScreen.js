@@ -46,6 +46,14 @@ export default function InfoScreen() {
         </View>
       );
     } else if (FacilityName === "Source separated") {
+      //23 county we dont have info, 25 citys
+      if (reqDivName === "UNION") {
+        return (
+          <View>
+            <Text style = {[styles.infoBox, {backgroundColor: "lawngreen"}]}>Your county already has a customized recycling app called "recycle coach". Please download that app instead</Text>
+          </View>
+        );
+      }
       return (
         <View>
           <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
