@@ -11,7 +11,7 @@ const port = 80;
 app.get('/maps-api/autocomplete/:input', async function(req, res) {
   console.log("AUTOCOMPLETE REQUEST:", req.params.input);
   const response = await fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${req.params.input}&region=us&key=${process.env.MAPS_API_KEY}`);
-  const predictions = await response.json().catch((response) => {console.log("it no work", response);});
+  const predictions = await response.json();
   console.log("AUTOCOMPLETE RESPONSE:", predictions);
   res.set("Access-Control-Allow-Origin", "*");
   res.json(predictions);

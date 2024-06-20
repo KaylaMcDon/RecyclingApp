@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, Button, View, Text } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { TextInput } from 'react-native-gesture-handler';
-import { TouchableHighlight } from 'react-native-web';
+import { TouchableOpacity } from 'react-native-web';
 
 export default function AddressSearch() {
   const [search, setSearch] = useState("");
@@ -25,7 +25,7 @@ export default function AddressSearch() {
         reqPlaceId = place.place_id;
       }
       toShow.push(
-        <TouchableHighlight 
+        <TouchableOpacity 
           style={styles.result}
           activeOpacity={1}
           underlayColor="#DDDDDD"
@@ -36,7 +36,7 @@ export default function AddressSearch() {
           }}
         >
           <Text>{place.description}</Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
       );
     }
     return toShow;
