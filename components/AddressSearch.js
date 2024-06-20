@@ -43,7 +43,7 @@ export default function AddressSearch() {
   }
 
   return (
-    <View style={{padding: 17, backgroundColor: "aliceblue"}}>
+    <View style={{padding: 17}}>
       <TextInput
         style={styles.input}
         value={search}
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     height: 40,
     borderWidth: 1,
     padding: 10,
-    backgroundColor: "white",
+    backgroundColor: "aliceblue",
   },
   result: {
     height: 40,
