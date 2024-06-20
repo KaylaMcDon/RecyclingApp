@@ -110,12 +110,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     backgroundColor: 'white',
-    marginVertical: 10,
+    // marginVertical: 10,
   },
   optionButton: {
     padding: 10,
     backgroundColor: "#2d61fc",
-    marginVertical: 10,
+    // marginVertical: 10,
+    borderWidth: 1,
   },
   optionText: {
     color: "white",
@@ -126,6 +127,6 @@ const styles = StyleSheet.create({
   goButton: {
     padding: 10,
     backgroundColor: "#32b81d",
-    marginVertical: 10,
+    // marginVertical: 10,
   },
 });
