@@ -48,7 +48,7 @@ export default function Location({ navigation }) {
       {searchMethod === "division" && <DivisionSearch/>}
       <View style={styles.spacer}></View>
       <Button
-        title="Search by address (not yet)" 
+        title="Search by address" 
         onPress={() => {updateSearchMethod("address")}}
       />
       <View style={styles.spacer}></View>
