@@ -26,7 +26,7 @@ export default function AddressSearch() {
       }
       toShow.push(
         <TouchableHighlight 
-          style={styles.result}
+          style={styles.wordBox}
           activeOpacity={1}
           underlayColor="#DDDDDD"
           onPress={async function() {
@@ -45,7 +45,7 @@ export default function AddressSearch() {
   return (
     <View>
       <TextInput
-        style={styles.input}
+        style={[styles.wordBox, {backgroundColor: "aliceblue"}]}
         value={search}
         placeholder="Search a place..."
         onChangeText={async function(newText) {
@@ -83,16 +83,10 @@ let reqPlaceId = null;
 export { reqPlaceId };
 
 const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    borderWidth: 1,
-    padding: 10,
-    backgroundColor: "aliceblue",
-  },
-  result: {
+  wordBox: {
     height: 40,
     borderWidth: 1,
     padding: 10,
     backgroundColor: "white",
-  }
+  },
 });

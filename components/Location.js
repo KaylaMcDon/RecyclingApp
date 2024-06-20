@@ -78,7 +78,7 @@ export default function Location({ navigation }) {
 
   return (
     <View>
-      
+
       <TouchableHighlight
         style={styles.optionButton}
         underlayColor="#0000DD"
@@ -117,13 +117,7 @@ export {reqDivType, reqDivName};
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
     padding: 16,
-  },
-  header: {
-    fontSize: 24,
-    textAlign: 'center',
-    backgroundColor: 'white',
   },
   optionButton: {
     marginVertical: 10,
