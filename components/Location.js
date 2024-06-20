@@ -1,64 +1,25 @@
 import React, { useState } from "react";
-import { StyleSheet, Button, View, Text } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight } from "react-native";
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
-  const [errorMesage, setErrorMessage] = useState("");
 
   function updateSearchMethod(newVal) {
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
   }
 
-  async function getRegionFromPlaceId(place_id) {
-    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
-    const results = await response.json();
-    const address = results.results[0];
-    const localityComponent = address.address_components.find(function(component) {
-      return component.types.includes("locality");
-    });
-    if (localityComponent !== undefined) {
-      return ["city", localityComponent.long_name];
-    }
-    const countyComponent = address.address_components.find(function(component) {
-      return component.types.includes("administrative_area_level_2");
-    });
-    if (countyComponent !== undefined) {
-      return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
-    }
-    return "UH OH: no region found?";
-  }
-
-  return (
-    <View>
-      <Text style={styles.header}>Search for Recycling Information</Text>
-      <View style={styles.spacer}></View>
-      <Button
-        title="Use current location (not yet)"
-        onPress={() => {updateSearchMethod("currentLoc")}}
-      />
-      <View style={styles.spacer}></View>
-      <View style={styles.spacer}></View>
-      <Button
-        title="Search by city/county"
-        onPress={() => {updateSearchMethod("division")}}
-      />
-      <View style={styles.spacer}></View>
-      {searchMethod === "division" && <DivisionSearch/>}
-      <View style={styles.spacer}></View>
-      <Button
-        title="Search by address" 
-        onPress={() => {updateSearchMethod("address")}}
-      />
-      <View style={styles.spacer}></View>
-      {searchMethod === "address" && <AddressSearch/>}
-      <View style={styles.spacer}></View>
-      <Button
-        title="Get Recycling Laws"
+  function GoButton() {
+    const [errorMesage, setErrorMessage] = useState("");
+    return ( <View>
+      <TouchableHighlight
+        style={styles.goButton}
         onPress={() => {
           switch (searchMethod) {
             case "division":
+              console.log("division");
+              console.log(reqDiv, reqCity, reqCounty);
               if (reqDiv === null || (reqDiv === "city" && reqCity === null) || (reqDiv === "county" && reqCounty === null)) {
                 setErrorMessage("Please select a city/county");
               } else {
@@ -69,6 +30,7 @@ export default function Location({ navigation }) {
               }
               break;
             case "address":
+              console.log("address");
               if (reqPlaceId === null) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
@@ -87,8 +49,64 @@ export default function Location({ navigation }) {
               setErrorMessage("Please select a search method and input details");
           }
         }}
-      />
+      >
+        <Text style={styles.optionText}>Get Recycling Laws</Text>
+      </TouchableHighlight>
       <Text>{errorMesage}</Text>
+    </View> );
+  }
+
+  async function getRegionFromPlaceId(place_id) {
+    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
+    const results = await response.json();
+    const address = results.results[0];
+
+    const localityComponent = address.address_components.find(function(component) {
+      return component.types.includes("locality");
+    });
+    if (localityComponent !== undefined) {
+      return ["city", localityComponent.long_name];
+    }
+    const countyComponent = address.address_components.find(function(component) {
+      return component.types.includes("administrative_area_level_2");
+    });
+    if (countyComponent !== undefined) {
+      return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
+    }
+    return "UH OH: no region found?";
+  }
+
+  return (
+    <View>
+
+      <TouchableHighlight
+        style={styles.optionButton}
+        underlayColor="#0000DD"
+        onPress={() => {updateSearchMethod("currentLoc")}}
+      >
+        <Text style={styles.optionText}>Use current location (not yet)</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight
+        style={styles.optionButton}
+        underlayColor="#0000DD"
+        onPress={() => {updateSearchMethod("division")}}
+      >
+        <Text style={styles.optionText}>Search by city/county</Text>
+      </TouchableHighlight>
+
+      {searchMethod === "division" && <View style={styles.container}><DivisionSearch/><GoButton/></View>}
+
+      <TouchableHighlight
+        style={styles.optionButton}
+        underlayColor="#0000DD"
+        onPress={() => {updateSearchMethod("address")}}
+      >
+        <Text style={styles.optionText}>Search by address</Text>
+      </TouchableHighlight>
+
+      {searchMethod === "address" && <View style={styles.container}><AddressSearch/><GoButton/></View>}
+
     </View>
   );
 }
@@ -98,29 +116,24 @@ let reqDivName;
 export {reqDivType, reqDivName};
 
 const styles = StyleSheet.create({
-  spacer: {
-    padding: 5,
-    backgroundColor: 'white',
+  container: {
+    padding: 16,
   },
-  header: {
-    fontSize: 24,
-    textAlign: 'center',
-    backgroundColor: 'white',
+  optionButton: {
+    marginVertical: 10,
+    padding: 10,
+    backgroundColor: "#2d61fc",
   },
-  icon: {
-    marginRight: 5,
+  optionText: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "white",
+    fontWeight: "bold",
   },
-  label: {
-    position: 'absolute',
-    backgroundColor: 'white',
-    left: 22,
-    top: 8,
-    zIndex: 999,
-    paddingHorizontal: 8,
-    fontSize: 14,
-  },
-  iconStyle: {
-    width: 20,
-    height: 20,
+  goButton: {
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: "#32b81d",
+    borderRadius: 8,
   },
 });

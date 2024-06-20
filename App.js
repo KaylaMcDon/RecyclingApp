@@ -13,7 +13,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
       <NavigationContainer>
-          <Stack.Navigator initialRouteName='Select Location'>
+          <Stack.Navigator screenOptions={{
+              headerStyle: { elevation: 0 },
+              headerTitleAlign: "center",
+              cardStyle: { backgroundColor: '#fff' }
+            }}
+            initialRouteName='Select Location'>
               <Stack.Screen
                   name="Info"
                   component={InfoScreen}
