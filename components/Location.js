@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Button, View, Text } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
 import { countyNames, cityNames } from "../data";
-import AddressSearch from "./AddressSearch";
+import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
@@ -15,15 +15,33 @@ export default function Location({ navigation }) {
   const [errorMesage, setErrorMessage] = useState("");
 
   function updateSearchMethod(newVal) {
-    console.log(searchMethod);
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
-    console.log(searchMethod === newVal);
-    console.log("searchMethod updated to " + searchMethod + ". newVal = " + newVal);
+  }
+
+  async function getRegionFromPlaceId(place_id) {
+    console.log(place_id);
+    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
+    const results = await response.json();
+    const address = results.results[0];
+    console.log(address.address_components);
+    const localityComponent = address.address_components.find(function(component) {
+      console.log(component.types);
+      return component.types.includes("locality");
+    });
+    if (localityComponent !== undefined) {
+      return ["city", localityComponent.long_name];
+    }
+    const countyComponent = address.address_components.find(function(component) {
+      component.types.includes("administrative_area_level_two");
+    });
+    if (countyComponent !== undefined) {
+      return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
+    }
+    return "UH OH: no region found?";
   }
 
   return (
     <View>
-      <AddressSearch/>
       <Text style={styles.header}>Search for Recycling Information</Text>
       <View style={styles.spacer}></View>
       <Button
@@ -110,6 +128,7 @@ export default function Location({ navigation }) {
         onPress={() => {updateSearchMethod("address")}}
       />
       <View style={styles.spacer}></View>
+      {searchMethod === "address" && <AddressSearch/>}
       <View style={styles.spacer}></View>
       <Button
         title="Get Recycling Laws"
@@ -126,13 +145,24 @@ export default function Location({ navigation }) {
                 navigation.navigate("Info");
               }
               break;
+            case "address":
+              console.log("address");
+              if (reqPlaceId === null) {
+                setErrorMessage("Please select a valid address/location from the dropdown");
+              } else {
+                (async function() {
+                  [reqDivType, reqDivName] = await getRegionFromPlaceId(reqPlaceId);
+                  console.log(reqDivType, reqDivName);
+                  navigation.navigate("Info");
+                })();
+              }
+              break;
             default:
               setErrorMessage("Please select a search method and input details");
           }
         }}
       />
       <Text>{errorMesage}</Text>
-
     </View>
   );
 }
