@@ -60,8 +60,6 @@ export default function InfoScreen() {
       );
   }
 
-
-  
   if (FacilityObject !== null) {
     const [Plastic, setPlastic] = useState("More details...");
     const [Metal, setMetal] = useState("More details...");
