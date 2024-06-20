@@ -4,100 +4,91 @@ import { Dropdown } from 'react-native-element-dropdown';
 import { countyNames, cityNames } from "../data";
 
 export default function DivisionSearch() {
-  const [divOptValue, setDivOptValue] = useState(null);
+  const [divOptValue, setDivOptValue] = useState(reqDiv);
   const [divOptIsFocus, setDivOptIsFocus] = useState(false);
-  const [cityValue, setCityValue] = useState(null);
+  const [cityValue, setCityValue] = useState(reqCity);
   const [cityIsFocus, setCityIsFocus] = useState(false);
-  const [countyValue, setCountyValue] = useState(null);
+  const [countyValue, setCountyValue] = useState(reqCounty);
   const [countyIsFocus, setCountyIsFocus] = useState(false);
 
   return (
     <View>
-      <View style={styles.container}>
+      <Dropdown
+        style={[styles.dropdown, divOptIsFocus && { borderColor: 'blue' }]}
+        placeholderStyle={styles.placeholderStyle}
+        selectedTextStyle={styles.selectedTextStyle}
+        inputSearchStyle={styles.inputSearchStyle}
+        data={[
+          { label: 'City (recycling rules of a municipal area)', value: 'city' },
+          { label: 'County (recycling rules of an unincorporated area)', value: 'county' },
+        ]}
+        maxHeight={300}
+        labelField="label"
+        valueField="value"
+        placeholder={!divOptIsFocus ? "Select city or county" : "..."}
+        value={divOptValue}
+        onFocus={() => setDivOptIsFocus(true)}
+        onBlur={() => setDivOptIsFocus(false)}
+        onChange={item => {
+          setDivOptValue(item.value);
+          setDivOptIsFocus(false);
+          reqDiv = item.value;
+        }}
+      />
+      {divOptValue !== null && (divOptValue === 'city' ?
         <Dropdown
-          style={[styles.dropdown, divOptIsFocus && { borderColor: 'blue' }]}
+          style={[styles.dropdown, {marginTop: 15}, cityIsFocus && { borderColor: 'blue' }]}
           placeholderStyle={styles.placeholderStyle}
           selectedTextStyle={styles.selectedTextStyle}
           inputSearchStyle={styles.inputSearchStyle}
-          data={[
-            { label: 'City (recycling rules of a municipal area)', value: 'city' },
-            { label: 'County (recycling rules of an unincorporated area)', value: 'county' },
-          ]}
+          data={cityNames}
           maxHeight={300}
           labelField="label"
           valueField="value"
-          placeholder={!divOptIsFocus ? "Select city or county" : "..."}
-          value={divOptValue}
-          onFocus={() => setDivOptIsFocus(true)}
-          onBlur={() => setDivOptIsFocus(false)}
+          placeholder={!cityIsFocus ? 'Select city' : '...'}
+          search
+          searchPlaceholder="Search..."
+          value={cityValue}
+          onFocus={() => setCityIsFocus(true)}
+          onBlur={() => setCityIsFocus(false)}
           onChange={item => {
-            setDivOptValue(item.value);
-            setDivOptIsFocus(false);
-            reqDiv = item.value;
+            setCityValue(item.value);
+            setCityIsFocus(false);
+            reqCity = item.value;
+          }}
+        /> :
+        <Dropdown
+          style={[styles.dropdown, {marginTop: 15}, countyIsFocus && { borderColor: 'blue' }]}
+          placeholderStyle={styles.placeholderStyle}
+          selectedTextStyle={styles.selectedTextStyle}
+          inputSearchStyle={styles.inputSearchStyle}
+          data={countyNames}
+          maxHeight={300}
+          labelField="label"
+          valueField="value"
+          placeholder={!countyIsFocus ? 'Select county' : '...'}
+          search
+          searchPlaceholder="Search..."
+          value={countyValue}
+          onFocus={() => setCountyIsFocus(true)}
+          onBlur={() => setCountyIsFocus(false)}
+          onChange={item => {
+            setCountyValue(item.value);
+            setCountyIsFocus(false);
+            reqCounty = item.value;
           }}
         />
-      </View>
-      {divOptValue === null ? <View></View> : <View style={styles.container}>
-        {divOptValue === 'city' ?
-          <Dropdown
-            style={[styles.dropdown, cityIsFocus && { borderColor: 'blue' }]}
-            placeholderStyle={styles.placeholderStyle}
-            selectedTextStyle={styles.selectedTextStyle}
-            inputSearchStyle={styles.inputSearchStyle}
-            data={cityNames}
-            maxHeight={300}
-            labelField="label"
-            valueField="value"
-            placeholder={!cityIsFocus ? 'Select city' : '...'}
-            search
-            searchPlaceholder="Search..."
-            value={cityValue}
-            onFocus={() => setCityIsFocus(true)}
-            onBlur={() => setCityIsFocus(false)}
-            onChange={item => {
-              setCityValue(item.value);
-              setCityIsFocus(false);
-              reqCity = item.value;
-            }}
-          /> :
-          <Dropdown
-            style={[styles.dropdown, countyIsFocus && { borderColor: 'blue' }]}
-            placeholderStyle={styles.placeholderStyle}
-            selectedTextStyle={styles.selectedTextStyle}
-            inputSearchStyle={styles.inputSearchStyle}
-            data={countyNames}
-            maxHeight={300}
-            labelField="label"
-            valueField="value"
-            placeholder={!countyIsFocus ? 'Select county' : '...'}
-            search
-            searchPlaceholder="Search..."
-            value={countyValue}
-            onFocus={() => setCountyIsFocus(true)}
-            onBlur={() => setCountyIsFocus(false)}
-            onChange={item => {
-              setCountyValue(item.value);
-              setCountyIsFocus(false);
-              reqCounty = item.value;
-            }}
-          />
-        }
-      </View>
-      }
+      )}
     </View>
   );
 }
 
-let reqDiv;
-let reqCity;
-let reqCounty;
+let reqDiv = null;
+let reqCity = null;
+let reqCounty = null;
 export { reqDiv, reqCity, reqCounty };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'white',
-    padding: 16,
-  },
   dropdown: {
     height: 50,
     borderColor: 'gray',

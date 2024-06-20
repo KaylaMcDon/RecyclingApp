@@ -43,7 +43,7 @@ export default function AddressSearch() {
   }
 
   return (
-    <View style={{padding: 17}}>
+    <View>
       <TextInput
         style={styles.input}
         value={search}
