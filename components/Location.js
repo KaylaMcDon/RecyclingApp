@@ -19,7 +19,6 @@ export default function Location({ navigation }) {
           style={[styles.dropdown, divOptIsFocus && { borderColor: 'blue' }]}
           placeholderStyle={styles.placeholderStyle}
           selectedTextStyle={styles.selectedTextStyle}
-          inputSearchStyle={styles.inputSearchStyle}
           data={divOptData}
           maxHeight={300}
           labelField="label"

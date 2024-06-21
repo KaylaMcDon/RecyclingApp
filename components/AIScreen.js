@@ -1,25 +1,33 @@
 import * as tf from '@tensorflow/tfjs';
-import '@tensorflow/tfjs-react-native';
 import { bundleResourceIO } from '@tensorflow/tfjs-react-native';
-import * as FileSystem from "expo-file-system"
 
 
 export default function AIScreen() {
-    const modelJSON = require("../tfjs_RecyclingModel/model.json")
-    const modelWeights1 = require("../tfjs_RecyclingModel/group1-shard1of4.bin")
-    /*const modelWeights2 = require("../tfjs_RecyclingModel/group1-shard2of4.bin")
-    const modelWeights3 = require("../tfjs_RecyclingModel/group1-shard3of4.bin")
-    const modelWeights4 = require("../tfjs_RecyclingModel/group1-shard4of4.bin")
+    const modelJSON = require("../GraphRecyclingModel/model.json")
+    const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
 
-    console.log(modelWeights3)
 
-    const loadModel = async () => {
+    const loadModel = (async () => {
+
+        await tf.ready()
+
         const model = await tf
-        .loadLayersModel(bundleResourceIO(modelJSON, [modelWeights1, modelWeights2. modelWeights3, modelWeights4]))
+        .loadGraphModel(bundleResourceIO(modelJSON, modelWeights))
         .catch((e) => {console.log(e)})
         console.log("model loaded")
         return(model);
-    }*/
+    })();
 
+    const practiceImagee = require("../08544447-2712014160.jpg")
+    const recyclingAI = loadModel
+
+    async function predict() {
+        const input = tf.tensor(practiceImagee);
+        const prediction = recyclingAI.executeAsync(input);
+        const predictionArray = prediction.arraySync();
+        console.log(predictionArray)
+    }
+
+    predict();
 }
     
