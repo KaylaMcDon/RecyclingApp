@@ -1,6 +1,7 @@
 import * as tf from '@tensorflow/tfjs';
 import { bundleResourceIO } from '@tensorflow/tfjs-react-native';
 import { useEffect } from 'react';
+import { readDir } from 'react-native-fs';
 
 
 export default function AIScreen() {
@@ -24,7 +25,7 @@ export default function AIScreen() {
             try {
         
         
-                const practiceImage = readFile("../08544447-2712014160.jpg")
+                const practiceImage = readDir("../08544447-2712014160.jpg")
                 
                 usedImage = tf.browser.fromPixels(practiceImage)
 
