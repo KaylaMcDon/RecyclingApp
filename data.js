@@ -617,7 +617,7 @@ const countyNames = [
   { label: 'Montgomery', value: 'MONTGOMERY' },
   { label: 'Moore', value: 'MOORE' },
   { label: 'Nash', value: 'NASH' },
-  { label: 'New hanover', value: 'NEW HANOVER' },
+  { label: 'New Hanover', value: 'NEW HANOVER' },
   { label: 'Northampton', value: 'NORTHAMPTON' },
   { label: 'Onslow', value: 'ONSLOW' },
   { label: 'Orange', value: 'ORANGE' },
