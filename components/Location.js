@@ -103,7 +103,10 @@ export default function Location({ navigation }) {
           const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
           if (locPerms.granted) {
             setGeolocateMsg("Working...");
-            const pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg("Error getting location: please try again")});
+            let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+            if (pos === null) {
+              pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+            }
             const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`));
             const results = await response.json();
             [reqDivType, reqDivName] = getRegionFromPlaceId(results);
