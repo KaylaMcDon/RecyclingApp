@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, Platform, } from "react-native";
+import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
+  const [geolocateMsg, setGeolocateMsg] = useState("");
 
   function updateSearchMethod(newVal) {
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
@@ -36,7 +38,9 @@ export default function Location({ navigation }) {
                     reqDivType = "city";
                     reqDivName = "Durham";
                   } else {
-                    [reqDivType, reqDivName] = await getRegionFromPlaceId(reqPlaceId);
+                    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId));
+                    const results = await response.json();
+                    [reqDivType, reqDivName] = getRegionFromPlaceId(results);
                   }
                   navigation.navigate("Info");
                 })();
@@ -53,9 +57,7 @@ export default function Location({ navigation }) {
     </View> );
   }
 
-  async function getRegionFromPlaceId(place_id) {
-    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + place_id));
-    const results = await response.json();
+  function getRegionFromPlaceId(results) {
     const address = results.results[0];
 
     const localityComponent = address.address_components.find(function(component) {
@@ -70,20 +72,11 @@ export default function Location({ navigation }) {
     if (countyComponent !== undefined) {
       return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
     }
-    return "UH OH: no region found?";
+    return ["Error finding region", "Error finding region"];
   }
 
   return (
     <View>
-
-      <TouchableHighlight
-        style={styles.optionButton}
-        underlayColor="#0000DD"
-        onPress={() => {updateSearchMethod("currentLoc")}}
-      >
-        <Text style={styles.optionText}>Use current location (not yet)</Text>
-      </TouchableHighlight>
-
       <TouchableHighlight
         style={styles.optionButton}
         underlayColor="#0000DD"
@@ -104,6 +97,29 @@ export default function Location({ navigation }) {
 
       {searchMethod === "address" && <View style={styles.container}><AddressSearch/><GoButton/></View>}
 
+      <TouchableHighlight
+        style={styles.locButton}
+        onPress={async function() {
+          const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
+          if (locPerms.granted) {
+            setGeolocateMsg("Working...");
+            let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+            if (pos === null) {
+              pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+            }
+            const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`));
+            const results = await response.json();
+            [reqDivType, reqDivName] = getRegionFromPlaceId(results);
+            setGeolocateMsg("");
+            navigation.navigate("Info");
+          } else {
+            setGeolocateMsg("Missing location permissions: You may need to enable location sharing in settings to use this feature");
+          }
+        }}
+      >
+        <Text style={styles.optionText}>Use current location</Text>
+      </TouchableHighlight>
+      <Text style={{textAlign: "center"}}>{geolocateMsg}</Text>
     </View>
   );
 }
@@ -126,6 +142,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "white",
     fontWeight: "bold",
+  },
+  locButton: {
+    marginTop: 20,
+    marginBottom: 10,
+    marginHorizontal: 16,
+    padding: 10,
+    backgroundColor: "#32b81d",
+    borderRadius: 8,
   },
   goButton: {
     marginTop: 20,
