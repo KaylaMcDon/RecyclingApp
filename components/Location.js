@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight, Platform, PermissionsAndroid } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, Platform, } from "react-native";
 import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
-  const [geolocateErrMsg, setGeolocateErrMsg] = useState("");
+  const [geolocateMsg, setGeolocateMsg] = useState("");
 
   function updateSearchMethod(newVal) {
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
@@ -72,7 +72,7 @@ export default function Location({ navigation }) {
     if (countyComponent !== undefined) {
       return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
     }
-    return "UH OH: no region found?";
+    return ["Error finding region", "Error finding region"];
   }
 
   return (
@@ -100,26 +100,23 @@ export default function Location({ navigation }) {
       <TouchableHighlight
         style={styles.locButton}
         onPress={async function() {
-          let granted = true;
-          if (Platform.OS === "android" || Platform.OS === "ios") {
-            granted = false;
-            const permission = await ExpoLocation.requestForegroundPermissionsAsync();
-            if (permission.granted) {granted = true;}
-          }
-          if (granted) {
-            setGeolocateErrMsg("Working...");
-            const pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateErrMsg("Error getting location: did you give permissions?")});
+          const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
+          if (locPerms.granted) {
+            setGeolocateMsg("Working...");
+            const pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg("Error getting location: please try again")});
             const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`));
             const results = await response.json();
             [reqDivType, reqDivName] = getRegionFromPlaceId(results);
-            setGeolocateErrMsg("");
+            setGeolocateMsg("");
             navigation.navigate("Info");
+          } else {
+            setGeolocateMsg("Missing location permissions: You may need to enable location sharing in settings to use this feature");
           }
         }}
       >
         <Text style={styles.optionText}>Use current location</Text>
       </TouchableHighlight>
-      <Text>{geolocateErrMsg}</Text>
+      <Text style={{textAlign: "center"}}>{geolocateMsg}</Text>
     </View>
   );
 }
