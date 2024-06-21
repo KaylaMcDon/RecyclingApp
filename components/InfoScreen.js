@@ -47,11 +47,13 @@ export default function InfoScreen() {
     return (
       <View>
         <Text style={styles.pageTitle}>
-          {reqDivType === "city" ? <Text>City of {reqDivName}</Text> :
+          {reqDivType === "city" ?
+          <Text>City of {reqDivName}</Text> :
           <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
-        {facilityName === "No recycling program" && <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is not a recycling program at this location.</Text>}
-        {facilityName === "Source separated" && <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>This location has a source separated recycling program.</Text>}
+        {facilityName === "Source separated" ?
+        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>This location has a source separated recycling program.</Text> :
+        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is either not a recycling program at this location, or we have no informtion about it.</Text>}
       </View>
     );
   }
@@ -183,7 +185,7 @@ export default function InfoScreen() {
         </TouchableOpacity>
         
         {
-          bannedItems !== "" && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )
+          bannedItems.length() !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )
         }
       
       </ScrollView>
