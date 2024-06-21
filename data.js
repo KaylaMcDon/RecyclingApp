@@ -1222,8 +1222,13 @@ const countyData = [
   },
   {
     CO_NAME: 'HALIFAX',
+    'Material Recovery Facility Name': 'Source separated',
     'Recycling Type': 'Both curbside and drop-off recycling',
-    'Recycling Collection': 'Curbside single stream and source-separated drop-off'
+    'Recycling Collection': 'Curbside single stream and source-separated drop-off',
+    'External information': {
+      'What to recycle': 'https://www.halifaxnc.com/DocumentCenter/View/3761/What_to_Recycle_Brochure_2023',
+      'What not to recycle': 'https://www.halifaxnc.com/DocumentCenter/View/3762/What_Not_To_Recycle_Brochure_2023'
+    }
   },
   {
     CO_NAME: 'GATES',
