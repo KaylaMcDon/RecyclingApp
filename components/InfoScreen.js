@@ -76,25 +76,31 @@ export default function InfoScreen() {
   const BannedItem = ({words}) => {
     const [detailText, setdetailText] = useState("More details...");
     let notPresent = words.split("(");
-    return (
-      <TouchableOpacity
-        style={[styles.bannedBox, detailText !== "More details..." && {padding: 8}]}
-        onPress={ () => {
-          if (detailText === "More details...") { 
-            if (notPresent.length === 1) {
-              setdetailText("This item is not recyclable at this location");
+    if (notPresent.length !== 1) {
+      return (
+        <TouchableOpacity
+          style={[styles.bannedBox, detailText !== "More details..." && {padding: 8}]}
+          onPress={ () => {
+            if (detailText === "More details...") { 
+              setdetailText(notPresent[1].slice(0, notPresent[1].length-1));
             } else {
-              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
+              setdetailText("More details...");
             }
-          } else {
-            setdetailText("More details...");
-          }
-        }}
-      >
-        <Text style = {styles.title}>{words.split('(')[0]}</Text>
-        <Text>{detailText}</Text>
-      </TouchableOpacity>
-    );
+          }}
+        >
+          <Text style = {styles.title}>{notPresent[0]}</Text>
+          <Text>{detailText}</Text>
+        </TouchableOpacity>
+      );
+    } else {
+      return (
+        <View
+          style={styles.bannedBox}
+        >
+          <Text style = {styles.title}>{notPresent[0]}</Text>
+        </View>
+      );
+    }
   }
     
   return (
