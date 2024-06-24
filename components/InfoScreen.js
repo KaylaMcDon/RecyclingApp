@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
-// import { countyData, cityData, recyclingData } from "../data.js";
 import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
