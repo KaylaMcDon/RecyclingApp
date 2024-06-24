@@ -6631,9 +6631,9 @@
     {
       "name": "Curbie",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "All batteries (car, lithium, etc.)",
         "Ceramic items",
@@ -6660,16 +6660,16 @@
       "name": "ECVC",
       "plastic": "Water, soda, juice, milk and detergent bottles \nNo pumps \nEmpty out",
       "metal": "All cans \nempty out",
-      "glass": "glass is not recyclable at this location",
+      "glass": "Glass is not recyclable at this location",
       "paper": "Newspaper, office paper, and cardboard \nFlatten cardboard",
       "banned": []
     },
     {
       "name": "GFL",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper and cardboard \nFlatten cardboard",
+      "paper": "Paper and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6695,9 +6695,9 @@
     {
       "name": "High Point",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper and cardboard \nFlatten cardboard",
+      "paper": "Paper and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6723,9 +6723,9 @@
     {
       "name": "MecklenburgCounty",
       "plastic": "Bottles, jugs, and jars. \nNo caps, lids, or pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "All batteries (car, lithium, etc.)",
         "Ceramic items",
@@ -6750,9 +6750,9 @@
     {
       "name": "NorthDavidson",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, aseptic cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, aseptic cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6777,9 +6777,9 @@
     {
       "name": "Pratt",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
-      "glass": "glass is not recyclable at this location",
-      "paper": "paper, cartons,  and cardboard \nFlatten cardboard",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6805,9 +6805,9 @@
     {
       "name": "RDS",
       "plastic": "Bottles, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
-      "glass": "glass is not recyclable at this location",
-      "paper": "paper, cartons,  and cardboard \nFlatten cardboard",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6833,9 +6833,9 @@
     {
       "name": "RepublicConover",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6861,9 +6861,9 @@
     {
       "name": "RepublicGreensboro",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo caps, lids, or pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nNo metal lids \nEmpty and rinse",
-      "paper": "paper, and cardboard \nFlatten cardboard",
+      "paper": "Paper, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6889,9 +6889,9 @@
     {
       "name": "RepublicMooresville",
       "plastic": "Bottles, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
-      "glass": "glass is not recyclable at this location",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6917,9 +6917,9 @@
     {
       "name": "Sonoco",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6945,9 +6945,9 @@
     {
       "name": "TFC",
       "plastic": "Bottles and jugs. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
@@ -6973,9 +6973,9 @@
     {
       "name": "RepublicConover",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
-      "metal": "metal cans \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
-      "paper": "paper, cartons, and cardboard \nFlatten cardboard",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
       "banned": [
         "Aersol cans",
         "All batteries (car, lithium, etc.)",
