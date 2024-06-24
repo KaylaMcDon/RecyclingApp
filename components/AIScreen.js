@@ -1,16 +1,16 @@
 import * as tf from '@tensorflow/tfjs';
-import { bundleResourceIO } from '@tensorflow/tfjs-react-native';
-import { useEffect } from 'react';
-import { CameraView, useCameraPermissions, takePictureAsync, Camera } from 'expo-camera';
+import { bundleResourceIO, decodeJpeg } from '@tensorflow/tfjs-react-native';
+import { CameraView, useCameraPermissions } from 'expo-camera';
 import { Button, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-
+import { manipulateAsync } from 'expo-image-manipulator';
 
 export default function AIScreen() {
+    var imageTensor = "temp"
     const modelJSON = require("../GraphRecyclingModel/model.json")
     const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
     
     //AI
-    /*
+    
     const loadModel = async () => {
 
         await tf.ready()
@@ -22,16 +22,12 @@ export default function AIScreen() {
     };
 
 
-    useEffect(() => {
+    function predictionFunction() {
         const predict = async (model) => {  
             try {
-        
-        
-                const practiceImage = ("../08544447-2712014160.jpg")
-                
-                usedImage = (practiceImage)
 
-                const prediction = model.predict(usedImage);
+                console.log(imageTensor)
+                const prediction = model.predict(imageTensor);
                 console.log("prediction", prediction)
                 const predictionArray = prediction.arraySync();
                 console.log("predictionarray", predictionArray)
@@ -51,8 +47,8 @@ export default function AIScreen() {
 
     runPrediction();
 
-    }, [])
-    */
+    }
+    
     
     //Camera to get Image
     
@@ -75,10 +71,57 @@ export default function AIScreen() {
     }
 
     const pictureTaker = async () => {
-        console.log("picture taken")
-        const data = await camera.takePictureAsync();
+        console.log("picture taken")    
+        data = await camera.takePictureAsync();
         console.log(data)
+        
+        const manipResult = await manipulateAsync(
+            data["uri"],
+            [{ resize: { width: 32, height: 24 } }],
+            { format: 'jpeg' }
+        );
+
+        
+        const response = await fetch(manipResult["uri"]);
+        console.log("1")
+        const imageDataArrayBuffer = await response.arrayBuffer();
+        console.log("2")
+        const imageData = new Uint8Array(imageDataArrayBuffer)
+        console.log("3")
+        console.log(typeof(imageData))
+        imageTensor = decodeJpeg(imageData).then(function(data){
+            console.log("PROMISE RESOLVED")
+        }).catch(function(data){
+            console.log("PROMISE REJECTED")
+        });
+        console.log("4")
+        console.log("image tensor: ", imageTensor)
+
+        /*
+        function load(url){
+            return new Promise((resolve, reject) => {
+                  const im = new Image()
+                  im.crossOrigin = 'anonymous'
+                  im.src = url
+                  im.onload = () => {
+                    resolve(im)
+                  }
+                  
+             })
+          }
+        
+          (async() => {
+            console.log("0")
+            const image = await load(data["uri"])
+            console.log("1")
+            imageTensor = await tf.browser.fromPixels(image)
+            console.log("This is an image tensor: ", imageTensor)
+          })()
+          */
+        console.log("word")
+        predictionFunction()
     }
+    
 
 
 
