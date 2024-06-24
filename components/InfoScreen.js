@@ -78,7 +78,7 @@ export default function InfoScreen() {
     let notPresent = words.split("(");
     return (
       <TouchableOpacity
-        style={[styles.bannedBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
+        style={[styles.bannedBox, detailText !== "More details..." && {padding: 8}]}
         onPress={ () => {
           if (detailText === "More details...") { 
             if (notPresent.length === 1) {
@@ -91,12 +91,7 @@ export default function InfoScreen() {
           }
         }}
       >
-        <View style={styles.infoLabel}>
-          <View style={{paddingRight: 5}}>
-            <AntDesign name="closecircleo" size={24} color="black"/>
-          </View>
-          <Text style = {styles.title}>{words.split('(')[0]}</Text>
-        </View>
+        <Text style = {styles.title}>{words.split('(')[0]}</Text>
         <Text>{detailText}</Text>
       </TouchableOpacity>
     );
@@ -192,7 +187,11 @@ export default function InfoScreen() {
       </TouchableOpacity>
       
       {bannedItems.length !== 0 && <TouchableOpacity
-        style={[styles.bannedBox, { backgroundColor: "red" }]}
+        style={[
+          styles.bannedBox,
+          {borderTopLeftRadius: 8, borderTopRightRadius: 8},
+          banned === "" ? { borderRadius: 8 } : { padding: 8 }
+        ]}
         onPress={() => {
           if (banned === "") {
             setBanned(bannedItems.map( (item) => <BannedItem words={item} key={item}/> ));
@@ -201,7 +200,13 @@ export default function InfoScreen() {
           }
         }}
       >
-        <Text style={styles.title}>Banned Items...</Text>
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            <AntDesign name="closecircleo" size={24} color="black"/>
+          </View>
+          <Text style={styles.title}>Banned Items</Text>
+        </View>
+        {banned === "" && <Text>More details...</Text>}
       </TouchableOpacity>}
       {banned !== "" ? banned : <View></View>}
       {/* { bannedItems.length !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )} */}
@@ -224,6 +229,7 @@ export default function InfoScreen() {
       borderColor: "black",
     },
     bannedBox: {
+      backgroundColor: "red",
       marginHorizontal: 20,
       borderColor: 'gray',
       borderWidth: 0.5,
