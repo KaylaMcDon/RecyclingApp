@@ -58,139 +58,137 @@ export default function InfoScreen() {
     );
   }
 
-  if (facilityInfo !== null) {
-    const [plastic, setPlastic] = useState("More details...");
-    const [metal, setMetal] = useState("More details...");
-    const [paper, setPaper] = useState("More details...");
-    const [glass, setGlass] = useState("More details...");
+  const [plastic, setPlastic] = useState("More details...");
+  const [metal, setMetal] = useState("More details...");
+  const [paper, setPaper] = useState("More details...");
+  const [glass, setGlass] = useState("More details...");
 
-    let bannedItems = facilityInfo["banned"];
+  let bannedItems = facilityInfo["banned"];
 
-    const BannedItem = ({words}) => {
-      const [detailText, setdetailText] = useState("More details...");
-      let notPresent = words.split("(");
-      return (
-        <TouchableOpacity
-          style={[styles.infoBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
-          onPress={ () => {
-            if (detailText === "More details...") { 
-              if (notPresent.length === 1) {
-                setdetailText("This item is not recyclable at this location");
-              } else {
-                setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
-              }
-            } else {
-              setdetailText("More details...");
-            }
-          }}
-        >
-          <View style={styles.infoLabel}>
-            <View style={{paddingRight: 5}}>
-              <AntDesign name="closecircleo" size={24} color="black"/>
-            </View>
-            <Text style = {styles.title}>{words.split('(')[0]}</Text>
-          </View>
-          <Text>{detailText}</Text>
-        </TouchableOpacity>
-      );
-    }
-      
+  const BannedItem = ({words}) => {
+    const [detailText, setdetailText] = useState("More details...");
+    let notPresent = words.split("(");
     return (
-      <ScrollView>
-        <Text style={styles.pageTitle}>
-          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
-           : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
-        </Text>
-        <Text style={styles.pageSubtitle}>Recycling Facility: {facilityName}</Text>
-        
-        <TouchableOpacity
-          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, plastic !== "More details..." && {padding: 8}]}
-          onPress={ () => {
-            if (plastic === "More details...") { 
-              setPlastic(facilityInfo["plastic"]);
+      <TouchableOpacity
+        style={[styles.infoBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
+        onPress={ () => {
+          if (detailText === "More details...") { 
+            if (notPresent.length === 1) {
+              setdetailText("This item is not recyclable at this location");
             } else {
-              setPlastic("More details...");
+              setdetailText(`${notPresent[1].slice(0, notPresent[1].length-1)} \nThis item is not recyclable at this location`);
             }
-          }}
-        >
-          <View style={styles.infoLabel}>
-            <View style={{paddingRight: 5}}>
-              <AntDesign name="checkcircleo" size={24} color="black"/>
-            </View>
-            <Text style = {styles.title}>plastic</Text>
+          } else {
+            setdetailText("More details...");
+          }
+        }}
+      >
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            <AntDesign name="closecircleo" size={24} color="black"/>
           </View>
-          <Text>{plastic}</Text>
-        </TouchableOpacity>
-       
-        <TouchableOpacity
-          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, metal !== "More details..." && {padding: 8}]}
-          onPress={ () => {
-            if (metal === "More details...") { 
-              setMetal(facilityInfo["metal"]);
-            } else {
-              setMetal("More details...");
-            }
-          }}
-        >
-          <View style={styles.infoLabel}>
-            <View style={{paddingRight: 5}}>
-              <AntDesign name="checkcircleo" size={24} color="black"/>
-            </View>
-            <Text style = {styles.title}>metal</Text>
-          </View>
-          <Text>{metal}</Text>
-        </TouchableOpacity>
-       
-        <TouchableOpacity
-          style = {[styles.infoBox, {backgroundColor: "lawngreen"}, paper !== "More details..." && {padding: 8}]}
-          onPress={ () => {
-            if (paper === "More details...") { 
-              setPaper(facilityInfo["paper"]);
-            } else {
-              setPaper("More details...");
-            }
-          }}
-        >
-          <View style={styles.infoLabel}>
-            <View style={{paddingRight: 5}}>
-              <AntDesign name="checkcircleo" size={24} color="black"/>
-            </View>
-            <Text style = {styles.title}>paper</Text>
-          </View>
-          <Text>{paper}</Text>
-        </TouchableOpacity>
-       
-        <TouchableOpacity
-          style = {[
-            styles.infoBox, glass !== "More details..." && {padding: 8},
-            facilityInfo["glass"]!=="glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
-          ]}
-          onPress={ () => {
-            if (glass === "More details...") { 
-              setGlass(facilityInfo["glass"]);
-            } else {
-              setGlass("More details...");
-            }
-          }}
-        >
-          <View style={styles.infoLabel}>
-            <View style={{paddingRight: 5}}>
-              { facilityInfo["glass"]!=="glass is not recyclable at this location" ?
-              <AntDesign name="checkcircleo" size={24} color="black"/> :
-              <AntDesign name="closecircleo" size={24} color="black"/> }
-            </View>
-            <Text style = {styles.title}>glass</Text>
-          </View>
-          <Text>{glass}</Text>
-        </TouchableOpacity>
-        
-        {
-          bannedItems.length() !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )
-        }
-      
-      </ScrollView>
+          <Text style = {styles.title}>{words.split('(')[0]}</Text>
+        </View>
+        <Text>{detailText}</Text>
+      </TouchableOpacity>
     );
   }
+    
+  return (
+    <ScrollView>
+      <Text style={styles.pageTitle}>
+        {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+          : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+      </Text>
+      <Text style={styles.pageSubtitle}>Recycling Facility: {facilityName}</Text>
+      
+      <TouchableOpacity
+        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, plastic !== "More details..." && {padding: 8}]}
+        onPress={ () => {
+          if (plastic === "More details...") { 
+            setPlastic(facilityInfo["plastic"]);
+          } else {
+            setPlastic("More details...");
+          }
+        }}
+      >
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            <AntDesign name="checkcircleo" size={24} color="black"/>
+          </View>
+          <Text style = {styles.title}>plastic</Text>
+        </View>
+        <Text>{plastic}</Text>
+      </TouchableOpacity>
+      
+      <TouchableOpacity
+        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, metal !== "More details..." && {padding: 8}]}
+        onPress={ () => {
+          if (metal === "More details...") { 
+            setMetal(facilityInfo["metal"]);
+          } else {
+            setMetal("More details...");
+          }
+        }}
+      >
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            <AntDesign name="checkcircleo" size={24} color="black"/>
+          </View>
+          <Text style = {styles.title}>metal</Text>
+        </View>
+        <Text>{metal}</Text>
+      </TouchableOpacity>
+      
+      <TouchableOpacity
+        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, paper !== "More details..." && {padding: 8}]}
+        onPress={ () => {
+          if (paper === "More details...") { 
+            setPaper(facilityInfo["paper"]);
+          } else {
+            setPaper("More details...");
+          }
+        }}
+      >
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            <AntDesign name="checkcircleo" size={24} color="black"/>
+          </View>
+          <Text style = {styles.title}>paper</Text>
+        </View>
+        <Text>{paper}</Text>
+      </TouchableOpacity>
+      
+      <TouchableOpacity
+        style = {[
+          styles.infoBox, glass !== "More details..." && {padding: 8},
+          facilityInfo["glass"]!=="glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
+        ]}
+        onPress={ () => {
+          if (glass === "More details...") { 
+            setGlass(facilityInfo["glass"]);
+          } else {
+            setGlass("More details...");
+          }
+        }}
+      >
+        <View style={styles.infoLabel}>
+          <View style={{paddingRight: 5}}>
+            { facilityInfo["glass"]!=="glass is not recyclable at this location" ?
+            <AntDesign name="checkcircleo" size={24} color="black"/> :
+            <AntDesign name="closecircleo" size={24} color="black"/> }
+          </View>
+          <Text style = {styles.title}>glass</Text>
+        </View>
+        <Text>{glass}</Text>
+      </TouchableOpacity>
+      
+      {
+        bannedItems.length !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )
+      }
+    
+    </ScrollView>
+  );
 }
 
   const styles = StyleSheet.create({
