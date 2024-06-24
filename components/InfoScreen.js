@@ -10,7 +10,6 @@ const countyData = data.countyData;
 const recyclingData = data.recyclingData;
 
 export default function InfoScreen() {
-
   const getFacilityInfo = function(divType, divName) {
     let facilityInfo = null;
     let divData;
@@ -44,7 +43,6 @@ export default function InfoScreen() {
     } else if (facilityName.indexOf("Waste") >= 0) {
       facilityInfo = recyclingData[13];
     } else if (facilityName === "No recycling program") {
-      console.log("checking county");
       [facilityName, facilityInfo] = getFacilityInfo("county", divData.surroundingCounty);
     } else {
       return [facilityName, null];
@@ -52,7 +50,7 @@ export default function InfoScreen() {
     return [facilityName, facilityInfo];
   }
   
-  let [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
+  const [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
   if (facilityInfo === null) {
     return (
       <View>
@@ -71,11 +69,11 @@ export default function InfoScreen() {
   const [glass, setGlass] = useState("More details...");
   const [banned, setBanned] = useState("");
 
-  let bannedItems = facilityInfo["banned"];
+  const bannedItems = facilityInfo["banned"];
 
   const BannedItem = ({words}) => {
     const [detailText, setdetailText] = useState("More details...");
-    let notPresent = words.split("(");
+    const notPresent = words.split("(");
     if (notPresent.length !== 1) {
       return (
         <TouchableOpacity
@@ -171,7 +169,7 @@ export default function InfoScreen() {
       <TouchableOpacity
         style = {[
           styles.infoBox, glass !== "More details..." && {padding: 8},
-          facilityInfo["glass"]!=="glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
+          facilityInfo["glass"]!=="Glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
         ]}
         onPress={ () => {
           if (glass === "More details...") { 
@@ -183,7 +181,7 @@ export default function InfoScreen() {
       >
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
-            { facilityInfo["glass"]!=="glass is not recyclable at this location" ?
+            { facilityInfo["glass"]!=="Glass is not recyclable at this location" ?
             <AntDesign name="checkcircleo" size={24} color="black"/> :
             <AntDesign name="closecircleo" size={24} color="black"/> }
           </View>
@@ -215,8 +213,6 @@ export default function InfoScreen() {
         {banned === "" && <Text>More details...</Text>}
       </TouchableOpacity>}
       {banned !== "" ? banned : <View></View>}
-      {/* { bannedItems.length !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )} */}
-    
     </ScrollView>
   );
 }
