@@ -116,7 +116,7 @@ export default function InfoScreen() {
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
-          <Text style = {styles.title}>plastic</Text>
+          <Text style = {styles.title}>Plastic</Text>
         </View>
         <Text>{plastic}</Text>
       </TouchableOpacity>
@@ -135,7 +135,7 @@ export default function InfoScreen() {
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
-          <Text style = {styles.title}>metal</Text>
+          <Text style = {styles.title}>Metal</Text>
         </View>
         <Text>{metal}</Text>
       </TouchableOpacity>
@@ -154,7 +154,7 @@ export default function InfoScreen() {
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
-          <Text style = {styles.title}>paper</Text>
+          <Text style = {styles.title}>Paper</Text>
         </View>
         <Text>{paper}</Text>
       </TouchableOpacity>
@@ -178,7 +178,7 @@ export default function InfoScreen() {
             <AntDesign name="checkcircleo" size={24} color="black"/> :
             <AntDesign name="closecircleo" size={24} color="black"/> }
           </View>
-          <Text style = {styles.title}>glass</Text>
+          <Text style = {styles.title}>Glass</Text>
         </View>
         <Text>{glass}</Text>
       </TouchableOpacity>
