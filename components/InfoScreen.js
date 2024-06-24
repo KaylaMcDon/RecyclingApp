@@ -10,50 +10,57 @@ const countyData = data.countyData;
 const recyclingData = data.recyclingData;
 
 export default function InfoScreen() {
-  console.log(reqDivType, reqDivName);
 
-  let facilityInfo = null;
-  let reqDivData;
-  if (reqDivType === "county") {
-    reqDivData = countyData.find(x => x.name === reqDivName);
-  } else {
-    reqDivData = cityData.find(x => x.name === reqDivName);
-  };
+  const getFacilityInfo = function(divType, divName) {
+    let facilityInfo = null;
+    let divData;
+    if (divType === "county") {
+      divData = countyData.find(x => x.name === divName);
+    } else {
+      divData = cityData.find(x => x.name === divName);
+    };
 
-  const facilityName = reqDivData.facilityName;
-  if (facilityName.indexOf(" ") === -1) {
-    facilityInfo = recyclingData.find(x => x.name === facilityName);
-  } else if (facilityName.indexOf("Sonoco") >= 0) {
-    facilityInfo = recyclingData[11];
-  } else if (facilityName.indexOf("GFL") >= 0) {
-    facilityInfo = recyclingData[2];
-  } else if (facilityName.indexOf("High") >= 0) {
-    facilityInfo = recyclingData[3];
-  } else if (facilityName.indexOf("Meck") >= 0) {
-    facilityInfo = recyclingData[4];
-  } else if (facilityName.indexOf("North") >= 0) {
-    facilityInfo = recyclingData[5];
-  } else if (facilityName.indexOf("Conover") >= 0) {
-    facilityInfo = recyclingData[8];
-  } else if (facilityName.indexOf("Greensboro") >= 0) {
-    facilityInfo = recyclingData[9];
-  } else if (facilityName.indexOf("Mooresville") >= 0) {
-    facilityInfo = recyclingData[10];
-  } else if (facilityName.indexOf("TRC") >= 0) {
-    facilityInfo = recyclingData[12];
-  } else if (facilityName.indexOf("Waste") >= 0) {
-    facilityInfo = recyclingData[13];
-  } else {
+    let facilityName = divData.facilityName;
+    if (facilityName.indexOf(" ") === -1) {
+      facilityInfo = recyclingData.find(x => x.name === facilityName);
+    } else if (facilityName.indexOf("Sonoco") >= 0) {
+      facilityInfo = recyclingData[11];
+    } else if (facilityName.indexOf("GFL") >= 0) {
+      facilityInfo = recyclingData[2];
+    } else if (facilityName.indexOf("High") >= 0) {
+      facilityInfo = recyclingData[3];
+    } else if (facilityName.indexOf("Meck") >= 0) {
+      facilityInfo = recyclingData[4];
+    } else if (facilityName.indexOf("North") >= 0) {
+      facilityInfo = recyclingData[5];
+    } else if (facilityName.indexOf("Conover") >= 0) {
+      facilityInfo = recyclingData[8];
+    } else if (facilityName.indexOf("Greensboro") >= 0) {
+      facilityInfo = recyclingData[9];
+    } else if (facilityName.indexOf("Mooresville") >= 0) {
+      facilityInfo = recyclingData[10];
+    } else if (facilityName.indexOf("TRC") >= 0) {
+      facilityInfo = recyclingData[12];
+    } else if (facilityName.indexOf("Waste") >= 0) {
+      facilityInfo = recyclingData[13];
+    } else if (facilityName === "No recycling program") {
+      console.log("checking county");
+      [facilityName, facilityInfo] = getFacilityInfo("county", divData.surroundingCounty);
+    } else {
+      return [facilityName, null];
+    }
+    return [facilityName, facilityInfo];
+  }
+  
+  let [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
+  if (facilityInfo === null) {
     return (
       <View>
         <Text style={styles.pageTitle}>
-          {reqDivType === "city" ?
-          <Text>City of {reqDivName}</Text> :
-          <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
+          : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
-        {facilityName === "Source separated" ?
-        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>This location has a source separated recycling program.</Text> :
-        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>There is either not a recycling program at this location, or we have no informtion about it.</Text>}
+        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
       </View>
     );
   }
@@ -62,6 +69,7 @@ export default function InfoScreen() {
   const [metal, setMetal] = useState("More details...");
   const [paper, setPaper] = useState("More details...");
   const [glass, setGlass] = useState("More details...");
+  const [banned, setBanned] = useState("");
 
   let bannedItems = facilityInfo["banned"];
 
@@ -70,7 +78,7 @@ export default function InfoScreen() {
     let notPresent = words.split("(");
     return (
       <TouchableOpacity
-        style={[styles.infoBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
+        style={[styles.bannedBox, { backgroundColor: "red" }, detailText !== "More details..." && {padding: 8}]}
         onPress={ () => {
           if (detailText === "More details...") { 
             if (notPresent.length === 1) {
@@ -183,9 +191,20 @@ export default function InfoScreen() {
         <Text>{glass}</Text>
       </TouchableOpacity>
       
-      {
-        bannedItems.length !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )
-      }
+      {bannedItems.length !== 0 && <TouchableOpacity
+        style={[styles.bannedBox, { backgroundColor: "red" }]}
+        onPress={() => {
+          if (banned === "") {
+            setBanned(bannedItems.map( (item) => <BannedItem words={item} key={item}/> ));
+          } else {
+            setBanned("");
+          }
+        }}
+      >
+        <Text style={styles.title}>Banned Items...</Text>
+      </TouchableOpacity>}
+      {banned !== "" ? banned : <View></View>}
+      {/* { bannedItems.length !== 0 && bannedItems.map( (item) => <BannedItem words={item} key={item}/> )} */}
     
     </ScrollView>
   );
@@ -197,6 +216,17 @@ export default function InfoScreen() {
       borderColor: 'gray',
       borderWidth: 0.5,
       borderRadius: 8,
+      paddingHorizontal: 8,
+      paddingTop: 8,
+      justifyContent: "center",
+      textAlign: "left",
+      borderWidth: 1.3,
+      borderColor: "black",
+    },
+    bannedBox: {
+      marginHorizontal: 20,
+      borderColor: 'gray',
+      borderWidth: 0.5,
       paddingHorizontal: 8,
       paddingTop: 8,
       justifyContent: "center",
