@@ -97,6 +97,9 @@ export default function AIScreen() {
         console.log("4")
         console.log("image tensor: ", imageTensor)
 
+
+
+        // Probaly delete other comment later
         /*
         function load(url){
             return new Promise((resolve, reject) => {
