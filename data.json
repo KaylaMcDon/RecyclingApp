@@ -1,0 +1,7002 @@
+{
+  "cityNames": [
+    {
+      "label": "Aberdeen",
+      "value": "Aberdeen"
+    },
+    {
+      "label": "Ahoskie",
+      "value": "Ahoskie"
+    },
+    {
+      "label": "Alamance",
+      "value": "Alamance"
+    },
+    {
+      "label": "Albemarle",
+      "value": "Albemarle"
+    },
+    {
+      "label": "Alliance",
+      "value": "Alliance"
+    },
+    {
+      "label": "Andrews",
+      "value": "Andrews"
+    },
+    {
+      "label": "Angier",
+      "value": "Angier"
+    },
+    {
+      "label": "Ansonville",
+      "value": "Ansonville"
+    },
+    {
+      "label": "Apex",
+      "value": "Apex"
+    },
+    {
+      "label": "Arapahoe",
+      "value": "Arapahoe"
+    },
+    {
+      "label": "Archdale",
+      "value": "Archdale"
+    },
+    {
+      "label": "Archer Lodge",
+      "value": "Archer Lodge"
+    },
+    {
+      "label": "Asheboro",
+      "value": "Asheboro"
+    },
+    {
+      "label": "Asheville",
+      "value": "Asheville"
+    },
+    {
+      "label": "Askewville",
+      "value": "Askewville"
+    },
+    {
+      "label": "Atkinson",
+      "value": "Atkinson"
+    },
+    {
+      "label": "Atlantic Beach",
+      "value": "Atlantic Beach"
+    },
+    {
+      "label": "Aulander",
+      "value": "Aulander"
+    },
+    {
+      "label": "Aurora",
+      "value": "Aurora"
+    },
+    {
+      "label": "Autryville",
+      "value": "Autryville"
+    },
+    {
+      "label": "Ayden",
+      "value": "Ayden"
+    },
+    {
+      "label": "Badin",
+      "value": "Badin"
+    },
+    {
+      "label": "Bailey",
+      "value": "Bailey"
+    },
+    {
+      "label": "Bakersville",
+      "value": "Bakersville"
+    },
+    {
+      "label": "Bald Head Island",
+      "value": "Bald Head Island"
+    },
+    {
+      "label": "Banner Elk",
+      "value": "Banner Elk"
+    },
+    {
+      "label": "Bath",
+      "value": "Bath"
+    },
+    {
+      "label": "Bayboro",
+      "value": "Bayboro"
+    },
+    {
+      "label": "Bear Grass",
+      "value": "Bear Grass"
+    },
+    {
+      "label": "Beaufort",
+      "value": "Beaufort"
+    },
+    {
+      "label": "Beech Mountain",
+      "value": "Beech Mountain"
+    },
+    {
+      "label": "Belhaven",
+      "value": "Belhaven"
+    },
+    {
+      "label": "Belmont",
+      "value": "Belmont"
+    },
+    {
+      "label": "Belville",
+      "value": "Belville"
+    },
+    {
+      "label": "Belwood",
+      "value": "Belwood"
+    },
+    {
+      "label": "Benson",
+      "value": "Benson"
+    },
+    {
+      "label": "Bermuda Run",
+      "value": "Bermuda Run"
+    },
+    {
+      "label": "Bessemer City",
+      "value": "Bessemer City"
+    },
+    {
+      "label": "Bethania",
+      "value": "Bethania"
+    },
+    {
+      "label": "Bethel",
+      "value": "Bethel"
+    },
+    {
+      "label": "Beulaville",
+      "value": "Beulaville"
+    },
+    {
+      "label": "Biltmore Forest",
+      "value": "Biltmore Forest"
+    },
+    {
+      "label": "Biscoe",
+      "value": "Biscoe"
+    },
+    {
+      "label": "Black Creek",
+      "value": "Black Creek"
+    },
+    {
+      "label": "Black Mountain",
+      "value": "Black Mountain"
+    },
+    {
+      "label": "Bladenboro",
+      "value": "Bladenboro"
+    },
+    {
+      "label": "Blowing Rock",
+      "value": "Blowing Rock"
+    },
+    {
+      "label": "Boardman",
+      "value": "Boardman"
+    },
+    {
+      "label": "Bogue",
+      "value": "Bogue"
+    },
+    {
+      "label": "Boiling Spring Lakes",
+      "value": "Boiling Spring Lakes"
+    },
+    {
+      "label": "Boiling Springs",
+      "value": "Boiling Springs"
+    },
+    {
+      "label": "Bolivia",
+      "value": "Bolivia"
+    },
+    {
+      "label": "Bolton",
+      "value": "Bolton"
+    },
+    {
+      "label": "Boone",
+      "value": "Boone"
+    },
+    {
+      "label": "Boonville",
+      "value": "Boonville"
+    },
+    {
+      "label": "Bostic",
+      "value": "Bostic"
+    },
+    {
+      "label": "Brevard",
+      "value": "Brevard"
+    },
+    {
+      "label": "Bridgeton",
+      "value": "Bridgeton"
+    },
+    {
+      "label": "Broadway",
+      "value": "Broadway"
+    },
+    {
+      "label": "Brookford",
+      "value": "Brookford"
+    },
+    {
+      "label": "Brunswick",
+      "value": "Brunswick"
+    },
+    {
+      "label": "Bryson City",
+      "value": "Bryson City"
+    },
+    {
+      "label": "Bunn",
+      "value": "Bunn"
+    },
+    {
+      "label": "Burgaw",
+      "value": "Burgaw"
+    },
+    {
+      "label": "Burlington",
+      "value": "Burlington"
+    },
+    {
+      "label": "Burnsville",
+      "value": "Burnsville"
+    },
+    {
+      "label": "Butner",
+      "value": "Butner"
+    },
+    {
+      "label": "Cajahs Mountain",
+      "value": "Cajahs Mountain"
+    },
+    {
+      "label": "Calabash",
+      "value": "Calabash"
+    },
+    {
+      "label": "Calypso",
+      "value": "Calypso"
+    },
+    {
+      "label": "Cameron",
+      "value": "Cameron"
+    },
+    {
+      "label": "Candor",
+      "value": "Candor"
+    },
+    {
+      "label": "Canton",
+      "value": "Canton"
+    },
+    {
+      "label": "Cape Carteret",
+      "value": "Cape Carteret"
+    },
+    {
+      "label": "Carolina Beach",
+      "value": "Carolina Beach"
+    },
+    {
+      "label": "Carolina Shores",
+      "value": "Carolina Shores"
+    },
+    {
+      "label": "Carrboro",
+      "value": "Carrboro"
+    },
+    {
+      "label": "Carthage",
+      "value": "Carthage"
+    },
+    {
+      "label": "Cary",
+      "value": "Cary"
+    },
+    {
+      "label": "Casar",
+      "value": "Casar"
+    },
+    {
+      "label": "Castalia",
+      "value": "Castalia"
+    },
+    {
+      "label": "Caswell Beach",
+      "value": "Caswell Beach"
+    },
+    {
+      "label": "Catawba",
+      "value": "Catawba"
+    },
+    {
+      "label": "Cedar Point",
+      "value": "Cedar Point"
+    },
+    {
+      "label": "Cedar Rock",
+      "value": "Cedar Rock"
+    },
+    {
+      "label": "Cerro Gordo",
+      "value": "Cerro Gordo"
+    },
+    {
+      "label": "Chadbourn",
+      "value": "Chadbourn"
+    },
+    {
+      "label": "Chapel Hill",
+      "value": "Chapel Hill"
+    },
+    {
+      "label": "Charlotte",
+      "value": "Charlotte"
+    },
+    {
+      "label": "Cherryville",
+      "value": "Cherryville"
+    },
+    {
+      "label": "Chimney Rock",
+      "value": "Chimney Rock"
+    },
+    {
+      "label": "China Grove",
+      "value": "China Grove"
+    },
+    {
+      "label": "Chocowinity",
+      "value": "Chocowinity"
+    },
+    {
+      "label": "Claremont",
+      "value": "Claremont"
+    },
+    {
+      "label": "Clarkton",
+      "value": "Clarkton"
+    },
+    {
+      "label": "Clayton",
+      "value": "Clayton"
+    },
+    {
+      "label": "Clemmons",
+      "value": "Clemmons"
+    },
+    {
+      "label": "Cleveland",
+      "value": "Cleveland"
+    },
+    {
+      "label": "Clinton",
+      "value": "Clinton"
+    },
+    {
+      "label": "Clyde",
+      "value": "Clyde"
+    },
+    {
+      "label": "Coats",
+      "value": "Coats"
+    },
+    {
+      "label": "Cofield",
+      "value": "Cofield"
+    },
+    {
+      "label": "Colerain",
+      "value": "Colerain"
+    },
+    {
+      "label": "Columbia",
+      "value": "Columbia"
+    },
+    {
+      "label": "Columbus",
+      "value": "Columbus"
+    },
+    {
+      "label": "Como",
+      "value": "Como"
+    },
+    {
+      "label": "Concord",
+      "value": "Concord"
+    },
+    {
+      "label": "Conetoe",
+      "value": "Conetoe"
+    },
+    {
+      "label": "Connelly Springs",
+      "value": "Connelly Springs"
+    },
+    {
+      "label": "Conover",
+      "value": "Conover"
+    },
+    {
+      "label": "Conway",
+      "value": "Conway"
+    },
+    {
+      "label": "Cooleemee",
+      "value": "Cooleemee"
+    },
+    {
+      "label": "Cornelius",
+      "value": "Cornelius"
+    },
+    {
+      "label": "Cove City",
+      "value": "Cove City"
+    },
+    {
+      "label": "Cramerton",
+      "value": "Cramerton"
+    },
+    {
+      "label": "Creedmoor",
+      "value": "Creedmoor"
+    },
+    {
+      "label": "Creswell",
+      "value": "Creswell"
+    },
+    {
+      "label": "Crossnore",
+      "value": "Crossnore"
+    },
+    {
+      "label": "Dallas",
+      "value": "Dallas"
+    },
+    {
+      "label": "Danbury",
+      "value": "Danbury"
+    },
+    {
+      "label": "Davidson",
+      "value": "Davidson"
+    },
+    {
+      "label": "Denton",
+      "value": "Denton"
+    },
+    {
+      "label": "Dillsboro",
+      "value": "Dillsboro"
+    },
+    {
+      "label": "Dobbins Heights",
+      "value": "Dobbins Heights"
+    },
+    {
+      "label": "Dobson",
+      "value": "Dobson"
+    },
+    {
+      "label": "Dortches",
+      "value": "Dortches"
+    },
+    {
+      "label": "Dover",
+      "value": "Dover"
+    },
+    {
+      "label": "Drexel",
+      "value": "Drexel"
+    },
+    {
+      "label": "Dublin",
+      "value": "Dublin"
+    },
+    {
+      "label": "Duck",
+      "value": "Duck"
+    },
+    {
+      "label": "Dunn",
+      "value": "Dunn"
+    },
+    {
+      "label": "Durham",
+      "value": "Durham"
+    },
+    {
+      "label": "Earl",
+      "value": "Earl"
+    },
+    {
+      "label": "East Arcadia",
+      "value": "East Arcadia"
+    },
+    {
+      "label": "East Bend",
+      "value": "East Bend"
+    },
+    {
+      "label": "East Spencer",
+      "value": "East Spencer"
+    },
+    {
+      "label": "Eastover",
+      "value": "Eastover"
+    },
+    {
+      "label": "Eden",
+      "value": "Eden"
+    },
+    {
+      "label": "Edenton",
+      "value": "Edenton"
+    },
+    {
+      "label": "Elizabeth City",
+      "value": "Elizabeth City"
+    },
+    {
+      "label": "Elizabethtown",
+      "value": "Elizabethtown"
+    },
+    {
+      "label": "Elk Park",
+      "value": "Elk Park"
+    },
+    {
+      "label": "Elkin",
+      "value": "Elkin"
+    },
+    {
+      "label": "Ellenboro",
+      "value": "Ellenboro"
+    },
+    {
+      "label": "Ellerbe",
+      "value": "Ellerbe"
+    },
+    {
+      "label": "Elm City",
+      "value": "Elm City"
+    },
+    {
+      "label": "Elon",
+      "value": "Elon"
+    },
+    {
+      "label": "Emerald Isle",
+      "value": "Emerald Isle"
+    },
+    {
+      "label": "Enfield",
+      "value": "Enfield"
+    },
+    {
+      "label": "Erwin",
+      "value": "Erwin"
+    },
+    {
+      "label": "Eureka",
+      "value": "Eureka"
+    },
+    {
+      "label": "Everetts",
+      "value": "Everetts"
+    },
+    {
+      "label": "Fair Bluff",
+      "value": "Fair Bluff"
+    },
+    {
+      "label": "Fairmont",
+      "value": "Fairmont"
+    },
+    {
+      "label": "Fairview",
+      "value": "Fairview"
+    },
+    {
+      "label": "Faison",
+      "value": "Faison"
+    },
+    {
+      "label": "Faith",
+      "value": "Faith"
+    },
+    {
+      "label": "Falcon",
+      "value": "Falcon"
+    },
+    {
+      "label": "Falkland",
+      "value": "Falkland"
+    },
+    {
+      "label": "Fallston",
+      "value": "Fallston"
+    },
+    {
+      "label": "Farmville",
+      "value": "Farmville"
+    },
+    {
+      "label": "Fayetteville",
+      "value": "Fayetteville"
+    },
+    {
+      "label": "Flat Rock",
+      "value": "Flat Rock"
+    },
+    {
+      "label": "Fletcher",
+      "value": "Fletcher"
+    },
+    {
+      "label": "Fontana Dam",
+      "value": "Fontana Dam"
+    },
+    {
+      "label": "Forest City",
+      "value": "Forest City"
+    },
+    {
+      "label": "Forest Hills",
+      "value": "Forest Hills"
+    },
+    {
+      "label": "Fountain",
+      "value": "Fountain"
+    },
+    {
+      "label": "Four Oaks",
+      "value": "Four Oaks"
+    },
+    {
+      "label": "Foxfire Village",
+      "value": "Foxfire Village"
+    },
+    {
+      "label": "Franklin",
+      "value": "Franklin"
+    },
+    {
+      "label": "Franklinton",
+      "value": "Franklinton"
+    },
+    {
+      "label": "Franklinville",
+      "value": "Franklinville"
+    },
+    {
+      "label": "Fremont",
+      "value": "Fremont"
+    },
+    {
+      "label": "Fuquay-Varina",
+      "value": "Fuquay-Varina"
+    },
+    {
+      "label": "Gamewell",
+      "value": "Gamewell"
+    },
+    {
+      "label": "Garland",
+      "value": "Garland"
+    },
+    {
+      "label": "Garner",
+      "value": "Garner"
+    },
+    {
+      "label": "Garysburg",
+      "value": "Garysburg"
+    },
+    {
+      "label": "Gaston",
+      "value": "Gaston"
+    },
+    {
+      "label": "Gastonia",
+      "value": "Gastonia"
+    },
+    {
+      "label": "Gatesville",
+      "value": "Gatesville"
+    },
+    {
+      "label": "Gibson",
+      "value": "Gibson"
+    },
+    {
+      "label": "Gibsonville",
+      "value": "Gibsonville"
+    },
+    {
+      "label": "Glen Alpine",
+      "value": "Glen Alpine"
+    },
+    {
+      "label": "Godwin",
+      "value": "Godwin"
+    },
+    {
+      "label": "Goldsboro",
+      "value": "Goldsboro"
+    },
+    {
+      "label": "Goldston",
+      "value": "Goldston"
+    },
+    {
+      "label": "Graham",
+      "value": "Graham"
+    },
+    {
+      "label": "Grandfather Village",
+      "value": "Grandfather Village"
+    },
+    {
+      "label": "Granite Falls",
+      "value": "Granite Falls"
+    },
+    {
+      "label": "Granite Quarry",
+      "value": "Granite Quarry"
+    },
+    {
+      "label": "Grantsboro",
+      "value": "Grantsboro"
+    },
+    {
+      "label": "Green Level",
+      "value": "Green Level"
+    },
+    {
+      "label": "Greenevers",
+      "value": "Greenevers"
+    },
+    {
+      "label": "Greensboro",
+      "value": "Greensboro"
+    },
+    {
+      "label": "Greenville",
+      "value": "Greenville"
+    },
+    {
+      "label": "Grifton",
+      "value": "Grifton"
+    },
+    {
+      "label": "Grimesland",
+      "value": "Grimesland"
+    },
+    {
+      "label": "Grover",
+      "value": "Grover"
+    },
+    {
+      "label": "Halifax",
+      "value": "Halifax"
+    },
+    {
+      "label": "Hamilton",
+      "value": "Hamilton"
+    },
+    {
+      "label": "Hamlet",
+      "value": "Hamlet"
+    },
+    {
+      "label": "Harmony",
+      "value": "Harmony"
+    },
+    {
+      "label": "Harrells",
+      "value": "Harrells"
+    },
+    {
+      "label": "Harrellsville",
+      "value": "Harrellsville"
+    },
+    {
+      "label": "Harrisburg",
+      "value": "Harrisburg"
+    },
+    {
+      "label": "Hassell",
+      "value": "Hassell"
+    },
+    {
+      "label": "Havelock",
+      "value": "Havelock"
+    },
+    {
+      "label": "Haw River",
+      "value": "Haw River"
+    },
+    {
+      "label": "Hayesville",
+      "value": "Hayesville"
+    },
+    {
+      "label": "Hemby Bridge",
+      "value": "Hemby Bridge"
+    },
+    {
+      "label": "Henderson",
+      "value": "Henderson"
+    },
+    {
+      "label": "Hendersonville",
+      "value": "Hendersonville"
+    },
+    {
+      "label": "Hertford",
+      "value": "Hertford"
+    },
+    {
+      "label": "Hickory",
+      "value": "Hickory"
+    },
+    {
+      "label": "High Point",
+      "value": "High Point"
+    },
+    {
+      "label": "High Shoals",
+      "value": "High Shoals"
+    },
+    {
+      "label": "Highlands",
+      "value": "Highlands"
+    },
+    {
+      "label": "Hildebran",
+      "value": "Hildebran"
+    },
+    {
+      "label": "Hillsborough",
+      "value": "Hillsborough"
+    },
+    {
+      "label": "Hobgood",
+      "value": "Hobgood"
+    },
+    {
+      "label": "Hoffman",
+      "value": "Hoffman"
+    },
+    {
+      "label": "Holden Beach",
+      "value": "Holden Beach"
+    },
+    {
+      "label": "Holly Ridge",
+      "value": "Holly Ridge"
+    },
+    {
+      "label": "Holly Springs",
+      "value": "Holly Springs"
+    },
+    {
+      "label": "Hookerton",
+      "value": "Hookerton"
+    },
+    {
+      "label": "Hope Mills",
+      "value": "Hope Mills"
+    },
+    {
+      "label": "Hot Springs",
+      "value": "Hot Springs"
+    },
+    {
+      "label": "Hudson",
+      "value": "Hudson"
+    },
+    {
+      "label": "Huntersville",
+      "value": "Huntersville"
+    },
+    {
+      "label": "Indian Beach",
+      "value": "Indian Beach"
+    },
+    {
+      "label": "Indian Trail",
+      "value": "Indian Trail"
+    },
+    {
+      "label": "Jackson",
+      "value": "Jackson"
+    },
+    {
+      "label": "Jacksonville",
+      "value": "Jacksonville"
+    },
+    {
+      "label": "Jamestown",
+      "value": "Jamestown"
+    },
+    {
+      "label": "Jamesville",
+      "value": "Jamesville"
+    },
+    {
+      "label": "Jefferson",
+      "value": "Jefferson"
+    },
+    {
+      "label": "Jonesville",
+      "value": "Jonesville"
+    },
+    {
+      "label": "Kannapolis",
+      "value": "Kannapolis"
+    },
+    {
+      "label": "Kelford",
+      "value": "Kelford"
+    },
+    {
+      "label": "Kenansville",
+      "value": "Kenansville"
+    },
+    {
+      "label": "Kenly",
+      "value": "Kenly"
+    },
+    {
+      "label": "Kernersville",
+      "value": "Kernersville"
+    },
+    {
+      "label": "Kill Devil Hills",
+      "value": "Kill Devil Hills"
+    },
+    {
+      "label": "King",
+      "value": "King"
+    },
+    {
+      "label": "Kings Mountain",
+      "value": "Kings Mountain"
+    },
+    {
+      "label": "Kingstown",
+      "value": "Kingstown"
+    },
+    {
+      "label": "Kinston",
+      "value": "Kinston"
+    },
+    {
+      "label": "Kittrell",
+      "value": "Kittrell"
+    },
+    {
+      "label": "Kitty Hawk",
+      "value": "Kitty Hawk"
+    },
+    {
+      "label": "Knightdale",
+      "value": "Knightdale"
+    },
+    {
+      "label": "Kure Beach",
+      "value": "Kure Beach"
+    },
+    {
+      "label": "La Grange",
+      "value": "La Grange"
+    },
+    {
+      "label": "Lake Lure",
+      "value": "Lake Lure"
+    },
+    {
+      "label": "Lake Park",
+      "value": "Lake Park"
+    },
+    {
+      "label": "Lake Santeetlah",
+      "value": "Lake Santeetlah"
+    },
+    {
+      "label": "Lake Waccamaw",
+      "value": "Lake Waccamaw"
+    },
+    {
+      "label": "Landis",
+      "value": "Landis"
+    },
+    {
+      "label": "Lansing",
+      "value": "Lansing"
+    },
+    {
+      "label": "Lasker",
+      "value": "Lasker"
+    },
+    {
+      "label": "Lattimore",
+      "value": "Lattimore"
+    },
+    {
+      "label": "Laurel Park",
+      "value": "Laurel Park"
+    },
+    {
+      "label": "Laurinburg",
+      "value": "Laurinburg"
+    },
+    {
+      "label": "Lawndale",
+      "value": "Lawndale"
+    },
+    {
+      "label": "Leggett",
+      "value": "Leggett"
+    },
+    {
+      "label": "Leland",
+      "value": "Leland"
+    },
+    {
+      "label": "Lenoir",
+      "value": "Lenoir"
+    },
+    {
+      "label": "Lewiston Woodville",
+      "value": "Lewiston Woodville"
+    },
+    {
+      "label": "Lewisville",
+      "value": "Lewisville"
+    },
+    {
+      "label": "Lexington",
+      "value": "Lexington"
+    },
+    {
+      "label": "Liberty",
+      "value": "Liberty"
+    },
+    {
+      "label": "Lilesville",
+      "value": "Lilesville"
+    },
+    {
+      "label": "Lillington",
+      "value": "Lillington"
+    },
+    {
+      "label": "Lincolnton",
+      "value": "Lincolnton"
+    },
+    {
+      "label": "Linden",
+      "value": "Linden"
+    },
+    {
+      "label": "Littleton",
+      "value": "Littleton"
+    },
+    {
+      "label": "Locust",
+      "value": "Locust"
+    },
+    {
+      "label": "Long View",
+      "value": "Long View"
+    },
+    {
+      "label": "Louisburg",
+      "value": "Louisburg"
+    },
+    {
+      "label": "Love Valley",
+      "value": "Love Valley"
+    },
+    {
+      "label": "Lowell",
+      "value": "Lowell"
+    },
+    {
+      "label": "Lucama",
+      "value": "Lucama"
+    },
+    {
+      "label": "Lumber Bridge",
+      "value": "Lumber Bridge"
+    },
+    {
+      "label": "Lumberton",
+      "value": "Lumberton"
+    },
+    {
+      "label": "Macclesfield",
+      "value": "Macclesfield"
+    },
+    {
+      "label": "Macon",
+      "value": "Macon"
+    },
+    {
+      "label": "Madison",
+      "value": "Madison"
+    },
+    {
+      "label": "Maggie Valley",
+      "value": "Maggie Valley"
+    },
+    {
+      "label": "Magnolia",
+      "value": "Magnolia"
+    },
+    {
+      "label": "Maiden",
+      "value": "Maiden"
+    },
+    {
+      "label": "Manteo",
+      "value": "Manteo"
+    },
+    {
+      "label": "Marietta",
+      "value": "Marietta"
+    },
+    {
+      "label": "Marion",
+      "value": "Marion"
+    },
+    {
+      "label": "Mars Hill",
+      "value": "Mars Hill"
+    },
+    {
+      "label": "Marshall",
+      "value": "Marshall"
+    },
+    {
+      "label": "Marshville",
+      "value": "Marshville"
+    },
+    {
+      "label": "Marvin",
+      "value": "Marvin"
+    },
+    {
+      "label": "Matthews",
+      "value": "Matthews"
+    },
+    {
+      "label": "Maxton",
+      "value": "Maxton"
+    },
+    {
+      "label": "Mayodan",
+      "value": "Mayodan"
+    },
+    {
+      "label": "Maysville",
+      "value": "Maysville"
+    },
+    {
+      "label": "McAdenville",
+      "value": "McAdenville"
+    },
+    {
+      "label": "McDonald",
+      "value": "McDonald"
+    },
+    {
+      "label": "McFarlan",
+      "value": "McFarlan"
+    },
+    {
+      "label": "Mebane",
+      "value": "Mebane"
+    },
+    {
+      "label": "Mesic",
+      "value": "Mesic"
+    },
+    {
+      "label": "Micro",
+      "value": "Micro"
+    },
+    {
+      "label": "Middleburg",
+      "value": "Middleburg"
+    },
+    {
+      "label": "Middlesex",
+      "value": "Middlesex"
+    },
+    {
+      "label": "Midland",
+      "value": "Midland"
+    },
+    {
+      "label": "Midway",
+      "value": "Midway"
+    },
+    {
+      "label": "Mills River",
+      "value": "Mills River"
+    },
+    {
+      "label": "Milton",
+      "value": "Milton"
+    },
+    {
+      "label": "Mineral Springs",
+      "value": "Mineral Springs"
+    },
+    {
+      "label": "Minnesott Beach",
+      "value": "Minnesott Beach"
+    },
+    {
+      "label": "Mint Hill",
+      "value": "Mint Hill"
+    },
+    {
+      "label": "Misenheimer",
+      "value": "Misenheimer"
+    },
+    {
+      "label": "Mocksville",
+      "value": "Mocksville"
+    },
+    {
+      "label": "Momeyer",
+      "value": "Momeyer"
+    },
+    {
+      "label": "Monroe",
+      "value": "Monroe"
+    },
+    {
+      "label": "Montreat",
+      "value": "Montreat"
+    },
+    {
+      "label": "Mooresboro",
+      "value": "Mooresboro"
+    },
+    {
+      "label": "Mooresville",
+      "value": "Mooresville"
+    },
+    {
+      "label": "Morehead City",
+      "value": "Morehead City"
+    },
+    {
+      "label": "Morganton",
+      "value": "Morganton"
+    },
+    {
+      "label": "Morrisville",
+      "value": "Morrisville"
+    },
+    {
+      "label": "Morven",
+      "value": "Morven"
+    },
+    {
+      "label": "Mount Airy",
+      "value": "Mount Airy"
+    },
+    {
+      "label": "Mount Gilead",
+      "value": "Mount Gilead"
+    },
+    {
+      "label": "Mount Holly",
+      "value": "Mount Holly"
+    },
+    {
+      "label": "Mount Olive",
+      "value": "Mount Olive"
+    },
+    {
+      "label": "Mount Pleasant",
+      "value": "Mount Pleasant"
+    },
+    {
+      "label": "Murfreesboro",
+      "value": "Murfreesboro"
+    },
+    {
+      "label": "Murphy",
+      "value": "Murphy"
+    },
+    {
+      "label": "Nags Head",
+      "value": "Nags Head"
+    },
+    {
+      "label": "Nashville",
+      "value": "Nashville"
+    },
+    {
+      "label": "Navassa",
+      "value": "Navassa"
+    },
+    {
+      "label": "New Bern",
+      "value": "New Bern"
+    },
+    {
+      "label": "New London",
+      "value": "New London"
+    },
+    {
+      "label": "Newland",
+      "value": "Newland"
+    },
+    {
+      "label": "Newport",
+      "value": "Newport"
+    },
+    {
+      "label": "Newton",
+      "value": "Newton"
+    },
+    {
+      "label": "Newton Grove",
+      "value": "Newton Grove"
+    },
+    {
+      "label": "Norlina",
+      "value": "Norlina"
+    },
+    {
+      "label": "Norman",
+      "value": "Norman"
+    },
+    {
+      "label": "North Topsail Beach",
+      "value": "North Topsail Beach"
+    },
+    {
+      "label": "North Wilkesboro",
+      "value": "North Wilkesboro"
+    },
+    {
+      "label": "Northwest",
+      "value": "Northwest"
+    },
+    {
+      "label": "Norwood",
+      "value": "Norwood"
+    },
+    {
+      "label": "Oak City",
+      "value": "Oak City"
+    },
+    {
+      "label": "Oak Island",
+      "value": "Oak Island"
+    },
+    {
+      "label": "Oak Ridge",
+      "value": "Oak Ridge"
+    },
+    {
+      "label": "Oakboro",
+      "value": "Oakboro"
+    },
+    {
+      "label": "Ocean Isle Beach",
+      "value": "Ocean Isle Beach"
+    },
+    {
+      "label": "Old Fort",
+      "value": "Old Fort"
+    },
+    {
+      "label": "Oriental",
+      "value": "Oriental"
+    },
+    {
+      "label": "Orrum",
+      "value": "Orrum"
+    },
+    {
+      "label": "Ossipee",
+      "value": "Ossipee"
+    },
+    {
+      "label": "Oxford",
+      "value": "Oxford"
+    },
+    {
+      "label": "Pantego",
+      "value": "Pantego"
+    },
+    {
+      "label": "Parkton",
+      "value": "Parkton"
+    },
+    {
+      "label": "Parmele",
+      "value": "Parmele"
+    },
+    {
+      "label": "Patterson Springs",
+      "value": "Patterson Springs"
+    },
+    {
+      "label": "Peachland",
+      "value": "Peachland"
+    },
+    {
+      "label": "Peletier",
+      "value": "Peletier"
+    },
+    {
+      "label": "Pembroke",
+      "value": "Pembroke"
+    },
+    {
+      "label": "Pikeville",
+      "value": "Pikeville"
+    },
+    {
+      "label": "Pilot Mountain",
+      "value": "Pilot Mountain"
+    },
+    {
+      "label": "Pine Knoll Shores",
+      "value": "Pine Knoll Shores"
+    },
+    {
+      "label": "Pine Level",
+      "value": "Pine Level"
+    },
+    {
+      "label": "Pinebluff",
+      "value": "Pinebluff"
+    },
+    {
+      "label": "Pinehurst",
+      "value": "Pinehurst"
+    },
+    {
+      "label": "Pinetops",
+      "value": "Pinetops"
+    },
+    {
+      "label": "Pineville",
+      "value": "Pineville"
+    },
+    {
+      "label": "Pink Hill",
+      "value": "Pink Hill"
+    },
+    {
+      "label": "Pittsboro",
+      "value": "Pittsboro"
+    },
+    {
+      "label": "Pleasant Garden",
+      "value": "Pleasant Garden"
+    },
+    {
+      "label": "Plymouth",
+      "value": "Plymouth"
+    },
+    {
+      "label": "Polkton",
+      "value": "Polkton"
+    },
+    {
+      "label": "Polkville",
+      "value": "Polkville"
+    },
+    {
+      "label": "Pollocksville",
+      "value": "Pollocksville"
+    },
+    {
+      "label": "Powellsville",
+      "value": "Powellsville"
+    },
+    {
+      "label": "Princeton",
+      "value": "Princeton"
+    },
+    {
+      "label": "Princeville",
+      "value": "Princeville"
+    },
+    {
+      "label": "Proctorville",
+      "value": "Proctorville"
+    },
+    {
+      "label": "Raeford",
+      "value": "Raeford"
+    },
+    {
+      "label": "Raleigh",
+      "value": "Raleigh"
+    },
+    {
+      "label": "Ramseur",
+      "value": "Ramseur"
+    },
+    {
+      "label": "Randleman",
+      "value": "Randleman"
+    },
+    {
+      "label": "Ranlo",
+      "value": "Ranlo"
+    },
+    {
+      "label": "Raynham",
+      "value": "Raynham"
+    },
+    {
+      "label": "Red Cross",
+      "value": "Red Cross"
+    },
+    {
+      "label": "Red Oak",
+      "value": "Red Oak"
+    },
+    {
+      "label": "Red Springs",
+      "value": "Red Springs"
+    },
+    {
+      "label": "Reidsville",
+      "value": "Reidsville"
+    },
+    {
+      "label": "Rennert",
+      "value": "Rennert"
+    },
+    {
+      "label": "Rhodhiss",
+      "value": "Rhodhiss"
+    },
+    {
+      "label": "Rich Square",
+      "value": "Rich Square"
+    },
+    {
+      "label": "Richfield",
+      "value": "Richfield"
+    },
+    {
+      "label": "Richlands",
+      "value": "Richlands"
+    },
+    {
+      "label": "River Bend",
+      "value": "River Bend"
+    },
+    {
+      "label": "Roanoke Rapids",
+      "value": "Roanoke Rapids"
+    },
+    {
+      "label": "Robbins",
+      "value": "Robbins"
+    },
+    {
+      "label": "Robbinsville",
+      "value": "Robbinsville"
+    },
+    {
+      "label": "Robersonville",
+      "value": "Robersonville"
+    },
+    {
+      "label": "Rockingham",
+      "value": "Rockingham"
+    },
+    {
+      "label": "Rockwell",
+      "value": "Rockwell"
+    },
+    {
+      "label": "Rocky Mount",
+      "value": "Rocky Mount"
+    },
+    {
+      "label": "Rolesville",
+      "value": "Rolesville"
+    },
+    {
+      "label": "Ronda",
+      "value": "Ronda"
+    },
+    {
+      "label": "Roper",
+      "value": "Roper"
+    },
+    {
+      "label": "Rose Hill",
+      "value": "Rose Hill"
+    },
+    {
+      "label": "Roseboro",
+      "value": "Roseboro"
+    },
+    {
+      "label": "Rosman",
+      "value": "Rosman"
+    },
+    {
+      "label": "Rowland",
+      "value": "Rowland"
+    },
+    {
+      "label": "Roxboro",
+      "value": "Roxboro"
+    },
+    {
+      "label": "Roxobel",
+      "value": "Roxobel"
+    },
+    {
+      "label": "Rural Hall",
+      "value": "Rural Hall"
+    },
+    {
+      "label": "Ruth",
+      "value": "Ruth"
+    },
+    {
+      "label": "Rutherford College",
+      "value": "Rutherford College"
+    },
+    {
+      "label": "Rutherfordton",
+      "value": "Rutherfordton"
+    },
+    {
+      "label": "Saint Helena",
+      "value": "Saint Helena"
+    },
+    {
+      "label": "Saint James",
+      "value": "Saint James"
+    },
+    {
+      "label": "Saint Pauls",
+      "value": "Saint Pauls"
+    },
+    {
+      "label": "Salemburg",
+      "value": "Salemburg"
+    },
+    {
+      "label": "Salisbury",
+      "value": "Salisbury"
+    },
+    {
+      "label": "Saluda",
+      "value": "Saluda"
+    },
+    {
+      "label": "Sandy Creek",
+      "value": "Sandy Creek"
+    },
+    {
+      "label": "Sandyfield",
+      "value": "Sandyfield"
+    },
+    {
+      "label": "Sanford",
+      "value": "Sanford"
+    },
+    {
+      "label": "Saratoga",
+      "value": "Saratoga"
+    },
+    {
+      "label": "Sawmills",
+      "value": "Sawmills"
+    },
+    {
+      "label": "Scotland Neck",
+      "value": "Scotland Neck"
+    },
+    {
+      "label": "Seaboard",
+      "value": "Seaboard"
+    },
+    {
+      "label": "Seagrove",
+      "value": "Seagrove"
+    },
+    {
+      "label": "Sedalia",
+      "value": "Sedalia"
+    },
+    {
+      "label": "Selma",
+      "value": "Selma"
+    },
+    {
+      "label": "Seven Devils",
+      "value": "Seven Devils"
+    },
+    {
+      "label": "Seven Springs",
+      "value": "Seven Springs"
+    },
+    {
+      "label": "Severn",
+      "value": "Severn"
+    },
+    {
+      "label": "Shallotte",
+      "value": "Shallotte"
+    },
+    {
+      "label": "Sharpsburg",
+      "value": "Sharpsburg"
+    },
+    {
+      "label": "Shelby",
+      "value": "Shelby"
+    },
+    {
+      "label": "Siler City",
+      "value": "Siler City"
+    },
+    {
+      "label": "Simpson",
+      "value": "Simpson"
+    },
+    {
+      "label": "Sims",
+      "value": "Sims"
+    },
+    {
+      "label": "Smithfield",
+      "value": "Smithfield"
+    },
+    {
+      "label": "Snow Hill",
+      "value": "Snow Hill"
+    },
+    {
+      "label": "Southern Pines",
+      "value": "Southern Pines"
+    },
+    {
+      "label": "Southern Shores",
+      "value": "Southern Shores"
+    },
+    {
+      "label": "Southport",
+      "value": "Southport"
+    },
+    {
+      "label": "Sparta",
+      "value": "Sparta"
+    },
+    {
+      "label": "Speed",
+      "value": "Speed"
+    },
+    {
+      "label": "Spencer",
+      "value": "Spencer"
+    },
+    {
+      "label": "Spencer Mountain",
+      "value": "Spencer Mountain"
+    },
+    {
+      "label": "Spindale",
+      "value": "Spindale"
+    },
+    {
+      "label": "Spring Hope",
+      "value": "Spring Hope"
+    },
+    {
+      "label": "Spring Lake",
+      "value": "Spring Lake"
+    },
+    {
+      "label": "Spruce Pine",
+      "value": "Spruce Pine"
+    },
+    {
+      "label": "Staley",
+      "value": "Staley"
+    },
+    {
+      "label": "Stallings",
+      "value": "Stallings"
+    },
+    {
+      "label": "Stanfield",
+      "value": "Stanfield"
+    },
+    {
+      "label": "Stanley",
+      "value": "Stanley"
+    },
+    {
+      "label": "Stantonsburg",
+      "value": "Stantonsburg"
+    },
+    {
+      "label": "Star",
+      "value": "Star"
+    },
+    {
+      "label": "Statesville",
+      "value": "Statesville"
+    },
+    {
+      "label": "Stedman",
+      "value": "Stedman"
+    },
+    {
+      "label": "Stem",
+      "value": "Stem"
+    },
+    {
+      "label": "Stokesdale",
+      "value": "Stokesdale"
+    },
+    {
+      "label": "Stoneville",
+      "value": "Stoneville"
+    },
+    {
+      "label": "Stonewall",
+      "value": "Stonewall"
+    },
+    {
+      "label": "Stovall",
+      "value": "Stovall"
+    },
+    {
+      "label": "Sugar Mountain",
+      "value": "Sugar Mountain"
+    },
+    {
+      "label": "Summerfield",
+      "value": "Summerfield"
+    },
+    {
+      "label": "Sunset Beach",
+      "value": "Sunset Beach"
+    },
+    {
+      "label": "Surf City",
+      "value": "Surf City"
+    },
+    {
+      "label": "Swansboro",
+      "value": "Swansboro"
+    },
+    {
+      "label": "Swepsonville",
+      "value": "Swepsonville"
+    },
+    {
+      "label": "Sylva",
+      "value": "Sylva"
+    },
+    {
+      "label": "Tabor City",
+      "value": "Tabor City"
+    },
+    {
+      "label": "Tar Heel",
+      "value": "Tar Heel"
+    },
+    {
+      "label": "Tarboro",
+      "value": "Tarboro"
+    },
+    {
+      "label": "Taylorsville",
+      "value": "Taylorsville"
+    },
+    {
+      "label": "Taylortown",
+      "value": "Taylortown"
+    },
+    {
+      "label": "Teachey",
+      "value": "Teachey"
+    },
+    {
+      "label": "Thomasville",
+      "value": "Thomasville"
+    },
+    {
+      "label": "Tobaccoville",
+      "value": "Tobaccoville"
+    },
+    {
+      "label": "Topsail Beach",
+      "value": "Topsail Beach"
+    },
+    {
+      "label": "Trent Woods",
+      "value": "Trent Woods"
+    },
+    {
+      "label": "Trenton",
+      "value": "Trenton"
+    },
+    {
+      "label": "Trinity",
+      "value": "Trinity"
+    },
+    {
+      "label": "Troutman",
+      "value": "Troutman"
+    },
+    {
+      "label": "Troy",
+      "value": "Troy"
+    },
+    {
+      "label": "Tryon",
+      "value": "Tryon"
+    },
+    {
+      "label": "Turkey",
+      "value": "Turkey"
+    },
+    {
+      "label": "Unionville",
+      "value": "Unionville"
+    },
+    {
+      "label": "Valdese",
+      "value": "Valdese"
+    },
+    {
+      "label": "Vanceboro",
+      "value": "Vanceboro"
+    },
+    {
+      "label": "Vandemere",
+      "value": "Vandemere"
+    },
+    {
+      "label": "Varnamtown",
+      "value": "Varnamtown"
+    },
+    {
+      "label": "Vass",
+      "value": "Vass"
+    },
+    {
+      "label": "Waco",
+      "value": "Waco"
+    },
+    {
+      "label": "Wade",
+      "value": "Wade"
+    },
+    {
+      "label": "Wadesboro",
+      "value": "Wadesboro"
+    },
+    {
+      "label": "Wagram",
+      "value": "Wagram"
+    },
+    {
+      "label": "Wake Forest",
+      "value": "Wake Forest"
+    },
+    {
+      "label": "Walkertown",
+      "value": "Walkertown"
+    },
+    {
+      "label": "Wallace",
+      "value": "Wallace"
+    },
+    {
+      "label": "Wallburg",
+      "value": "Wallburg"
+    },
+    {
+      "label": "Walnut Cove",
+      "value": "Walnut Cove"
+    },
+    {
+      "label": "Walnut Creek",
+      "value": "Walnut Creek"
+    },
+    {
+      "label": "Walstonburg",
+      "value": "Walstonburg"
+    },
+    {
+      "label": "Warrenton",
+      "value": "Warrenton"
+    },
+    {
+      "label": "Warsaw",
+      "value": "Warsaw"
+    },
+    {
+      "label": "Washington",
+      "value": "Washington"
+    },
+    {
+      "label": "Washington Park",
+      "value": "Washington Park"
+    },
+    {
+      "label": "Watha",
+      "value": "Watha"
+    },
+    {
+      "label": "Waxhaw",
+      "value": "Waxhaw"
+    },
+    {
+      "label": "Waynesville",
+      "value": "Waynesville"
+    },
+    {
+      "label": "Weaverville",
+      "value": "Weaverville"
+    },
+    {
+      "label": "Webster",
+      "value": "Webster"
+    },
+    {
+      "label": "Weddington",
+      "value": "Weddington"
+    },
+    {
+      "label": "Weldon",
+      "value": "Weldon"
+    },
+    {
+      "label": "Wendell",
+      "value": "Wendell"
+    },
+    {
+      "label": "Wentworth",
+      "value": "Wentworth"
+    },
+    {
+      "label": "Wesley Chapel",
+      "value": "Wesley Chapel"
+    },
+    {
+      "label": "West Jefferson",
+      "value": "West Jefferson"
+    },
+    {
+      "label": "Whispering Pines",
+      "value": "Whispering Pines"
+    },
+    {
+      "label": "Whitakers",
+      "value": "Whitakers"
+    },
+    {
+      "label": "White Lake",
+      "value": "White Lake"
+    },
+    {
+      "label": "Whiteville",
+      "value": "Whiteville"
+    },
+    {
+      "label": "Whitsett",
+      "value": "Whitsett"
+    },
+    {
+      "label": "Wilkesboro",
+      "value": "Wilkesboro"
+    },
+    {
+      "label": "Williamston",
+      "value": "Williamston"
+    },
+    {
+      "label": "Wilmington",
+      "value": "Wilmington"
+    },
+    {
+      "label": "Wilson",
+      "value": "Wilson"
+    },
+    {
+      "label": "Wilsons Mills",
+      "value": "Wilsons Mills"
+    },
+    {
+      "label": "Windsor",
+      "value": "Windsor"
+    },
+    {
+      "label": "Winfall",
+      "value": "Winfall"
+    },
+    {
+      "label": "Wingate",
+      "value": "Wingate"
+    },
+    {
+      "label": "Winston-Salem",
+      "value": "Winston-Salem"
+    },
+    {
+      "label": "Winterville",
+      "value": "Winterville"
+    },
+    {
+      "label": "Winton",
+      "value": "Winton"
+    },
+    {
+      "label": "Woodfin",
+      "value": "Woodfin"
+    },
+    {
+      "label": "Woodland",
+      "value": "Woodland"
+    },
+    {
+      "label": "Wrightsville Beach",
+      "value": "Wrightsville Beach"
+    },
+    {
+      "label": "Yadkinville",
+      "value": "Yadkinville"
+    },
+    {
+      "label": "Yanceyville",
+      "value": "Yanceyville"
+    },
+    {
+      "label": "Youngsville",
+      "value": "Youngsville"
+    },
+    {
+      "label": "Zebulon",
+      "value": "Zebulon"
+    }
+  ],
+  "countyNames": [
+    {
+      "label": "Alamance",
+      "value": "ALAMANCE"
+    },
+    {
+      "label": "Alexander",
+      "value": "ALEXANDER"
+    },
+    {
+      "label": "Alleghany",
+      "value": "ALLEGHANY"
+    },
+    {
+      "label": "Anson",
+      "value": "ANSON"
+    },
+    {
+      "label": "Ashe",
+      "value": "ASHE"
+    },
+    {
+      "label": "Avery",
+      "value": "AVERY"
+    },
+    {
+      "label": "Beaufort",
+      "value": "BEAUFORT"
+    },
+    {
+      "label": "Bertie",
+      "value": "BERTIE"
+    },
+    {
+      "label": "Bladen",
+      "value": "BLADEN"
+    },
+    {
+      "label": "Brunswick",
+      "value": "BRUNSWICK"
+    },
+    {
+      "label": "Buncombe",
+      "value": "BUNCOMBE"
+    },
+    {
+      "label": "Burke",
+      "value": "BURKE"
+    },
+    {
+      "label": "Cabarrus",
+      "value": "CABARRUS"
+    },
+    {
+      "label": "Caldwell",
+      "value": "CALDWELL"
+    },
+    {
+      "label": "Camden",
+      "value": "CAMDEN"
+    },
+    {
+      "label": "Carteret",
+      "value": "CARTERET"
+    },
+    {
+      "label": "Caswell",
+      "value": "CASWELL"
+    },
+    {
+      "label": "Catawba",
+      "value": "CATAWBA"
+    },
+    {
+      "label": "Chatham",
+      "value": "CHATHAM"
+    },
+    {
+      "label": "Cherokee",
+      "value": "CHEROKEE"
+    },
+    {
+      "label": "Chowan",
+      "value": "CHOWAN"
+    },
+    {
+      "label": "Clay",
+      "value": "CLAY"
+    },
+    {
+      "label": "Cleveland",
+      "value": "CLEVELAND"
+    },
+    {
+      "label": "Columbus",
+      "value": "COLUMBUS"
+    },
+    {
+      "label": "Craven",
+      "value": "CRAVEN"
+    },
+    {
+      "label": "Cumberland",
+      "value": "CUMBERLAND"
+    },
+    {
+      "label": "Currituck",
+      "value": "CURRITUCK"
+    },
+    {
+      "label": "Dare",
+      "value": "DARE"
+    },
+    {
+      "label": "Davidson",
+      "value": "DAVIDSON"
+    },
+    {
+      "label": "Davie",
+      "value": "DAVIE"
+    },
+    {
+      "label": "Duplin",
+      "value": "DUPLIN"
+    },
+    {
+      "label": "Durham",
+      "value": "DURHAM"
+    },
+    {
+      "label": "Edgecombe",
+      "value": "EDGECOMBE"
+    },
+    {
+      "label": "Forsyth",
+      "value": "FORSYTH"
+    },
+    {
+      "label": "Franklin",
+      "value": "FRANKLIN"
+    },
+    {
+      "label": "Gaston",
+      "value": "GASTON"
+    },
+    {
+      "label": "Gates",
+      "value": "GATES"
+    },
+    {
+      "label": "Graham",
+      "value": "GRAHAM"
+    },
+    {
+      "label": "Granville",
+      "value": "GRANVILLE"
+    },
+    {
+      "label": "Greene",
+      "value": "GREENE"
+    },
+    {
+      "label": "Guilford",
+      "value": "GUILFORD"
+    },
+    {
+      "label": "Halifax",
+      "value": "HALIFAX"
+    },
+    {
+      "label": "Harnett",
+      "value": "HARNETT"
+    },
+    {
+      "label": "Haywood",
+      "value": "HAYWOOD"
+    },
+    {
+      "label": "Henderson",
+      "value": "HENDERSON"
+    },
+    {
+      "label": "Hertford",
+      "value": "HERTFORD"
+    },
+    {
+      "label": "Hoke",
+      "value": "HOKE"
+    },
+    {
+      "label": "Hyde",
+      "value": "HYDE"
+    },
+    {
+      "label": "Iredell",
+      "value": "IREDELL"
+    },
+    {
+      "label": "Jackson",
+      "value": "JACKSON"
+    },
+    {
+      "label": "Johnston",
+      "value": "JOHNSTON"
+    },
+    {
+      "label": "Jones",
+      "value": "JONES"
+    },
+    {
+      "label": "Lee",
+      "value": "LEE"
+    },
+    {
+      "label": "Lenoir",
+      "value": "LENOIR"
+    },
+    {
+      "label": "Lincoln",
+      "value": "LINCOLN"
+    },
+    {
+      "label": "Macon",
+      "value": "MACON"
+    },
+    {
+      "label": "Madison",
+      "value": "MADISON"
+    },
+    {
+      "label": "Martin",
+      "value": "MARTIN"
+    },
+    {
+      "label": "Mcdowell",
+      "value": "MCDOWELL"
+    },
+    {
+      "label": "Mecklenburg",
+      "value": "MECKLENBURG"
+    },
+    {
+      "label": "Mitchell",
+      "value": "MITCHELL"
+    },
+    {
+      "label": "Montgomery",
+      "value": "MONTGOMERY"
+    },
+    {
+      "label": "Moore",
+      "value": "MOORE"
+    },
+    {
+      "label": "Nash",
+      "value": "NASH"
+    },
+    {
+      "label": "New Hanover",
+      "value": "NEW HANOVER"
+    },
+    {
+      "label": "Northampton",
+      "value": "NORTHAMPTON"
+    },
+    {
+      "label": "Onslow",
+      "value": "ONSLOW"
+    },
+    {
+      "label": "Orange",
+      "value": "ORANGE"
+    },
+    {
+      "label": "Pamlico",
+      "value": "PAMLICO"
+    },
+    {
+      "label": "Pasquotank",
+      "value": "PASQUOTANK"
+    },
+    {
+      "label": "Pender",
+      "value": "PENDER"
+    },
+    {
+      "label": "Perquimans",
+      "value": "PERQUIMANS"
+    },
+    {
+      "label": "Person",
+      "value": "PERSON"
+    },
+    {
+      "label": "Pitt",
+      "value": "PITT"
+    },
+    {
+      "label": "Polk",
+      "value": "POLK"
+    },
+    {
+      "label": "Randolph",
+      "value": "RANDOLPH"
+    },
+    {
+      "label": "Richmond",
+      "value": "RICHMOND"
+    },
+    {
+      "label": "Robeson",
+      "value": "ROBESON"
+    },
+    {
+      "label": "Rockingham",
+      "value": "ROCKINGHAM"
+    },
+    {
+      "label": "Rowan",
+      "value": "ROWAN"
+    },
+    {
+      "label": "Rutherford",
+      "value": "RUTHERFORD"
+    },
+    {
+      "label": "Sampson",
+      "value": "SAMPSON"
+    },
+    {
+      "label": "Scotland",
+      "value": "SCOTLAND"
+    },
+    {
+      "label": "Stanly",
+      "value": "STANLY"
+    },
+    {
+      "label": "Stokes",
+      "value": "STOKES"
+    },
+    {
+      "label": "Surry",
+      "value": "SURRY"
+    },
+    {
+      "label": "Swain",
+      "value": "SWAIN"
+    },
+    {
+      "label": "Transylvania",
+      "value": "TRANSYLVANIA"
+    },
+    {
+      "label": "Tyrrell",
+      "value": "TYRRELL"
+    },
+    {
+      "label": "Union",
+      "value": "UNION"
+    },
+    {
+      "label": "Vance",
+      "value": "VANCE"
+    },
+    {
+      "label": "Wake",
+      "value": "WAKE"
+    },
+    {
+      "label": "Warren",
+      "value": "WARREN"
+    },
+    {
+      "label": "Washington",
+      "value": "WASHINGTON"
+    },
+    {
+      "label": "Watauga",
+      "value": "WATAUGA"
+    },
+    {
+      "label": "Wayne",
+      "value": "WAYNE"
+    },
+    {
+      "label": "Wilkes",
+      "value": "WILKES"
+    },
+    {
+      "label": "Wilson",
+      "value": "WILSON"
+    },
+    {
+      "label": "Yadkin",
+      "value": "YADKIN"
+    },
+    {
+      "label": "Yancey",
+      "value": "YANCEY"
+    }
+  ],
+  "countyData": [
+    {
+      "name": "PITT",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "PASQUOTANK",
+      "facilityName": "TFC Recycling",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "LINCOLN",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "MECKLENBURG",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Drop-off (source-separated and single stream)"
+    },
+    {
+      "name": "MOORE",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "BLADEN",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "UNION",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off"
+    },
+    {
+      "name": "MONTGOMERY",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "PERSON",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CABARRUS",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "ASHE",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream and source-separated drop-off"
+    },
+    {
+      "name": "CLEVELAND",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "RICHMOND",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "IREDELL",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "ROBESON",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "GASTON",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "PERQUIMANS",
+      "facilityName": "RDS",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "VANCE",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CLAY",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "ALLEGHANY",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "PAMLICO",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "DUPLIN",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "PENDER",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "BUNCOMBE",
+      "facilityName": "Curbie",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "ALEXANDER",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off dual stream"
+    },
+    {
+      "name": "SAMPSON",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "ROCKINGHAM",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "HYDE",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "BERTIE",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "RUTHERFORD",
+      "facilityName": "Curbie",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "BRUNSWICK",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "MARTIN",
+      "facilityName": "ECVC",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "MITCHELL",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "GREENE",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "DAVIDSON",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "WAKE",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "HARNETT",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CHOWAN",
+      "facilityName": "RDS",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "RANDOLPH",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "WARREN",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "STANLY",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "MADISON",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "ONSLOW",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "SWAIN",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "NASH",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "MACON",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "DAVIE",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "CHEROKEE",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "LEE",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off"
+    },
+    {
+      "name": "ALAMANCE",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off"
+    },
+    {
+      "name": "HENDERSON",
+      "facilityName": "Curbie",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Drop-off (source-separated and single stream)"
+    },
+    {
+      "name": "DURHAM",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "BURKE",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "JACKSON",
+      "facilityName": "Curbie",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off"
+    },
+    {
+      "name": "GRANVILLE",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "HOKE",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "WILSON",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CALDWELL",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "AVERY",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "SURRY",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "NEW HANOVER",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CURRITUCK",
+      "facilityName": "RDS",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "CATAWBA",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "SCOTLAND",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "WATAUGA",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "NORTHAMPTON",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "EDGECOMBE",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "JOHNSTON",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "ROWAN",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "CASWELL",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CARTERET",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CRAVEN",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off"
+    },
+    {
+      "name": "WASHINGTON",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream"
+    },
+    {
+      "name": "GRAHAM",
+      "facilityName": "Curbie",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "TRANSYLVANIA",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "COLUMBUS",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "STOKES",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "BEAUFORT",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CAMDEN",
+      "facilityName": "TFC Recycling",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "GUILFORD",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "HERTFORD",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "HAYWOOD",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "MCDOWELL",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "JONES",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "WAYNE",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "CHATHAM",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "FORSYTH",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "FRANKLIN",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "LENOIR",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "YADKIN",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "CUMBERLAND",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "TYRRELL",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream"
+    },
+    {
+      "name": "POLK",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "ANSON",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off"
+    },
+    {
+      "name": "HALIFAX",
+      "facilityName": "Source separated",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "externalInfo": {
+        "What to recycle": "https://www.halifaxnc.com/DocumentCenter/View/3761/What_to_Recycle_Brochure_2023",
+        "What not to recycle": "https://www.halifaxnc.com/DocumentCenter/View/3762/What_Not_To_Recycle_Brochure_2023"
+      }
+    },
+    {
+      "name": "GATES",
+      "facilityName": "RDS",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "ORANGE",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream"
+    },
+    {
+      "name": "YANCEY",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off"
+    },
+    {
+      "name": "DARE",
+      "facilityName": "RDS",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    },
+    {
+      "name": "WILKES",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off"
+    }
+  ],
+  "cityData": [
+    {
+      "name": "Aberdeen",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Ahoskie",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Alamance",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Albemarle",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Alliance",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Andrews",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CHEROKEE"
+    },
+    {
+      "name": "Angier",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HARNETT"
+    },
+    {
+      "name": "Ansonville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Apex",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Arapahoe",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Archdale",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Archer Lodge",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Asheboro",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Asheville",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Askewville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Atkinson",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Atlantic Beach",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside curb-sort and drop-off dual-stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Aulander",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Aurora",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Autryville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Ayden",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Badin",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Bailey",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Bakersville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "MITCHELL"
+    },
+    {
+      "name": "Bald Head Island",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Banner Elk",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Bath",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Bayboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Bear Grass",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Beaufort",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Beech Mountain",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "WATAUGA"
+    },
+    {
+      "name": "Belhaven",
+      "facilityName": "ECVC",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Belmont",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Belville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Belwood",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Benson",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Bermuda Run",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIE"
+    },
+    {
+      "name": "Bessemer City",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Bethania",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Bethel",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Beulaville",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Biltmore Forest",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Biscoe",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MONTGOMERY"
+    },
+    {
+      "name": "Black Creek",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Black Mountain",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Bladenboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Blowing Rock",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WATAUGA"
+    },
+    {
+      "name": "Boardman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Bogue",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Boiling Spring Lakes",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Boiling Springs",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Bolivia",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Bolton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Boone",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside (dual and single stream) and source-separated drop-off",
+      "surroundingCounty": "WATAUGA"
+    },
+    {
+      "name": "Boonville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "YADKIN"
+    },
+    {
+      "name": "Bostic",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Brevard",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "TRANSYLVANIA"
+    },
+    {
+      "name": "Bridgeton",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Broadway",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "LEE"
+    },
+    {
+      "name": "Brookford",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Brunswick",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Bryson City",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "SWAIN"
+    },
+    {
+      "name": "Bunn",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FRANKLIN"
+    },
+    {
+      "name": "Burgaw",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Burlington",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Burnsville",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "YANCEY"
+    },
+    {
+      "name": "Butner",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "GRANVILLE"
+    },
+    {
+      "name": "Cajahs Mountain",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Calabash",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Calypso",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Cameron",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Candor",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MONTGOMERY"
+    },
+    {
+      "name": "Canton",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "HAYWOOD"
+    },
+    {
+      "name": "Cape Carteret",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Carolina Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NEW HANOVER"
+    },
+    {
+      "name": "Carolina Shores",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Carrboro",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "ORANGE"
+    },
+    {
+      "name": "Carthage",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Cary",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Casar",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Castalia",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Caswell Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Catawba",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Cedar Point",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Cedar Rock",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Cerro Gordo",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Chadbourn",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Chapel Hill",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "ORANGE"
+    },
+    {
+      "name": "Charlotte",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Cherryville",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Chimney Rock",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "China Grove",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Chocowinity",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Claremont",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Clarkton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Clayton",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Clemmons",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Cleveland",
+      "facilityName": "Republic - Mooresville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Clinton",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Drop-off single stream",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Clyde",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HAYWOOD"
+    },
+    {
+      "name": "Coats",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HARNETT"
+    },
+    {
+      "name": "Cofield",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Colerain",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Columbia",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "TYRRELL"
+    },
+    {
+      "name": "Columbus",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "POLK"
+    },
+    {
+      "name": "Como",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Concord",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CABARRUS"
+    },
+    {
+      "name": "Conetoe",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Connelly Springs",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Conover",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off for only cardboard",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Conway",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Cooleemee",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIE"
+    },
+    {
+      "name": "Cornelius",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Cove City",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Cramerton",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Creedmoor",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GRANVILLE"
+    },
+    {
+      "name": "Creswell",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WASHINGTON"
+    },
+    {
+      "name": "Crossnore",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Dallas",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Danbury",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STOKES"
+    },
+    {
+      "name": "Davidson",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Denton",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIDSON"
+    },
+    {
+      "name": "Dillsboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JACKSON"
+    },
+    {
+      "name": "Dobbins Heights",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "Dobson",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SURRY"
+    },
+    {
+      "name": "Dortches",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Dover",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Drexel",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Dublin",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Duck",
+      "facilityName": "TFC Recycling",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "Dunn",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HARNETT"
+    },
+    {
+      "name": "Durham",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "DURHAM"
+    },
+    {
+      "name": "Earl",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "East Arcadia",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "East Bend",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "YADKIN"
+    },
+    {
+      "name": "East Spencer",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Eastover",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Eden",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Edenton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CHOWAN"
+    },
+    {
+      "name": "Elizabeth City",
+      "facilityName": "TFC Recycling",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PASQUOTANK"
+    },
+    {
+      "name": "Elizabethtown",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Elk Park",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Elkin",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SURRY"
+    },
+    {
+      "name": "Ellenboro",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Ellerbe",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "Elm City",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Elon",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Emerald Isle",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Enfield",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Erwin",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HARNETT"
+    },
+    {
+      "name": "Eureka",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Everetts",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Fair Bluff",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Fairmont",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Fairview",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Faison",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Faith",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Falcon",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Falkland",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Fallston",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Farmville",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Fayetteville",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Flat Rock",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HENDERSON"
+    },
+    {
+      "name": "Fletcher",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HENDERSON"
+    },
+    {
+      "name": "Fontana Dam",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GRAHAM"
+    },
+    {
+      "name": "Forest City",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Forest Hills",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JACKSON"
+    },
+    {
+      "name": "Fountain",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Four Oaks",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Foxfire Village",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Franklin",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MACON"
+    },
+    {
+      "name": "Franklinton",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FRANKLIN"
+    },
+    {
+      "name": "Franklinville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Fremont",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Fuquay-Varina",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Gamewell",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Garland",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Garner",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Garysburg",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Gaston",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Gastonia",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Gatesville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GATES"
+    },
+    {
+      "name": "Gibson",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "SCOTLAND"
+    },
+    {
+      "name": "Gibsonville",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Glen Alpine",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Godwin",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Goldsboro",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Goldston",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CHATHAM"
+    },
+    {
+      "name": "Graham",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Grandfather Village",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Granite Falls",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Granite Quarry",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Grantsboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Green Level",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Greenevers",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Greensboro",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Greenville",
+      "facilityName": "ECVC",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Grifton",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Grimesland",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Grover",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Halifax",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Hamilton",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Hamlet",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "Harmony",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "IREDELL"
+    },
+    {
+      "name": "Harrells",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Harrellsville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Harrisburg",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CABARRUS"
+    },
+    {
+      "name": "Hassell",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Havelock",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Haw River",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Hayesville",
+      "facilityName": "Source separated",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "CLAY"
+    },
+    {
+      "name": "Hemby Bridge",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Henderson",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "VANCE"
+    },
+    {
+      "name": "Hendersonville",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HENDERSON"
+    },
+    {
+      "name": "Hertford",
+      "facilityName": "RDS",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PERQUIMANS"
+    },
+    {
+      "name": "Hickory",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "High Point",
+      "facilityName": "High Point MRF",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "High Shoals",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Highlands",
+      "facilityName": "Source separated",
+      "recyclingType": "County-run drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "MACON"
+    },
+    {
+      "name": "Hildebran",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Hillsborough",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "ORANGE"
+    },
+    {
+      "name": "Hobgood",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Murfreesboro",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Murphy",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CHEROKEE"
+    },
+    {
+      "name": "Nags Head",
+      "facilityName": "TFC Recycling",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "Nashville",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Navassa",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "New Bern",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "New London",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Newland",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Newport",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Newton",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Newton Grove",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Norlina",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WARREN"
+    },
+    {
+      "name": "Norman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "North Topsail Beach",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ONSLOW"
+    },
+    {
+      "name": "North Wilkesboro",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WILKES"
+    },
+    {
+      "name": "Northwest",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Norwood",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Oak City",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Oak Island",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Oak Ridge",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Oakboro",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Ocean Isle Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Old Fort",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MCDOWELL"
+    },
+    {
+      "name": "Oriental",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Orrum",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Ossipee",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Oxford",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GRANVILLE"
+    },
+    {
+      "name": "Pantego",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Parkton",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Parmele",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Patterson Springs",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Peachland",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Peletier",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Pembroke",
+      "facilityName": "Pratt",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Pikeville",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Pilot Mountain",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SURRY"
+    },
+    {
+      "name": "Pine Knoll Shores",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Pine Level",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Pinebluff",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Pinehurst",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Pinetops",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Pineville",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Pink Hill",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "LENOIR"
+    },
+    {
+      "name": "Pittsboro",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CHATHAM"
+    },
+    {
+      "name": "Pleasant Garden",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Plymouth",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WASHINGTON"
+    },
+    {
+      "name": "Polkton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Polkville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Pollocksville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JONES"
+    },
+    {
+      "name": "Powellsville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Princeton",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Princeville",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Proctorville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Raeford",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HOKE"
+    },
+    {
+      "name": "Raleigh",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Ramseur",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Randleman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Ranlo",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Raynham",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Red Cross",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Red Oak",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Red Springs",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Reidsville",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Rennert",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Rhodhiss",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Rich Square",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Richfield",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Richlands",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ONSLOW"
+    },
+    {
+      "name": "River Bend",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Roanoke Rapids",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Robbins",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Robbinsville",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GRAHAM"
+    },
+    {
+      "name": "Robersonville",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Rockingham",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "Rockwell",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Rocky Mount",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Rolesville",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Ronda",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILKES"
+    },
+    {
+      "name": "Roper",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WASHINGTON"
+    },
+    {
+      "name": "Rose Hill",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Roseboro",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Rosman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "TRANSYLVANIA"
+    },
+    {
+      "name": "Rowland",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Roxboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PERSON"
+    },
+    {
+      "name": "Roxobel",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Rural Hall",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Ruth",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Rutherford College",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Rutherfordton",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Saint Helena",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Saint James",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Saint Pauls",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Salemburg",
+      "facilityName": "Pratt",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Salisbury",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Saluda",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "POLK"
+    },
+    {
+      "name": "Sandy Creek",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Sandyfield",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Sanford",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "LEE"
+    },
+    {
+      "name": "Saratoga",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Sawmills",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Scotland Neck",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Seaboard",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Seagrove",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Sedalia",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Selma",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Seven Devils",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WATAUGA"
+    },
+    {
+      "name": "Seven Springs",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Severn",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Shallotte",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Sharpsburg",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Shelby",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Siler City",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CHATHAM"
+    },
+    {
+      "name": "Simpson",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Sims",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Smithfield",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off and curbside program for plastics",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Snow Hill",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "GREENE"
+    },
+    {
+      "name": "Southern Pines",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Southern Shores",
+      "facilityName": "RDS",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "Southport",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Sparta",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ALLEGHANY"
+    },
+    {
+      "name": "Speed",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Spencer",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Spencer Mountain",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Spindale",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Spring Hope",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Spring Lake",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Spruce Pine",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MITCHELL"
+    },
+    {
+      "name": "Staley",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Stallings",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside dual stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Stanfield",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Stanley",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Stantonsburg",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Star",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MONTGOMERY"
+    },
+    {
+      "name": "Statesville",
+      "facilityName": "Republic - Mooresville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "IREDELL"
+    },
+    {
+      "name": "Stedman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Stem",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GRANVILLE"
+    },
+    {
+      "name": "Stokesdale",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Stoneville",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Stonewall",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Stovall",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GRANVILLE"
+    },
+    {
+      "name": "Sugar Mountain",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "AVERY"
+    },
+    {
+      "name": "Summerfield",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Sunset Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Surf City",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Swansboro",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ONSLOW"
+    },
+    {
+      "name": "Swepsonville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Sylva",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside dual stream",
+      "surroundingCounty": "JACKSON"
+    },
+    {
+      "name": "Tabor City",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Tar Heel",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Tarboro",
+      "facilityName": "ECVC",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Taylorsville",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALEXANDER"
+    },
+    {
+      "name": "Taylortown",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Teachey",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Thomasville",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIDSON"
+    },
+    {
+      "name": "Tobaccoville",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Topsail Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Trent Woods",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Trenton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JONES"
+    },
+    {
+      "name": "Trinity",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Troutman",
+      "facilityName": "Republic - Mooresville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "IREDELL"
+    },
+    {
+      "name": "Troy",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MONTGOMERY"
+    },
+    {
+      "name": "Tryon",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside dual stream",
+      "surroundingCounty": "POLK"
+    },
+    {
+      "name": "Turkey",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SAMPSON"
+    },
+    {
+      "name": "Unionville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Valdese",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Vanceboro",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "CRAVEN"
+    },
+    {
+      "name": "Vandemere",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Varnamtown",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Vass",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Waco",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream ",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Wade",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Wadesboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Wagram",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SCOTLAND"
+    },
+    {
+      "name": "Wake Forest",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Walkertown",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Wallace",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Wallburg",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIDSON"
+    },
+    {
+      "name": "Walnut Cove",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STOKES"
+    },
+    {
+      "name": "Walnut Creek",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Walstonburg",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Dual stream drop-off",
+      "surroundingCounty": "GREENE"
+    },
+    {
+      "name": "Warrenton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WARREN"
+    },
+    {
+      "name": "Warsaw",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Washington",
+      "facilityName": "ECVC",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Washington Park",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BEAUFORT"
+    },
+    {
+      "name": "Watha",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "PENDER"
+    },
+    {
+      "name": "Waxhaw",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Waynesville",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HAYWOOD"
+    },
+    {
+      "name": "Weaverville",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Webster",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JACKSON"
+    },
+    {
+      "name": "Weddington",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Weldon",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Wendell",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Wentworth",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Wesley Chapel",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "West Jefferson",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ASHE"
+    },
+    {
+      "name": "Whispering Pines",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MOORE"
+    },
+    {
+      "name": "Whitakers",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "White Lake",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BLADEN"
+    },
+    {
+      "name": "Whiteville",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Whitsett",
+      "facilityName": "Republic - Greensboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Wilkesboro",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WILKES"
+    },
+    {
+      "name": "Williamston",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Wilmington",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NEW HANOVER"
+    },
+    {
+      "name": "Wilson",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Wilsons Mills",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Windsor",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside curb-sort",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Winfall",
+      "facilityName": "RDS",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PERQUIMANS"
+    },
+    {
+      "name": "Wingate",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Winston-Salem",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Winterville",
+      "facilityName": "ECVC",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PITT"
+    },
+    {
+      "name": "Winton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HERTFORD"
+    },
+    {
+      "name": "Woodfin",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Woodland",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Wrightsville Beach",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NEW HANOVER"
+    },
+    {
+      "name": "Yadkinville",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "YADKIN"
+    },
+    {
+      "name": "Yanceyville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CASWELL"
+    },
+    {
+      "name": "Youngsville",
+      "facilityName": "Waste Management - Morrisville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "FRANKLIN"
+    },
+    {
+      "name": "Zebulon",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Hoffman",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RICHMOND"
+    },
+    {
+      "name": "Holden Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Holly Ridge",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ONSLOW"
+    },
+    {
+      "name": "Holly Springs",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Hookerton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "GREENE"
+    },
+    {
+      "name": "Hope Mills",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Hot Springs",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MADISON"
+    },
+    {
+      "name": "Hudson",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Huntersville",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Indian Beach",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Indian Trail",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Jackson",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Jacksonville",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ONSLOW"
+    },
+    {
+      "name": "Jamestown",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GUILFORD"
+    },
+    {
+      "name": "Jamesville",
+      "facilityName": "ECVC",
+      "recyclingType": "County-run curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MARTIN"
+    },
+    {
+      "name": "Jefferson",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ASHE"
+    },
+    {
+      "name": "Jonesville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "YADKIN"
+    },
+    {
+      "name": "Kannapolis",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CABARRUS"
+    },
+    {
+      "name": "Kelford",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Kenansville",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Kenly",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Kernersville",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Kill Devil Hills",
+      "facilityName": "RDS",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "King",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "STOKES"
+    },
+    {
+      "name": "Kings Mountain",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Kingstown",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Kinston",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "LENOIR"
+    },
+    {
+      "name": "Kittrell",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "VANCE"
+    },
+    {
+      "name": "Kitty Hawk",
+      "facilityName": "RDS",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off (source-separated and single stream)",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "Knightdale",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Kure Beach",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NEW HANOVER"
+    },
+    {
+      "name": "La Grange",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "LENOIR"
+    },
+    {
+      "name": "Lake Lure",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "RUTHERFORD"
+    },
+    {
+      "name": "Lake Park",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Lake Santeetlah",
+      "facilityName": "Curbie",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "GRAHAM"
+    },
+    {
+      "name": "Lake Waccamaw",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "COLUMBUS"
+    },
+    {
+      "name": "Landis",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROWAN"
+    },
+    {
+      "name": "Lansing",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ASHE"
+    },
+    {
+      "name": "Lasker",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NORTHAMPTON"
+    },
+    {
+      "name": "Lattimore",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Laurel Park",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HENDERSON"
+    },
+    {
+      "name": "Laurinburg",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "SCOTLAND"
+    },
+    {
+      "name": "Lawndale",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Leggett",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Leland",
+      "facilityName": "Sonoco - New Hanover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "BRUNSWICK"
+    },
+    {
+      "name": "Lenoir",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "CALDWELL"
+    },
+    {
+      "name": "Lewiston Woodville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BERTIE"
+    },
+    {
+      "name": "Lewisville",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "FORSYTH"
+    },
+    {
+      "name": "Lexington",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream and source-separated drop-off",
+      "surroundingCounty": "DAVIDSON"
+    },
+    {
+      "name": "Liberty",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "RANDOLPH"
+    },
+    {
+      "name": "Lilesville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Lillington",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HARNETT"
+    },
+    {
+      "name": "Lincolnton",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "LINCOLN"
+    },
+    {
+      "name": "Linden",
+      "facilityName": "Pratt",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CUMBERLAND"
+    },
+    {
+      "name": "Littleton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HALIFAX"
+    },
+    {
+      "name": "Locust",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Long View",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Louisburg",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "FRANKLIN"
+    },
+    {
+      "name": "Love Valley",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "IREDELL"
+    },
+    {
+      "name": "Lowell",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Lucama",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WILSON"
+    },
+    {
+      "name": "Lumber Bridge",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Lumberton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Macclesfield",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "EDGECOMBE"
+    },
+    {
+      "name": "Macon",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "WARREN"
+    },
+    {
+      "name": "Madison",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Maggie Valley",
+      "facilityName": "Sonoco - Asheville",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "HAYWOOD"
+    },
+    {
+      "name": "Magnolia",
+      "facilityName": "Source separated",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Source-separated drop-off",
+      "surroundingCounty": "DUPLIN"
+    },
+    {
+      "name": "Maiden",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CATAWBA"
+    },
+    {
+      "name": "Manteo",
+      "facilityName": "RDS",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "DARE"
+    },
+    {
+      "name": "Marietta",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Marion",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MCDOWELL"
+    },
+    {
+      "name": "Mars Hill",
+      "facilityName": "Curbie",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MADISON"
+    },
+    {
+      "name": "Marshall",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MADISON"
+    },
+    {
+      "name": "Marshville",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Marvin",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Matthews",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Maxton",
+      "facilityName": "Pratt",
+      "recyclingType": "Drop-off recycling",
+      "recyclingCollection": "Single stream drop-off",
+      "surroundingCounty": "ROBESON"
+    },
+    {
+      "name": "Mayodan",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ROCKINGHAM"
+    },
+    {
+      "name": "Maysville",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "JONES"
+    },
+    {
+      "name": "McAdenville",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "McDonald",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "McFarlan",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Mebane",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "ALAMANCE"
+    },
+    {
+      "name": "Mesic",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Micro",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "JOHNSTON"
+    },
+    {
+      "name": "Middleburg",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "VANCE"
+    },
+    {
+      "name": "Middlesex",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Midland",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CABARRUS"
+    },
+    {
+      "name": "Midway",
+      "facilityName": "North Davidson Garbage Service",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIDSON"
+    },
+    {
+      "name": "Mills River",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "HENDERSON"
+    },
+    {
+      "name": "Milton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CASWELL"
+    },
+    {
+      "name": "Mineral Springs",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Minnesott Beach",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "PAMLICO"
+    },
+    {
+      "name": "Mint Hill",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "MECKLENBURG"
+    },
+    {
+      "name": "Misenheimer",
+      "facilityName": "Waste Management - Winston Salem",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "STANLY"
+    },
+    {
+      "name": "Mocksville",
+      "facilityName": "Republic - Conover",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "DAVIE"
+    },
+    {
+      "name": "Momeyer",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "NASH"
+    },
+    {
+      "name": "Monroe",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "UNION"
+    },
+    {
+      "name": "Montreat",
+      "facilityName": "Curbie",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "BUNCOMBE"
+    },
+    {
+      "name": "Mooresboro",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "CLEVELAND"
+    },
+    {
+      "name": "Mooresville",
+      "facilityName": "Republic - Mooresville",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "IREDELL"
+    },
+    {
+      "name": "Morehead City",
+      "facilityName": "Sonoco - Onslow",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CARTERET"
+    },
+    {
+      "name": "Morganton",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "BURKE"
+    },
+    {
+      "name": "Morrisville",
+      "facilityName": "Sonoco - Raleigh",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "WAKE"
+    },
+    {
+      "name": "Morven",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "ANSON"
+    },
+    {
+      "name": "Mount Airy",
+      "facilityName": "GFL - Wilkesboro",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "SURRY"
+    },
+    {
+      "name": "Mount Gilead",
+      "facilityName": "No recycling program",
+      "surroundingCounty": "MONTGOMERY"
+    },
+    {
+      "name": "Mount Holly",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "GASTON"
+    },
+    {
+      "name": "Mount Olive",
+      "recyclingType": "Both curbside and drop-off recycling",
+      "recyclingCollection": "Curbside single stream and drop-off single stream",
+      "surroundingCounty": "WAYNE"
+    },
+    {
+      "name": "Mount Pleasant",
+      "facilityName": "Mecklenburg County Recovery Facility",
+      "recyclingType": "Curbside recycling",
+      "recyclingCollection": "Curbside single stream",
+      "surroundingCounty": "CABARRUS"
+    }
+  ],
+  "recyclingData": [
+    {
+      "name": "Curbie",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "plastic clamshell",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "ECVC",
+      "plastic": "Water, soda, juice, milk and detergent bottles \nNo pumps \nEmpty out",
+      "metal": "All cans \nempty out",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Newspaper, office paper, and cardboard \nFlatten cardboard",
+      "banned": []
+    },
+    {
+      "name": "GFL",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "High Point",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "MecklenburgCounty",
+      "plastic": "Bottles, jugs, and jars. \nNo caps, lids, or pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "NorthDavidson",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, aseptic cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "Pratt",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "RDS",
+      "plastic": "Bottles, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "RepublicConover",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "RepublicGreensboro",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo caps, lids, or pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nNo metal lids \nEmpty and rinse",
+      "paper": "Paper, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "RepublicMooresville",
+      "plastic": "Bottles, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Glass is not recyclable at this location",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "Sonoco",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Aluminnum foil",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "TFC",
+      "plastic": "Bottles and jugs. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    },
+    {
+      "name": "RepublicConover",
+      "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
+      "metal": "Metal cans \nEmpty and rinse",
+      "glass": "Bottles and jars \nEmpty and rinse",
+      "paper": "Paper, cartons, and cardboard \nFlatten cardboard",
+      "banned": [
+        "Aersol cans",
+        "All batteries (car, lithium, etc.)",
+        "Ceramic items",
+        "Clothing or textiles",
+        "Diapers",
+        "Disposable cups (plastic and paper)",
+        "Electronics",
+        "Food-tainted items",
+        "Hazardous waste",
+        "Household glass",
+        "Medical waste",
+        "plastic bags/wrap",
+        "containers",
+        "Scrap metal/wood",
+        "Shredded paper",
+        "Styrofoam/peanuts",
+        "Tanglers (cords, hoses, wires, etc.)",
+        "Tires",
+        "Toys"
+      ]
+    }
+  ]
+}

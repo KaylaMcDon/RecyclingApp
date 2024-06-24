@@ -57,14 +57,10 @@ export default function AddressSearch() {
           else if (newText.length < 3) {
             setResults([]);
           }
-          else if (newText in seen) {
-            setResults(seen[newText]);
-          }
           else {
             let predictions = await getPredictions(newText);
             if (predictions.status === 'OK') {
               setResults(predictions.predictions);
-              seen[newText] = predictions.predictions;
             }
             else {
               setResults("ERROR: " + predictions.status);
@@ -76,8 +72,6 @@ export default function AddressSearch() {
     </View>
   );
 }
-
-let seen = {};
 
 let reqPlaceId = null;
 export { reqPlaceId };
