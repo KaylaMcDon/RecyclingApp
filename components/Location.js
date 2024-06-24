@@ -38,7 +38,8 @@ export default function Location({ navigation }) {
                     reqDivType = "city";
                     reqDivName = "Durham";
                   } else {
-                    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId));
+                    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
+                      .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
                     const results = await response.json();
                     [reqDivType, reqDivName] = getRegionFromAddress(results);
                   }
@@ -107,9 +108,8 @@ export default function Location({ navigation }) {
             if (pos === null) {
               pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting position: ${error}`)});
             }
-            console.log(pos);
             const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
-              .catch((error) => {setGeolocateMsg(`Error getting local region: ${error}.`)});
+              .catch((error) => {setGeolocateMsg(`Error getting local region: please check your internet connection and try again.\n${error}`)});
             const results = await response.json();
             [reqDivType, reqDivName] = getRegionFromAddress(results);
             setGeolocateMsg("");
