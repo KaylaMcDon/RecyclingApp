@@ -40,7 +40,7 @@ export default function Location({ navigation }) {
                   } else {
                     const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId));
                     const results = await response.json();
-                    [reqDivType, reqDivName] = getRegionFromPlaceId(results);
+                    [reqDivType, reqDivName] = getRegionFromAddress(results);
                   }
                   navigation.navigate("Info");
                 })();
@@ -57,7 +57,7 @@ export default function Location({ navigation }) {
     </View> );
   }
 
-  function getRegionFromPlaceId(results) {
+  function getRegionFromAddress(results) {
     const address = results.results[0];
 
     const localityComponent = address.address_components.find(function(component) {
@@ -103,13 +103,15 @@ export default function Location({ navigation }) {
           const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
           if (locPerms.granted) {
             setGeolocateMsg("Working...");
-            let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+            let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setGeolocateMsg(`Error getting position: ${error}`)});
             if (pos === null) {
-              pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting location: ${error}`)});
+              pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting position: ${error}`)});
             }
-            const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`));
+            console.log(pos);
+            const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
+              .catch((error) => {setGeolocateMsg(`Error getting local region: ${error}.`)});
             const results = await response.json();
-            [reqDivType, reqDivName] = getRegionFromPlaceId(results);
+            [reqDivType, reqDivName] = getRegionFromAddress(results);
             setGeolocateMsg("");
             navigation.navigate("Info");
           } else {
