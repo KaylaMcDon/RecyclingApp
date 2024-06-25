@@ -28,6 +28,8 @@ export default function Location({ navigation }) {
     return (<View>
       <TouchableHighlight
         style={styles.goButton}
+        activeOpacity={1}
+        underlayColor="#129800"
         onPress={() => {
           switch (searchMethod) {
             case "division":
