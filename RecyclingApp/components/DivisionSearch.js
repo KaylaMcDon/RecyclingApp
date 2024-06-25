@@ -19,8 +19,8 @@ export default function DivisionSearch() {
         selectedTextStyle={styles.selectedTextStyle}
         inputSearchStyle={styles.inputSearchStyle}
         data={[
-          { label: 'City (recycling rules of a municipal area)', value: 'city' },
-          { label: 'County (recycling rules of an unincorporated area)', value: 'county' },
+          { label: 'City (local recycling program)', value: 'city' },
+          { label: 'County (county-wide recycling program)', value: 'county' },
         ]}
         maxHeight={300}
         labelField="label"
