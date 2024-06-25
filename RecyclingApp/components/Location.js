@@ -129,7 +129,7 @@ export {reqDivType, reqDivName};
 
 const styles = StyleSheet.create({
   goButton: {
-    marginVertical: 20,
+    marginTop: 20,
     padding: 10,
     backgroundColor: "#32b81d",
     borderRadius: 8,

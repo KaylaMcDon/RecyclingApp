@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableHighlight, } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, } from "react-native";
 import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
@@ -51,15 +51,15 @@ export default function InfoScreen() {
   
   const [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
   if (facilityInfo === null) {
-    return (
-      <View>
+    return (<View>
+      <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
           {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
           : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
-        <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
       </View>
-    );
+      <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
+    </View>);
   }
 
   const [plastic, setPlastic] = useState("More details...");
@@ -103,7 +103,7 @@ export default function InfoScreen() {
     
   return (
     <ScrollView>
-      <View style={styles.headerBox}>
+      <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
           {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
             : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}

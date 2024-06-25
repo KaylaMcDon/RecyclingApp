@@ -3177,10 +3177,10 @@
       "facilityName": "Source separated",
       "recyclingType": "Both curbside and drop-off recycling",
       "recyclingCollection": "Curbside single stream and source-separated drop-off",
-      "externalInfo": {
-        "What to recycle": "https://www.halifaxnc.com/DocumentCenter/View/3761/What_to_Recycle_Brochure_2023",
-        "What not to recycle": "https://www.halifaxnc.com/DocumentCenter/View/3762/What_Not_To_Recycle_Brochure_2023"
-      }
+      "externalInfo": [
+        {"title": "What to recycle", "url": "https://www.halifaxnc.com/DocumentCenter/View/3761/What_to_Recycle_Brochure_2023"},
+        {"title": "What not to recycle", "url": "https://www.halifaxnc.com/DocumentCenter/View/3762/What_Not_To_Recycle_Brochure_2023"}
+      ]
     },
     {
       "name": "GATES",
@@ -6693,7 +6693,7 @@
       ]
     },
     {
-      "name": "High Point",
+      "name": "HighPoint",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
       "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
@@ -6971,7 +6971,7 @@
       ]
     },
     {
-      "name": "RepublicConover",
+      "name": "WasteManagement",
       "plastic": "Bottles, tubs, jugs, and jars. \nNo pumps \nEmpty and rinse",
       "metal": "Metal cans \nEmpty and rinse",
       "glass": "Bottles and jars \nEmpty and rinse",
