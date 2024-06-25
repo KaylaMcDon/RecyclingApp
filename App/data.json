@@ -2624,7 +2624,10 @@
       "name": "LINCOLN",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "MECKLENBURG",
@@ -2648,7 +2651,10 @@
       "name": "UNION",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Dual stream drop-off"
+      "recyclingCollection": "Dual stream drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "MONTGOMERY",
@@ -2678,7 +2684,12 @@
       "name": "CLEVELAND",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "Solid Waste/Landfill Dept.", "url": "https://www.clevelandcounty.com/main/departments/solid_waste_landfill.php"},
+        {"title": "Recycling Centers Brochure", "url": "https://www.clevelandcounty.com/main/Recycle-centers-brochure.pdf"},
+        {"title": "Map of Recycling Centers & Open Hours", "url": "https://www.clevelandcounty.com/main/CORRECT%20Recycling%20Center%20Locations%20and%20Times.pdf"}
+      ]
     },
     {
       "name": "RICHMOND",
@@ -2690,19 +2701,29 @@
       "name": "IREDELL",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "ROBESON",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Single stream drop-off"
+      "recyclingCollection": "Single stream drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "GASTON",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "List of Recyclable Items", "url": "https://www.gastongov.com/568/Recycle"},
+        {"title": "Map of Recycling Centers", "url": "https://www.gastongov.com/565/Recycling-Centers"}
+      ]
     },
     {
       "name": "PERQUIMANS",
@@ -2720,7 +2741,10 @@
       "name": "CLAY",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "Clay County Transfer Station", "url": "https://www.claync.us/transfer-station"}
+      ]
     },
     {
       "name": "ALLEGHANY",
@@ -2738,7 +2762,11 @@
       "name": "DUPLIN",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "Solid Waste and Recycling Dept.", "url": "https://www.duplincountync.com/solid-waste-and-recycling/"},
+        {"title": "List of Collection Sites", "url": "https://www.duplincountync.com/wp-content/uploads/Collection-Sites-2022.pdf"}
+      ]
     },
     {
       "name": "PENDER",
@@ -2804,7 +2832,10 @@
       "name": "MITCHELL",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "GREENE",
@@ -2858,7 +2889,10 @@
       "name": "MADISON",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "ONSLOW",
@@ -2882,7 +2916,10 @@
       "name": "MACON",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "DAVIE",
@@ -2894,7 +2931,10 @@
       "name": "CHEROKEE",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "Cherokee County Solid Waste Dept.", "url": "https://www.cherokeecounty-nc.gov/166/Solid-Waste-Department"}
+      ]
     },
     {
       "name": "LEE",
@@ -2942,7 +2982,10 @@
       "name": "HOKE",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "WILSON",
@@ -2966,7 +3009,10 @@
       "name": "SURRY",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "NEW HANOVER",
@@ -2990,13 +3036,19 @@
       "name": "SCOTLAND",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "WATAUGA",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Single stream drop-off"
+      "recyclingCollection": "Single stream drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "NORTHAMPTON",
@@ -3020,7 +3072,10 @@
       "name": "ROWAN",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "CASWELL",
@@ -3056,7 +3111,10 @@
       "name": "TRANSYLVANIA",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "COLUMBUS",
@@ -3116,7 +3174,10 @@
       "name": "WAYNE",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "CHATHAM",
@@ -3164,7 +3225,10 @@
       "name": "POLK",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "ANSON",
@@ -3198,7 +3262,10 @@
       "name": "YANCEY",
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
-      "recyclingCollection": "Source-separated drop-off"
+      "recyclingCollection": "Source-separated drop-off",
+      "externalInfo": [
+        {"title": "", "url": ""}
+      ]
     },
     {
       "name": "DARE",
