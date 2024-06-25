@@ -45,15 +45,10 @@ export default function Location({ navigation }) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
                 (async function() {
-                  if (reqPlaceId === "ChIJ8WYPEnHkrIkRfvJGionaeuE") {
-                    reqDivType = "city";
-                    reqDivName = "Durham";
-                  } else {
-                    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
-                      .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
-                    const results = await response.json();
-                    [reqDivType, reqDivName] = getRegionFromAddress(results);
-                  }
+                  const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
+                    .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
+                  const results = await response.json();
+                  [reqDivType, reqDivName] = getRegionFromAddress(results);
                   navigation.navigate("Info");
                 })();
               }
