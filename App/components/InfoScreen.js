@@ -42,22 +42,15 @@ export default function InfoScreen() {
     } else if (facilityName.indexOf("Waste") >= 0) {
       facilityInfo = recyclingData[13];
     } else if (facilityName === "No recycling program") {
-      [facilityName, facilityInfo] = getFacilityInfo("county", divData.surroundingCounty);
+      [facilityInfo, divData] = getFacilityInfo("county", divData.surroundingCounty);
     } else {
-      return [facilityName, null];
+      return [null, divData];
     }
-    return [facilityName, facilityInfo];
+    return [facilityInfo, divData];
   }
   
-  const [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
+  const [facilityInfo, divData] = getFacilityInfo(reqDivType, reqDivName);
   if (facilityInfo === null) {
-    let externalInfo;
-    if (reqDivType === "county") {
-      externalInfo = countyData.find(x => x.name === reqDivName).externalInfo;
-    } else {
-      externalInfo = cityData.find(x => x.name === reqDivName).externalInfo;
-    };
-
     return (<View>
       <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
@@ -66,18 +59,20 @@ export default function InfoScreen() {
         </Text>
       </View>
       <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
-      <View style={styles.sectionLabel}>
-        <Text style={styles.text}>External Information</Text>
-      </View>
 
-      {externalInfo.map( (extLink) => <TouchableHighlight
-        style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
-        underlayColor="#129800"
-        onPress={() => {Linking.openURL(extLink.url);}}
-      ><View>
-        <Text style={styles.text}>{extLink.title}</Text>
-        <Text style={[styles.text, {textDecorationLine: "underline"}]}>{extLink.url}</Text>
-      </View></TouchableHighlight> )}
+      {"externalInfo" in divData && <View>
+        <View style={styles.sectionLabel}>
+          <Text style={styles.text}>External Information</Text>
+        </View>
+        {divData.externalInfo.map( (extLink) => <TouchableHighlight
+          style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
+          underlayColor="#129800"
+          onPress={() => {Linking.openURL(extLink.url);}}
+        ><View>
+          <Text style={styles.text}>{extLink.title}</Text>
+          <Text style={[styles.text, {textDecorationLine: "underline"}]}>{extLink.url}</Text>
+        </View></TouchableHighlight> )}
+      </View>}
     </View>);
   }
 
@@ -127,7 +122,7 @@ export default function InfoScreen() {
           {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
             : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
-        <Text style={styles.pageSubtitle}>Recycling Facility: {facilityName}</Text>
+        <Text style={styles.pageSubtitle}>Recycling Facility: {divData.facilityName}</Text>
       </View>
       
       <TouchableHighlight
@@ -239,6 +234,20 @@ export default function InfoScreen() {
         {banned === "" && <Text style={styles.white}>More details...</Text>}
       </View></TouchableHighlight>}
       {banned !== "" ? banned : <View></View>}
+
+      {"externalInfo" in divData && <View>
+        <View style={styles.sectionLabel}>
+          <Text style={styles.text}>External Information</Text>
+        </View>
+        {divData.externalInfo.map( (extLink) => <TouchableHighlight
+          style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
+          underlayColor="#129800"
+          onPress={() => {Linking.openURL(extLink.url);}}
+        ><View>
+          <Text style={styles.text}>{extLink.title}</Text>
+          <Text style={[styles.text, {textDecorationLine: "underline"}]}>{extLink.url}</Text>
+        </View></TouchableHighlight> )}
+      </View>}
     </ScrollView>
   );
 }
