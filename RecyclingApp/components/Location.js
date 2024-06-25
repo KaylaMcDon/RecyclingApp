@@ -50,8 +50,12 @@ export default function Location({ navigation }) {
                   const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
                     .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
                   const results = await response.json();
-                  [reqDivType, reqDivName] = getRegionFromAddress(results);
-                  navigation.navigate("Info");
+                  if (results.status === "OK") { 
+                    [reqDivType, reqDivName] = getRegionFromAddress(results);
+                    navigation.navigate("Info");
+                  } else {
+                    setErrorMessage(`Google maps API error: ${error}.`);
+                  }
                 })();
               }
               break;
@@ -67,9 +71,13 @@ export default function Location({ navigation }) {
                   const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
                     .catch((error) => {setErrorMessage(`Error getting local region: please check your internet connection and try again.\n${error}`)});
                   const results = await response.json();
-                  [reqDivType, reqDivName] = getRegionFromAddress(results);
-                  setErrorMessage("");
-                  navigation.navigate("Info");
+                  if (results.status === "OK") {
+                    [reqDivType, reqDivName] = getRegionFromAddress(results);
+                    setErrorMessage("");
+                    navigation.navigate("Info");
+                  } else {
+                    setErrorMessage(`Google maps API error: ${error}.`)
+                  }
                 } else {
                   setErrorMessage("Missing location permissions: You may need to enable location sharing in settings to use this feature");
                 }
