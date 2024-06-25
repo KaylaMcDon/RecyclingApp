@@ -192,7 +192,7 @@ export default function InfoScreen() {
       {bannedItems.length !== 0 && <TouchableOpacity
         style={[
           styles.bannedBox,
-          {borderTopLeftRadius: 8, borderTopRightRadius: 8},
+          {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
           banned === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
         onPress={() => {
