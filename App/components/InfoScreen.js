@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, Linking, } from "react-native";
 import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
@@ -51,6 +51,13 @@ export default function InfoScreen() {
   
   const [facilityName, facilityInfo] = getFacilityInfo(reqDivType, reqDivName);
   if (facilityInfo === null) {
+    let externalInfo;
+    if (reqDivType === "county") {
+      externalInfo = countyData.find(x => x.name === reqDivName).externalInfo;
+    } else {
+      externalInfo = cityData.find(x => x.name === reqDivName).externalInfo;
+    };
+    console.log("Links:", externalInfo);
     return (<View>
       <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
@@ -59,6 +66,14 @@ export default function InfoScreen() {
         </Text>
       </View>
       <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
+      {externalInfo.map((extLink) => 
+        <TouchableHighlight
+          style = {styles.infoBox}
+          onPress={() => {Linking.openURL(extLink.url);}}
+        >
+          <Text>{extLink.title}</Text>
+        </TouchableHighlight>
+      )}
     </View>);
   }
 
