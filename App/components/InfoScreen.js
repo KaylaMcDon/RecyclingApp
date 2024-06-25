@@ -57,7 +57,7 @@ export default function InfoScreen() {
     } else {
       externalInfo = cityData.find(x => x.name === reqDivName).externalInfo;
     };
-    console.log("Links:", externalInfo);
+
     return (<View>
       <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
@@ -66,14 +66,18 @@ export default function InfoScreen() {
         </Text>
       </View>
       <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
-      {externalInfo.map((extLink) => 
-        <TouchableHighlight
-          style = {styles.infoBox}
-          onPress={() => {Linking.openURL(extLink.url);}}
-        >
-          <Text>{extLink.title}</Text>
-        </TouchableHighlight>
-      )}
+      <View style={styles.sectionLabel}>
+        <Text style={styles.text}>External Information</Text>
+      </View>
+
+      {externalInfo.map( (extLink) => <TouchableHighlight
+        style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
+        underlayColor="#129800"
+        onPress={() => {Linking.openURL(extLink.url);}}
+      ><View>
+        <Text style={styles.text}>{extLink.title}</Text>
+        <Text style={[styles.text, {textDecorationLine: "underline"}]}>{extLink.url}</Text>
+      </View></TouchableHighlight> )}
     </View>);
   }
 
@@ -244,6 +248,11 @@ export default function InfoScreen() {
       backgroundColor: "#2d61fc",
       paddingBottom: 16,
     },
+    sectionLabel: {
+      marginVertical: 10,
+      padding: 10,
+      backgroundColor: "#2d61fc",
+    },
     infoBox: {
       margin: 20,
       borderColor: "gray",
@@ -281,8 +290,11 @@ export default function InfoScreen() {
       textAlign: "center",
       color: "white",
     },
-    white: {
-      // color: "white",
+    text: {
+      textAlign: "center",
+      fontSize: 16,
+      color: "white",
+      fontWeight: "bold",
     },
   } 
 )
