@@ -5,12 +5,6 @@ import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
-  // const [searchMethod, setSearchMethod] = useState(null);
-
-  // function updateSearchMethod(newVal) {
-  //   (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
-  // }
-
   function getRegionFromAddress(results) {
     const address = results.results[0];
 
@@ -90,9 +84,9 @@ export default function Location({ navigation }) {
         }}
       >
         <View>
-          {searchMethod === "division" && <Text style={styles.goText}>Get Laws by City/County</Text>}
-          {searchMethod === "address" && <Text style={styles.goText}>Get Laws by Address</Text>}
-          {searchMethod === "location" && <Text style={styles.goText}>Get Laws by Current Location</Text>}
+          {searchMethod === "division" && <Text style={styles.text}>Get Laws by City/County</Text>}
+          {searchMethod === "address" && <Text style={styles.text}>Get Laws by Address</Text>}
+          {searchMethod === "location" && <Text style={styles.text}>Get Laws by Current Location</Text>}
         </View>
       </TouchableHighlight>
       <Text>{errorMesage}</Text>
@@ -101,23 +95,20 @@ export default function Location({ navigation }) {
 
   return (
     <View>
-      <View style={styles.optionButton}>
-        <Text style={styles.optionText}>Use Current Location</Text>
-      </View>
       <View style={styles.container}>
         <GoButton searchMethod="location"/>
       </View>
 
-      <View style={styles.optionButton}>
-        <Text style={styles.optionText}>Search by Address</Text>
+      <View style={styles.optionLabel}>
+        <Text style={styles.text}>Search by Address</Text>
       </View>
       <View style={styles.container}>
         <AddressSearch/>
         <GoButton searchMethod="address"/>
       </View>
 
-      <View style={styles.optionButton}>
-        <Text style={styles.optionText}>Search by City/County</Text>
+      <View style={styles.optionLabel}>
+        <Text style={styles.text}>Search by City/County</Text>
       </View>
       <View style={styles.container}>
         <DivisionSearch/>
@@ -132,42 +123,24 @@ let reqDivName;
 export {reqDivType, reqDivName};
 
 const styles = StyleSheet.create({
+  goButton: {
+    marginVertical: 20,
+    padding: 10,
+    backgroundColor: "#32b81d",
+    borderRadius: 8,
+  },
   container: {
     padding: 16,
   },
-  optionButton: {
+  optionLabel: {
     marginVertical: 10,
     padding: 10,
     backgroundColor: "#2d61fc",
   },
-  optionLabel: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  optionText: {
+  text: {
     textAlign: "center",
     fontSize: 16,
     color: "white",
     fontWeight: "bold",
-  },
-  goText: {
-    textAlign: "center",
-    fontSize: 16,
-    color: "white",
-    fontWeight: "bold",
-  },
-  circle: {
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: "#72f85d",
-  },
-  goButton: {
-    marginVertical: 20,
-    // marginHorizontal: 16,
-    padding: 10,
-    backgroundColor: "#32b81d",
-    borderRadius: 8,
   },
 });

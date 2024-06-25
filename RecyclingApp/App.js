@@ -14,7 +14,8 @@ export default function App() {
   return (
       <NavigationContainer>
           <Stack.Navigator screenOptions={{
-              headerStyle: { elevation: 0 },
+              headerStyle: { elevation: 0, backgroundColor: "#2d61fc", },
+              headerTitleStyle: { color: "white" },
               headerTitleAlign: "center",
               cardStyle: { backgroundColor: '#fff' }
             }}
