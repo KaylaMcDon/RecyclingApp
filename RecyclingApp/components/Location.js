@@ -5,12 +5,11 @@ import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
-  const [searchMethod, setSearchMethod] = useState(null);
-  const [errorMesage, setErrorMessage] = useState("");
+  // const [searchMethod, setSearchMethod] = useState(null);
 
-  function updateSearchMethod(newVal) {
-    (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
-  }
+  // function updateSearchMethod(newVal) {
+  //   (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
+  // }
 
   function getRegionFromAddress(results) {
     const address = results.results[0];
@@ -30,16 +29,9 @@ export default function Location({ navigation }) {
     return ["Error finding region", "Error finding region"];
   }
 
-  return (
-    <View>
-      <Text style={styles.optionText}>Use Current Location</Text>
-
-      <Text style={styles.optionText}>Search by Address</Text>
-      <View style={styles.container}><AddressSearch/></View>
-
-      <Text style={styles.optionText}>Search by City/County</Text>
-      <View style={styles.container}><DivisionSearch/></View>
-
+  function GoButton({ searchMethod }) {
+    const [errorMesage, setErrorMessage] = useState("");
+    return (<View>
       <TouchableHighlight
         style={styles.goButton}
         onPress={() => {
@@ -91,14 +83,46 @@ export default function Location({ navigation }) {
                   setErrorMessage("Missing location permissions: You may need to enable location sharing in settings to use this feature");
                 }
               })();
+              break;
             default:
               setErrorMessage("Please select a search method and input details");
           }
         }}
       >
-        <Text style={styles.goText}>Get Recycling Laws</Text>
+        <View>
+          {searchMethod === "division" && <Text style={styles.goText}>Get Laws by City/County</Text>}
+          {searchMethod === "address" && <Text style={styles.goText}>Get Laws by Address</Text>}
+          {searchMethod === "location" && <Text style={styles.goText}>Get Laws by Current Location</Text>}
+        </View>
       </TouchableHighlight>
       <Text>{errorMesage}</Text>
+    </View>);
+  }
+
+  return (
+    <View>
+      <View style={styles.optionButton}>
+        <Text style={styles.optionText}>Use Current Location</Text>
+      </View>
+      <View style={styles.container}>
+        <GoButton searchMethod="location"/>
+      </View>
+
+      <View style={styles.optionButton}>
+        <Text style={styles.optionText}>Search by Address</Text>
+      </View>
+      <View style={styles.container}>
+        <AddressSearch/>
+        <GoButton searchMethod="address"/>
+      </View>
+
+      <View style={styles.optionButton}>
+        <Text style={styles.optionText}>Search by City/County</Text>
+      </View>
+      <View style={styles.container}>
+        <DivisionSearch/>
+        <GoButton searchMethod="division"/>
+      </View>
     </View>
   );
 }
@@ -124,9 +148,8 @@ const styles = StyleSheet.create({
   optionText: {
     textAlign: "center",
     fontSize: 16,
-    // color: "white",
+    color: "white",
     fontWeight: "bold",
-    flex: 1,
   },
   goText: {
     textAlign: "center",
@@ -141,8 +164,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#72f85d",
   },
   goButton: {
-    marginTop: 20,
-    marginHorizontal: 16,
+    marginVertical: 20,
+    // marginHorizontal: 16,
     padding: 10,
     backgroundColor: "#32b81d",
     borderRadius: 8,
