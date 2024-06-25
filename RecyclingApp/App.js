@@ -15,8 +15,8 @@ export default function App() {
       <NavigationContainer>
           <Stack.Navigator screenOptions={{
               headerStyle: { elevation: 0, backgroundColor: "#2d61fc", },
-              headerTitleStyle: { color: "white" },
               headerTitleAlign: "center",
+              headerTintColor: "white",
               cardStyle: { backgroundColor: '#fff' }
             }}
             initialRouteName='Select Location'>
