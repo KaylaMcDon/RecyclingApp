@@ -6,15 +6,40 @@ import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
 export default function Location({ navigation }) {
   const [searchMethod, setSearchMethod] = useState(null);
-  const [geolocateMsg, setGeolocateMsg] = useState("");
+  const [errorMesage, setErrorMessage] = useState("");
 
   function updateSearchMethod(newVal) {
     (searchMethod === newVal) ? setSearchMethod(null) : setSearchMethod(newVal);
   }
 
-  function GoButton() {
-    const [errorMesage, setErrorMessage] = useState("");
-    return ( <View>
+  function getRegionFromAddress(results) {
+    const address = results.results[0];
+
+    const localityComponent = address.address_components.find(function(component) {
+      return component.types.includes("locality");
+    });
+    if (localityComponent !== undefined) {
+      return ["city", localityComponent.long_name];
+    }
+    const countyComponent = address.address_components.find(function(component) {
+      return component.types.includes("administrative_area_level_2");
+    });
+    if (countyComponent !== undefined) {
+      return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
+    }
+    return ["Error finding region", "Error finding region"];
+  }
+
+  return (
+    <View>
+      <Text style={styles.optionText}>Use Current Location</Text>
+
+      <Text style={styles.optionText}>Search by Address</Text>
+      <View style={styles.container}><AddressSearch/></View>
+
+      <Text style={styles.optionText}>Search by City/County</Text>
+      <View style={styles.container}><DivisionSearch/></View>
+
       <TouchableHighlight
         style={styles.goButton}
         onPress={() => {
@@ -47,81 +72,33 @@ export default function Location({ navigation }) {
                 })();
               }
               break;
+            case "location":
+              (async function() {
+                const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
+                if (locPerms.granted) {
+                  setErrorMessage("Working...");
+                  let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setErrorMessage(`Error getting position: ${error}`)});
+                  if (pos === null) {
+                    pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setErrorMessage(`Error getting position: ${error}`)});
+                  }
+                  const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
+                    .catch((error) => {setErrorMessage(`Error getting local region: please check your internet connection and try again.\n${error}`)});
+                  const results = await response.json();
+                  [reqDivType, reqDivName] = getRegionFromAddress(results);
+                  setErrorMessage("");
+                  navigation.navigate("Info");
+                } else {
+                  setErrorMessage("Missing location permissions: You may need to enable location sharing in settings to use this feature");
+                }
+              })();
             default:
               setErrorMessage("Please select a search method and input details");
           }
         }}
       >
-        <Text style={styles.optionText}>Get Recycling Laws</Text>
+        <Text style={styles.goText}>Get Recycling Laws</Text>
       </TouchableHighlight>
       <Text>{errorMesage}</Text>
-    </View> );
-  }
-
-  function getRegionFromAddress(results) {
-    const address = results.results[0];
-
-    const localityComponent = address.address_components.find(function(component) {
-      return component.types.includes("locality");
-    });
-    if (localityComponent !== undefined) {
-      return ["city", localityComponent.long_name];
-    }
-    const countyComponent = address.address_components.find(function(component) {
-      return component.types.includes("administrative_area_level_2");
-    });
-    if (countyComponent !== undefined) {
-      return ["county", countyComponent.long_name.slice(0, -7).toUpperCase()];
-    }
-    return ["Error finding region", "Error finding region"];
-  }
-
-  return (
-    <View>
-      <TouchableHighlight
-        style={styles.optionButton}
-        underlayColor="#0000DD"
-        onPress={() => {updateSearchMethod("division")}}
-      >
-        <Text style={styles.optionText}>Search by city/county</Text>
-      </TouchableHighlight>
-
-      {searchMethod === "division" && <View style={styles.container}><DivisionSearch/><GoButton/></View>}
-
-      <TouchableHighlight
-        style={styles.optionButton}
-        underlayColor="#0000DD"
-        onPress={() => {updateSearchMethod("address")}}
-      >
-        <Text style={styles.optionText}>Search by address</Text>
-      </TouchableHighlight>
-
-      {searchMethod === "address" && <View style={styles.container}><AddressSearch/><GoButton/></View>}
-
-      <TouchableHighlight
-        style={styles.locButton}
-        onPress={async function() {
-          const locPerms = await ExpoLocation.requestForegroundPermissionsAsync();
-          if (locPerms.granted) {
-            setGeolocateMsg("Working...");
-            let pos = await ExpoLocation.getLastKnownPositionAsync().catch((error) => {setGeolocateMsg(`Error getting position: ${error}`)});
-            if (pos === null) {
-              pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setGeolocateMsg(`Error getting position: ${error}`)});
-            }
-            const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
-              .catch((error) => {setGeolocateMsg(`Error getting local region: please check your internet connection and try again.\n${error}`)});
-            const results = await response.json();
-            [reqDivType, reqDivName] = getRegionFromAddress(results);
-            setGeolocateMsg("");
-            navigation.navigate("Info");
-          } else {
-            setGeolocateMsg("Missing location permissions: You may need to enable location sharing in settings to use this feature");
-          }
-        }}
-      >
-        <Text style={styles.optionText}>Use current location</Text>
-      </TouchableHighlight>
-      <Text style={{textAlign: "center"}}>{geolocateMsg}</Text>
     </View>
   );
 }
@@ -139,22 +116,33 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#2d61fc",
   },
+  optionLabel: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
   optionText: {
+    textAlign: "center",
+    fontSize: 16,
+    // color: "white",
+    fontWeight: "bold",
+    flex: 1,
+  },
+  goText: {
     textAlign: "center",
     fontSize: 16,
     color: "white",
     fontWeight: "bold",
   },
-  locButton: {
-    marginTop: 20,
-    marginBottom: 10,
-    marginHorizontal: 16,
-    padding: 10,
-    backgroundColor: "#32b81d",
+  circle: {
+    width: 16,
+    height: 16,
     borderRadius: 8,
+    backgroundColor: "#72f85d",
   },
   goButton: {
     marginTop: 20,
+    marginHorizontal: 16,
     padding: 10,
     backgroundColor: "#32b81d",
     borderRadius: 8,
