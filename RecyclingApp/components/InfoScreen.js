@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableHighlight, } from "react-native";
 import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
@@ -54,8 +54,8 @@ export default function InfoScreen() {
     return (
       <View>
         <Text style={styles.pageTitle}>
-          {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
-          : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
+          : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
         <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
       </View>
@@ -75,8 +75,9 @@ export default function InfoScreen() {
     const notPresent = words.split("(");
     if (notPresent.length !== 1) {
       return (
-        <TouchableOpacity
+        <TouchableHighlight
           style={[styles.bannedBox, detailText !== "More details..." && {padding: 8}]}
+          underlayColor="#d00"
           onPress={ () => {
             if (detailText === "More details...") { 
               setdetailText(notPresent[1].slice(0, notPresent[1].length-1));
@@ -84,10 +85,10 @@ export default function InfoScreen() {
               setdetailText("More details...");
             }
           }}
-        >
+        ><View>
           <Text style = {styles.title}>{notPresent[0]}</Text>
-          <Text>{detailText}</Text>
-        </TouchableOpacity>
+          <Text style={styles.white}>{detailText}</Text>
+        </View></TouchableHighlight>
       );
     } else {
       return (
@@ -102,14 +103,17 @@ export default function InfoScreen() {
     
   return (
     <ScrollView>
-      <Text style={styles.pageTitle}>
-        {reqDivType === "city" ? <Text>City of {reqDivName}</Text>
-          : <Text>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
-      </Text>
-      <Text style={styles.pageSubtitle}>Recycling Facility: {facilityName}</Text>
+      <View style={styles.headerBox}>
+        <Text style={styles.pageTitle}>
+          {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
+            : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+        </Text>
+        <Text style={styles.pageSubtitle}>Recycling Facility: {facilityName}</Text>
+      </View>
       
-      <TouchableOpacity
-        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, plastic !== "More details..." && {padding: 8}]}
+      <TouchableHighlight
+        style = {[styles.infoBox, {backgroundColor: "#32b81d"}, plastic !== "More details..." && {padding: 8}]}
+        underlayColor="#129800"
         onPress={ () => {
           if (plastic === "More details...") { 
             setPlastic(facilityInfo["plastic"]);
@@ -117,18 +121,19 @@ export default function InfoScreen() {
             setPlastic("More details...");
           }
         }}
-      >
+      ><View>
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
           <Text style = {styles.title}>Plastic</Text>
         </View>
-        <Text>{plastic}</Text>
-      </TouchableOpacity>
+        <Text style={styles.white}>{plastic}</Text>
+      </View></TouchableHighlight>
       
-      <TouchableOpacity
-        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, metal !== "More details..." && {padding: 8}]}
+      <TouchableHighlight
+        style = {[styles.infoBox, {backgroundColor: "#32b81d"}, metal !== "More details..." && {padding: 8}]}
+        underlayColor="#129800"
         onPress={ () => {
           if (metal === "More details...") { 
             setMetal(facilityInfo["metal"]);
@@ -136,18 +141,19 @@ export default function InfoScreen() {
             setMetal("More details...");
           }
         }}
-      >
+      ><View>
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
           <Text style = {styles.title}>Metal</Text>
         </View>
-        <Text>{metal}</Text>
-      </TouchableOpacity>
+        <Text style={styles.white}>{metal}</Text>
+      </View></TouchableHighlight>
       
-      <TouchableOpacity
-        style = {[styles.infoBox, {backgroundColor: "lawngreen"}, paper !== "More details..." && {padding: 8}]}
+      <TouchableHighlight
+        style = {[styles.infoBox, {backgroundColor: "#32b81d"}, paper !== "More details..." && {padding: 8}]}
+        underlayColor="#129800"
         onPress={ () => {
           if (paper === "More details...") { 
             setPaper(facilityInfo["paper"]);
@@ -155,21 +161,22 @@ export default function InfoScreen() {
             setPaper("More details...");
           }
         }}
-      >
+      ><View>
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
             <AntDesign name="checkcircleo" size={24} color="black"/>
           </View>
           <Text style = {styles.title}>Paper</Text>
         </View>
-        <Text>{paper}</Text>
-      </TouchableOpacity>
+        <Text style={styles.white}>{paper}</Text>
+      </View></TouchableHighlight>
       
-      <TouchableOpacity
+      <TouchableHighlight
         style = {[
           styles.infoBox, glass !== "More details..." && {padding: 8},
-          facilityInfo["glass"]!=="Glass is not recyclable at this location" ? {backgroundColor: "lawngreen"} : {backgroundColor: "red"},
+          facilityInfo["glass"]!=="Glass is not recyclable at this location" ? {backgroundColor: "#32b81d"} : {backgroundColor: "red"},
         ]}
+        underlayColor={facilityInfo["glass"]!=="Glass is not recyclable at this location" ? "#129800" : "#d00"}
         onPress={ () => {
           if (glass === "More details...") { 
             setGlass(facilityInfo["glass"]);
@@ -177,7 +184,7 @@ export default function InfoScreen() {
             setGlass("More details...");
           }
         }}
-      >
+      ><View>
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
             { facilityInfo["glass"]!=="Glass is not recyclable at this location" ?
@@ -186,15 +193,16 @@ export default function InfoScreen() {
           </View>
           <Text style = {styles.title}>Glass</Text>
         </View>
-        <Text>{glass}</Text>
-      </TouchableOpacity>
+        <Text style={styles.white}>{glass}</Text>
+      </View></TouchableHighlight>
       
-      {bannedItems.length !== 0 && <TouchableOpacity
+      {bannedItems.length !== 0 && <TouchableHighlight
         style={[
           styles.bannedBox,
-          {borderTopLeftRadius: 8, borderTopRightRadius: 8},
+          {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
           banned === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
+        underlayColor="#d00"
         onPress={() => {
           if (banned === "") {
             setBanned(bannedItems.map( (item) => <BannedItem words={item} key={item}/> ));
@@ -202,44 +210,41 @@ export default function InfoScreen() {
             setBanned("");
           }
         }}
-      >
+      ><View>
         <View style={styles.infoLabel}>
           <View style={{paddingRight: 5}}>
             <AntDesign name="closecircleo" size={24} color="black"/>
           </View>
           <Text style={styles.title}>Banned Items</Text>
         </View>
-        {banned === "" && <Text>More details...</Text>}
-      </TouchableOpacity>}
+        {banned === "" && <Text style={styles.white}>More details...</Text>}
+      </View></TouchableHighlight>}
       {banned !== "" ? banned : <View></View>}
     </ScrollView>
   );
 }
 
   const styles = StyleSheet.create({
+    headerBox: {
+      backgroundColor: "#2d61fc",
+      paddingBottom: 16,
+    },
     infoBox: {
       margin: 20,
-      borderColor: 'gray',
-      borderWidth: 0.5,
+      borderColor: "gray",
+      borderWidth: 1.3,
       borderRadius: 8,
       paddingHorizontal: 8,
       paddingTop: 8,
-      justifyContent: "center",
-      textAlign: "left",
-      borderWidth: 1.3,
-      borderColor: "black",
+
     },
     bannedBox: {
       backgroundColor: "red",
       marginHorizontal: 20,
-      borderColor: 'gray',
-      borderWidth: 0.5,
+      borderColor: 'black',
+      borderWidth: 1.3,
       paddingHorizontal: 8,
       paddingTop: 8,
-      justifyContent: "center",
-      textAlign: "left",
-      borderWidth: 1.3,
-      borderColor: "black",
     },
     infoLabel: {
       display: "flex",
@@ -247,16 +252,22 @@ export default function InfoScreen() {
       alignItems: "center",
     },
     title: {
-      fontSize: 24
+      fontSize: 24,
+      // color: "white",
     },
     pageTitle: {
       fontSize: 30,
-      padding: 10,
+      marginBottom: 10,
       textAlign: "center",
+      color: "white",
     },
     pageSubtitle: {
       fontSize: 20,
       textAlign: "center",
-    }
+      color: "white",
+    },
+    white: {
+      // color: "white",
+    },
   } 
 )
