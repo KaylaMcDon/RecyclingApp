@@ -9,7 +9,9 @@ import Settings from './components/Settings';
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
+
 export default function App() {
+  
   function Information() {
     return (
       <Tab.Navigator screenOptions={{

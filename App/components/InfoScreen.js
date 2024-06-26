@@ -4,9 +4,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { cityData, countyData, recyclingData } from "../data.json"
 import { useRoute } from "@react-navigation/native";
+import GLOBAL from './global.js'
 
 export default function InfoScreen({ navigation }) {
   const route = useRoute();
+
 
   const getFacilityInfo = function(divType, divName) {
     let divData;
@@ -74,6 +76,8 @@ export default function InfoScreen({ navigation }) {
     </View>);
   }
 
+
+  GLOBAL.allowGlass = divData;
   const [plastic, setPlastic] = useState("More details...");
   const [metal, setMetal] = useState("More details...");
   const [paper, setPaper] = useState("More details...");
