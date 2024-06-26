@@ -14,7 +14,7 @@ export default function AddressSearch() {
 
   function displayPredictions(predictions) {
     if (predictions.length === 0) {
-      return;
+      return <View></View>;
     }
     let toShow = [];
     for (let place of predictions) {
@@ -57,7 +57,7 @@ export default function AddressSearch() {
               setResults(predictions.predictions);
             }
             else {
-              setResults("ERROR: " + predictions.status);
+              setResults([]);
             }
           }
         }}
