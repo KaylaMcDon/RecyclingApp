@@ -4,21 +4,23 @@ import { NavigationContainer } from "@react-navigation/native"
 //Add the screens
 import Location from './components/Location';
 import InfoScreen from './components/InfoScreen';
-import AIScreen from './App/components/AIScreen'
+import AIScreen from './components/AIScreen'
 //Icons for tab navigation
 
 
 //import { Feather } from '@expo/vector-icons';
-
-
-import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
       <NavigationContainer>
-          <Tab.Navigator initialRouteName='AIScreen'>
+          <Tab.Navigator screenOptions={{
+              headerStyle: { elevation: 0, backgroundColor: "#2d61fc", },
+              headerTitleAlign: "center",
+              headerTintColor: "white",
+              cardStyle: { backgroundColor: '#fff' }
+            }}>
               <Tab.Screen
                   name="Info"
                   component={InfoScreen}
@@ -35,12 +37,3 @@ export default function App() {
       </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
