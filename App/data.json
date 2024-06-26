@@ -2626,7 +2626,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Lincoln County Recycling", "url": "https://www.lincolncountync.gov/2092/Recycling"}
       ]
     },
     {
@@ -2653,7 +2653,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Dual stream drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Union County Recycling", "url": "https://www.unioncountync.gov/government/departments-r-z/waste-and-recycling"}
       ]
     },
     {
@@ -2703,7 +2703,8 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Iredell County Recycling", "url": "https://www.iredellcountync.gov/348/Recycling"},
+        {"title": "List of Accepted Items", "url": "https://www.iredellcountync.gov/350/Accepted-Recyclables"}
       ]
     },
     {
@@ -2712,7 +2713,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Single stream drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Robeson County Recycling", "url": "https://www.robesoncountysw.org/index.php/conservation"}
       ]
     },
     {
@@ -2834,7 +2835,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Mitchell County Recycling Center", "url": "https://mitchellcountyconservation.com/recycling-center/"}
       ]
     },
     {
@@ -2891,7 +2892,8 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "List of Collection Centers", "url": "https://www.madisoncountync.gov/collection-centers.html"},
+        {"title": "List of Recyclable Items", "url": "https://www.madisoncountync.gov/uploads/5/9/7/0/59701963/recycle__1_.png"}
       ]
     },
     {
@@ -2918,7 +2920,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Macon County Recycling", "url": "https://maconnc.org/solid-waste-recycling.html"}
       ]
     },
     {
@@ -2984,7 +2986,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Hoke County Transfer Station", "url": "https://www.hokecounty.net/207/Recycling"}
       ]
     },
     {
@@ -3011,7 +3013,8 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "List of Recycling Locations", "url": "https://www.co.surry.nc.us/departments/(k_through_z)/public_works/landfill_and_convenience_center_locations.php"},
+        {"title": "List of Accepted Items", "url": "https://www.co.surry.nc.us/departments/(k_through_z)/public_works/recycling.php"}
       ]
     },
     {
@@ -3038,7 +3041,8 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "List of Recycling Locations", "url": "https://www.scotlandcounty.org/436/Recycling-Locations"},
+        {"title": "List of Accepted Items", "url": "https://www.scotlandcounty.org/422/What-Can-Be-Recycled"}
       ]
     },
     {
@@ -3047,7 +3051,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Single stream drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Watauga County Recycling", "url": "https://www.wataugacounty.org/app_pages/dept/sanitation/home.aspx"}
       ]
     },
     {
@@ -3074,7 +3078,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Rowan County Recycling", "url": "https://www.rowancountync.gov/533/Recycling"}
       ]
     },
     {
@@ -3113,7 +3117,8 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Solid Waste Dept.", "url": "https://www.transylvaniacounty.org/departments/solid-waste"},
+        {"title": "List of Accepted Items", "url": "https://www.transylvaniacounty.org/sites/default/files/departments/Solid%20Waste/Docs/Transylvania%20Co%20-%20Solid%20Waste%20All%20Accepted%20List.pdf"}
       ]
     },
     {
@@ -3176,7 +3181,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Wayne County Recycling", "url": "https://www.waynegov.com/404/Recycling"}
       ]
     },
     {
@@ -3227,7 +3232,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Polk County Transfer Station", "url": "https://www.polknc.gov/solid_waste.php"}
       ]
     },
     {
@@ -3264,7 +3269,7 @@
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
       "externalInfo": [
-        {"title": "", "url": ""}
+        {"title": "Yancey County Public Works Dept.", "url": "https://yanceycountync.gov/departments/public-works"}
       ]
     },
     {
