@@ -12,6 +12,7 @@ export default function AIScreen() {
     
     //AI
     var imageTensor = "temp"
+    const [isRecyclable, setIsRecyclable] = useState("")
     const [AIPrediction, setAIPrediction] = useState("Take a picture to recieve an AI prediction");
     const modelJSON = require("../GraphRecyclingModel/model.json")
     const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
@@ -42,7 +43,16 @@ export default function AIScreen() {
             const highestPredictionNum = Math.max(...roundedArray)
             const numIndex = roundedArray.indexOf(highestPredictionNum)
             const finalMaterial = materialArray[numIndex]
-            setAIPrediction("The AI detects it as: "+finalMaterial+" with a strength of: "+highestPredictionNum*100+"%")
+            setAIPrediction("The AI detects it as: "+finalMaterial+" with a strength of: "+highestPredictionNum*100+"%.")
+            //possible results ['', '', 'Glass', 'Organic Waste', 'Other Plastics', ', '', 'Textiles', 'Wood']
+            if (finalMaterial == "Carton" || finalMaterial == "Aluminum" || finalMaterial == "Plastic" || finalMaterial == "Paper and Cardboard" || (GLOBAL.allowGlass && finalMaterial == "Glass")) {
+                setIsRecyclable("This item is recyclable at your location! However please note that the AI is not always accurate, and that results that seem wrong probaly are.")
+            } else {
+                setIsRecyclable("This item is not recyclable at your location. However please note that the AI is not always accurate, and that this could be incorrect.")
+            }
+
+            
+
         }
     
     const runPrediction = async () => {
@@ -78,6 +88,7 @@ export default function AIScreen() {
         
         data = await camera.takePictureAsync();
         setAIPrediction("The AI is processing (this may take a minute)")
+        setIsRecyclable("")
 
         const manipResult = await manipulateAsync(
             data["uri"],
@@ -104,7 +115,7 @@ export default function AIScreen() {
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity onPress={pictureTaker} style={styles.button}>
                         <Text style={styles.text}>Take Pic</Text>
-                        <Text>{AIPrediction}</Text>
+                        <Text>{AIPrediction+isRecyclable}</Text>
                     </TouchableOpacity>
                 </View>
             </CameraView>
