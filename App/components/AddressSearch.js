@@ -23,6 +23,7 @@ export default function AddressSearch() {
       }
       toShow.push(
         <TouchableHighlight 
+          key={place.place_id}
           style={styles.wordBox}
           activeOpacity={1}
           underlayColor="#DDDDDD"

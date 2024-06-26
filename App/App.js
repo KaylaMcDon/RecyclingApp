@@ -27,7 +27,7 @@ export default function App() {
           component={InfoScreen}
         />
         <Tab.Screen
-          name="AIScreen"
+          name="Analyze Item"
           component={AIScreen}
         />
         <Tab.Screen
@@ -41,9 +41,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-        headerStyle: { elevation: 0, backgroundColor: "#2d61fc", },
-        headerTitleAlign: "center",
-        headerTintColor: "white",
+        headerShown: false,
         cardStyle: { backgroundColor: '#fff' }
       }}>
         <Stack.Screen
