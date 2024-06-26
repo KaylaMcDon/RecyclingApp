@@ -22,12 +22,12 @@ export default function App() {
               cardStyle: { backgroundColor: '#fff' }
             }}>
               <Tab.Screen
-                  name="Info"
-                  component={InfoScreen}
-              />
-              <Tab.Screen
                   name="Select Location"
                   component={Location}
+              />
+              <Tab.Screen
+                  name="Info"
+                  component={InfoScreen}
               />
               <Tab.Screen
                   name="AIScreen"

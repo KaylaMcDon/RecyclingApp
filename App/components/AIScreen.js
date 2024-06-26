@@ -12,7 +12,7 @@ export default function AIScreen() {
     //AI
     var imageTensor = "temp"
     const [AIPrediction, setAIPrediction] = useState("Take a picture to recieve an AI prediction");
-    const modelJSON = require("../../GraphRecyclingModel/model.json")
+    const modelJSON = require("../GraphRecyclingModel/model.json")
     const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
     
     const loadModel = async () => {
