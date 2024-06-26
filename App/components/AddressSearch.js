@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableHighlight } from "react-native";
-import { TextInput } from 'react-native-gesture-handler';
+import { TextInput } from 'react-native';
 
 export default function AddressSearch() {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
 
   async function getPredictions(input) {
-    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/autocomplete/" + "NC " + input));
+    const response = await fetch(encodeURI("https://recyclingappserver.onrender.com/maps-api/autocomplete/" + "NC " + input));
     const predictions = await response.json();
     return predictions;
   }

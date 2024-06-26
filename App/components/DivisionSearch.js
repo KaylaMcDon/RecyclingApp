@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, View, } from "react-native";
 import { Dropdown } from 'react-native-element-dropdown';
-import { countyNames, cityNames } from "../data";
+import { countyNames, cityNames } from "../data.json";
 
 export default function DivisionSearch() {
   const [divOptValue, setDivOptValue] = useState(reqDiv);

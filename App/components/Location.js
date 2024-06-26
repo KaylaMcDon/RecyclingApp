@@ -47,7 +47,7 @@ export default function Location({ navigation }) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
                 (async function() {
-                  const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
+                  const response = await fetch(encodeURI("https://recyclingappserver.onrender.com/maps-api/lookup/" + reqPlaceId))
                     .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
                   const results = await response.json();
                   if (results.status === "OK") { 
@@ -68,7 +68,7 @@ export default function Location({ navigation }) {
                   if (pos === null) {
                     pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setErrorMessage(`Error getting position: ${error}`)});
                   }
-                  const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
+                  const response = await fetch(encodeURI(`https://recyclingappserver.onrender.com/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
                     .catch((error) => {setErrorMessage(`Error getting local region: please check your internet connection and try again.\n${error}`)});
                   const results = await response.json();
                   if (results.status === "OK") {
