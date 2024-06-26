@@ -54,6 +54,7 @@ export default function App() {
               headerTintColor: "white",
               cardStyle: { backgroundColor: '#fff' }
             }}>
+<<<<<<< HEAD
                 <Stack.Screen
                   name="Select Location"
                   component={Location}
@@ -63,6 +64,21 @@ export default function App() {
                   component={FullApp}
                 />
           </Stack.Navigator>
+=======
+              <Tab.Screen
+                  name="Select Location"
+                  component={Location}
+              />
+              <Tab.Screen
+                  name="Info"
+                  component={InfoScreen}
+              />
+              <Tab.Screen
+                  name="AIScreen"
+                  component={AIScreen}
+              />
+          </Tab.Navigator>
+>>>>>>> 50ac0fa42b7c45d7cd97ce1429d2a914ddb66bd1
       </NavigationContainer>
   )
 }
