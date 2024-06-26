@@ -75,8 +75,7 @@ export default function AIScreen() {
     }
 
     const pictureTaker = async () => {
-        console.log(GLOBAL.allowGlass)
-        /*
+        
         data = await camera.takePictureAsync();
         setAIPrediction("The AI is processing (this may take a minute)")
 
@@ -96,7 +95,6 @@ export default function AIScreen() {
         const resized = tf.cast(decodedJpeg, 'float32');
         imageTensor = tf.tensor4d(Array.from(resized.dataSync()),[1,256,256,3])
         predictionFunction()
-    */
     }
     
 
