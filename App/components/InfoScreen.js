@@ -8,10 +8,7 @@ import { useRoute } from "@react-navigation/native";
 export default function InfoScreen({ navigation }) {
   const route = useRoute();
 
-  console.log(route.params)
-
   const getFacilityInfo = function(divType, divName) {
-    console.log(divType, divName)
     let facilityInfo = null;
     let divData;
     if (divType === "county") {
@@ -19,7 +16,6 @@ export default function InfoScreen({ navigation }) {
     } else {
       divData = cityData.find(x => x.name === divName);
     };
-    console.log(divData)
     let facilityName = divData.facilityName;
     if (facilityName.indexOf(" ") === -1) {
       facilityInfo = recyclingData.find(x => x.name === facilityName);
