@@ -25,7 +25,7 @@ export default function App() {
           component={InfoScreen}
         />
         <Tab.Screen
-          name="AIScreen"
+          name="Analyze Item"
           component={AIScreen}
         />
         <Tab.Screen
