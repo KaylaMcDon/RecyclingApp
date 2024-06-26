@@ -14,7 +14,7 @@ export default function Settings() {
             banned === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
         underlayColor="#d00">
-            <Text style={styles.title}>Banned Items</Text>
+            <Text style={styles.title}>FAQs</Text>
         </TouchableHighlight>
     )
 }

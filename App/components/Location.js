@@ -4,6 +4,7 @@ import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
+
 export default function Location({ navigation }) {
   function getRegionFromAddress(results) {
     const address = results.results[0];
@@ -39,7 +40,7 @@ export default function Location({ navigation }) {
                 reqDivType = reqDiv;
                 if (reqDiv === "city") {reqDivName = reqCity;}
                 else if (reqDiv === "county") {reqDivName = reqCounty;}
-                navigation.navigate("Info");
+                navigation.navigate("FullApp", { screen: 'Info' });
               }
               break;
             case "address":
@@ -52,7 +53,7 @@ export default function Location({ navigation }) {
                   const results = await response.json();
                   if (results.status === "OK") { 
                     [reqDivType, reqDivName] = getRegionFromAddress(results);
-                    navigation.navigate("Info");
+                    navigation.navigate("FullApp", { screen: 'Info' });
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`);
                   }
@@ -74,7 +75,7 @@ export default function Location({ navigation }) {
                   if (results.status === "OK") {
                     [reqDivType, reqDivName] = getRegionFromAddress(results);
                     setErrorMessage("");
-                    navigation.navigate("Info");
+                    navigation.navigate("FullApp", { screen: 'Info' });
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`)
                   }
