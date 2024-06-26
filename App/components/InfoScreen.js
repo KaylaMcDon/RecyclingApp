@@ -4,46 +4,41 @@ import { AntDesign } from '@expo/vector-icons';
 import { cityData, countyData, recyclingData } from "../data.json"
 import { useRoute } from "@react-navigation/native";
 
-
 export default function InfoScreen({ navigation }) {
   const route = useRoute();
 
-  console.log(route.params)
-
   const getFacilityInfo = function(divType, divName) {
-    console.log(divType, divName)
-    let facilityInfo = null;
     let divData;
     if (divType === "county") {
       divData = countyData.find(x => x.name === divName);
     } else {
       divData = cityData.find(x => x.name === divName);
     };
-    console.log(divData)
-    let facilityName = divData.facilityName;
-    if (facilityName.indexOf(" ") === -1) {
-      facilityInfo = recyclingData.find(x => x.name === facilityName);
-    } else if (facilityName.indexOf("Sonoco") >= 0) {
+
+    let facilityInfo;
+    if (divData.facilityName.indexOf(" ") === -1) {
+      facilityInfo = recyclingData.find(x => x.name === divData.facilityName);
+    } else if (divData.facilityName.indexOf("Sonoco") >= 0) {
       facilityInfo = recyclingData[11];
-    } else if (facilityName.indexOf("GFL") >= 0) {
+    } else if (divData.facilityName.indexOf("GFL") >= 0) {
       facilityInfo = recyclingData[2];
-    } else if (facilityName.indexOf("High") >= 0) {
+    } else if (divData.facilityName.indexOf("High") >= 0) {
       facilityInfo = recyclingData[3];
-    } else if (facilityName.indexOf("Meck") >= 0) {
+    } else if (divData.facilityName.indexOf("Meck") >= 0) {
       facilityInfo = recyclingData[4];
-    } else if (facilityName.indexOf("North") >= 0) {
+    } else if (divData.facilityName.indexOf("North") >= 0) {
       facilityInfo = recyclingData[5];
-    } else if (facilityName.indexOf("Conover") >= 0) {
+    } else if (divData.facilityName.indexOf("Conover") >= 0) {
       facilityInfo = recyclingData[8];
-    } else if (facilityName.indexOf("Greensboro") >= 0) {
+    } else if (divData.facilityName.indexOf("Greensboro") >= 0) {
       facilityInfo = recyclingData[9];
-    } else if (facilityName.indexOf("Mooresville") >= 0) {
+    } else if (divData.facilityName.indexOf("Mooresville") >= 0) {
       facilityInfo = recyclingData[10];
-    } else if (facilityName.indexOf("TRC") >= 0) {
+    } else if (divData.facilityName.indexOf("TRC") >= 0) {
       facilityInfo = recyclingData[12];
-    } else if (facilityName.indexOf("Waste") >= 0) {
+    } else if (divData.facilityName.indexOf("Waste") >= 0) {
       facilityInfo = recyclingData[13];
-    } else if (facilityName === "No recycling program") {
+    } else if (divData.facilityName === "No recycling program") {
       [facilityInfo, divData] = getFacilityInfo("county", divData.surroundingCounty);
     } else {
       return [null, divData];
@@ -288,7 +283,6 @@ export default function InfoScreen({ navigation }) {
     },
     title: {
       fontSize: 24,
-      // color: "white",
     },
     pageTitle: {
       fontSize: 30,

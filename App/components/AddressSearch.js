@@ -7,16 +7,14 @@ export default function AddressSearch() {
   const [results, setResults] = useState([]);
 
   async function getPredictions(input) {
-    console.log("sending", input);
     const response = await fetch(encodeURI("https://recyclingappserver.onrender.com/maps-api/autocomplete/" + "NC " + input));
-    console.log("response got");
     const predictions = await response.json();
     return predictions;
   }
 
   function displayPredictions(predictions) {
     if (predictions.length === 0) {
-      return;
+      return <View></View>;
     }
     let toShow = [];
     for (let place of predictions) {
@@ -59,7 +57,7 @@ export default function AddressSearch() {
               setResults(predictions.predictions);
             }
             else {
-              setResults("ERROR: " + predictions.status);
+              setResults([]);
             }
           }
         }}

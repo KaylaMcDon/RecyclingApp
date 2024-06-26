@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight, Platform, } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, } from "react-native";
 import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
@@ -7,7 +7,6 @@ import AddressSearch, { reqPlaceId } from "./AddressSearch";
 export default function Location({ navigation }) {
   function getRegionFromAddress(results) {
     const address = results.results[0];
-
     const localityComponent = address.address_components.find(function(component) {
       return component.types.includes("locality");
     });
