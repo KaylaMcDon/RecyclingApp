@@ -232,6 +232,7 @@ export default function InfoScreen({ navigation }) {
         {banned === "" && <Text style={styles.white}>More details...</Text>}
       </View></TouchableHighlight>}
       {banned !== "" ? banned : <View></View>}
+      {banned !== "" ? <View style={[styles.bannedBox, {borderBottomLeftRadius: 8, borderBottomRightRadius: 8, height: 25} ]}></View> : <View></View>}
 
       {"externalInfo" in divData && <View>
         <View style={styles.sectionLabel}>

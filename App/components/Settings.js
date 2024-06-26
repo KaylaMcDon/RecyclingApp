@@ -35,8 +35,8 @@ export default function Settings() {
         <TouchableHighlight
         style={[
             styles.box,
-            {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, }
-            //,banned === "" ? { borderRadius: 8 } : { padding: 8 }
+            {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
+            Questions === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
         onPress={() => {
           if (Questions === "") {
@@ -46,7 +46,10 @@ export default function Settings() {
           }
         }}
         >
+          <View>
             <Text style={styles.title}>FAQs</Text>
+            {Questions === "" && <Text style={styles.white}>More details...</Text>}
+          </View>
         </TouchableHighlight>
         {Questions !== "" ? Questions : <View></View>}
         {Questions !== "" ? <View style={[styles.box, {borderBottomLeftRadius: 8, borderBottomRightRadius: 8, height: 25} ]}></View> : <View></View>}
