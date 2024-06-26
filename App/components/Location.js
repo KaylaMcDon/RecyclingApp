@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight, } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, SafeAreaView } from "react-native";
 import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
@@ -107,33 +107,41 @@ export default function Location({ navigation }) {
   }
 
   return (
-    <View>
-      <View style={styles.container}>
-        <GoButton searchMethod="location"/>
-      </View>
+    <View style={{flex: 1, backgroundColor: "#2d61fc"}}>
+      <SafeAreaView />
+      <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+        <View style={[styles.header, {marginTop: 0}]}>
+          <Text style={styles.headerText}>Select Location</Text>
+        </View>
+        <View style={styles.container}>
+          <GoButton searchMethod="location"/>
+        </View>
 
-      <View style={styles.optionLabel}>
-        <Text style={styles.text}>Search by Address</Text>
-      </View>
-      <View style={styles.container}>
-        <AddressSearch/>
-        <GoButton searchMethod="address"/>
-      </View>
+        <View style={styles.optionLabel}>
+          <Text style={styles.text}>Search by Address</Text>
+        </View>
+        <View style={styles.container}>
+          <AddressSearch/>
+          <GoButton searchMethod="address"/>
+        </View>
 
-      <View style={styles.optionLabel}>
-        <Text style={styles.text}>Search by City/County</Text>
-      </View>
-      <View style={styles.container}>
-        <DivisionSearch/>
-        <GoButton searchMethod="division"/>
-      </View>
+        <View style={styles.optionLabel}>
+          <Text style={styles.text}>Search by City/County</Text>
+        </View>
+        <View style={styles.container}>
+          <DivisionSearch/>
+          <GoButton searchMethod="division"/>
+        </View>
+      </SafeAreaView>
     </View>
   );
 }
 
-
-
 const styles = StyleSheet.create({
+  header: {
+    backgroundColor: "#2d61fc",
+    height: 100,
+  },
   goButton: {
     marginTop: 20,
     padding: 10,
@@ -147,6 +155,12 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     padding: 10,
     backgroundColor: "#2d61fc",
+  },
+  headerText: {
+    paddingTop: 30,
+    fontSize: 30,
+    textAlign: "center",
+    color: "white",
   },
   text: {
     textAlign: "center",
