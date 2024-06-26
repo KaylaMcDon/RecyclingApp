@@ -1,33 +1,37 @@
 //Added for stack navigation
-import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native"
 //Add the screens
 import Location from './components/Location';
 import InfoScreen from './components/InfoScreen';
 import AIScreen from './components/AIScreen'
+//Icons for tab navigation
+
+
+//import { Feather } from '@expo/vector-icons';
 
 
 import { StyleSheet } from 'react-native';
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
       <NavigationContainer>
-          <Stack.Navigator initialRouteName='AIScreen'>
-              <Stack.Screen
+          <Tab.Navigator initialRouteName='AIScreen'>
+              <Tab.Screen
                   name="Info"
                   component={InfoScreen}
               />
-              <Stack.Screen
+              <Tab.Screen
                   name="Select Location"
                   component={Location}
               />
-              <Stack.Screen
+              <Tab.Screen
                   name="AIScreen"
                   component={AIScreen}
               />
-          </Stack.Navigator>
+          </Tab.Navigator>
       </NavigationContainer>
   );
 }

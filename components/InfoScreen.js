@@ -1,10 +1,21 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Button } from "react-native";
 import { countyData, cityData, recyclingData } from "../data";
 import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
 
-export default function InfoScreen() {
+export default function InfoScreen({ navigation }) {
+  //Gives the user an error message when attempting to nabigate to this screen without selecting a location
+  if (reqDivName == null) {
+    return(
+      <View>
+        <Text>This screen requires you to have selected a location already</Text>
+        <Button onPress={navigation.navigate("Select Location")} title="Go to location screen" />
+      </View>
+    )
+  }
+  
+  
   //Takes the name of the facility from the Location page and determines which Facility object it is in data.js.
   let FacilityName = "";
   let FacilityObject = {};
