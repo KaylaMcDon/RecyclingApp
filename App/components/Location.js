@@ -4,7 +4,6 @@ import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
 
-
 export default function Location({ navigation }) {
   function getRegionFromAddress(results) {
     const address = results.results[0];
@@ -40,7 +39,10 @@ export default function Location({ navigation }) {
                 reqDivType = reqDiv;
                 if (reqDiv === "city") {reqDivName = reqCity;}
                 else if (reqDiv === "county") {reqDivName = reqCounty;}
-                navigation.navigate("FullApp", { screen: 'Info' });
+                navigation.navigate("FullApp", { screen: 'Info' ,
+                  params: {
+                      reqDivType: reqDivType, reqDivName: reqDivName}
+                  }) 
               }
               break;
             case "address":
@@ -53,7 +55,7 @@ export default function Location({ navigation }) {
                   const results = await response.json();
                   if (results.status === "OK") { 
                     [reqDivType, reqDivName] = getRegionFromAddress(results);
-                    navigation.navigate("FullApp", { screen: 'Info' });
+                    navigation.navigate("FullApp", { screen: 'Info' , reqDivType: reqDivType, reqDivName: reqDivName});
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`);
                   }
@@ -75,7 +77,7 @@ export default function Location({ navigation }) {
                   if (results.status === "OK") {
                     [reqDivType, reqDivName] = getRegionFromAddress(results);
                     setErrorMessage("");
-                    navigation.navigate("FullApp", { screen: 'Info' });
+                    navigation.navigate("FullApp", { screen: 'Info' , reqDivType: reqDivType, reqDivName: reqDivName});
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`)
                   }

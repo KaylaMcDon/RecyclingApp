@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, Linking, } from "react-native";
-import { reqDivType, reqDivName } from "./Location";
 import { AntDesign } from '@expo/vector-icons';
+import { cityData, countyData, recyclingData } from "../data.json"
+import { useRoute } from "@react-navigation/native";
 
-import data from "../data.json";
-const cityData = data.cityData;
-const countyData = data.countyData;
-const recyclingData = data.recyclingData;
 
-export default function InfoScreen() {
+export default function InfoScreen({ navigation }) {
+  const route = useRoute();
+
+  console.log(route.params)
+
   const getFacilityInfo = function(divType, divName) {
+    console.log(divType, divName)
     let facilityInfo = null;
     let divData;
     if (divType === "county") {
@@ -17,7 +19,7 @@ export default function InfoScreen() {
     } else {
       divData = cityData.find(x => x.name === divName);
     };
-
+    console.log(divData)
     let facilityName = divData.facilityName;
     if (facilityName.indexOf(" ") === -1) {
       facilityInfo = recyclingData.find(x => x.name === facilityName);
@@ -49,13 +51,13 @@ export default function InfoScreen() {
     return [facilityInfo, divData];
   }
   
-  const [facilityInfo, divData] = getFacilityInfo(reqDivType, reqDivName);
+  const [facilityInfo, divData] = getFacilityInfo(route.params.reqDivType, route.params.reqDivName);
   if (facilityInfo === null) {
     return (<View>
       <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
-          {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
-          : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          {route.params.reqDivType === "city" ? <Text style={styles.white}>City of {route.params.reqDivName}</Text>
+          : <Text style={styles.white}>{route.params.reqDivName[0] + route.params.reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
       </View>
       <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
@@ -119,8 +121,8 @@ export default function InfoScreen() {
     <ScrollView>
       <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
         <Text style={styles.pageTitle}>
-          {reqDivType === "city" ? <Text style={styles.white}>City of {reqDivName}</Text>
-            : <Text style={styles.white}>{reqDivName[0] + reqDivName.toLowerCase().slice(1)} County</Text>}
+          {route.params.reqDivType === "city" ? <Text style={styles.white}>City of {route.params.reqDivName}</Text>
+            : <Text style={styles.white}>{route.params.reqDivName[0] + route.params.reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
         <Text style={styles.pageSubtitle}>Recycling Facility: {divData.facilityName}</Text>
       </View>
