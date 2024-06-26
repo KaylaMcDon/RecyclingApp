@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight, SafeAreaView } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
 import AddressSearch, { reqPlaceId } from "./AddressSearch";
@@ -106,10 +107,12 @@ export default function Location({ navigation }) {
     </View>);
   }
 
-  return (
-    <View style={{flex: 1, backgroundColor: "#2d61fc"}}>
-      <SafeAreaView />
-      <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+  return (<>
+    <SafeAreaView
+      style={{backgroundColor: "#2d61fc", flex: 1}}
+      edges={["top"]}
+    >
+      <View style={{backgroundColor: "white", flexGrow: 1}}>
         <View style={[styles.header, {marginTop: 0}]}>
           <Text style={styles.headerText}>Select Location</Text>
         </View>
@@ -132,9 +135,9 @@ export default function Location({ navigation }) {
           <DivisionSearch/>
           <GoButton searchMethod="division"/>
         </View>
-      </SafeAreaView>
-    </View>
-  );
+      </View>
+    </SafeAreaView>
+  </>);
 }
 
 const styles = StyleSheet.create({
