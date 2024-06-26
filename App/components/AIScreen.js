@@ -5,6 +5,7 @@ import { Button, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { manipulateAsync } from 'expo-image-manipulator';
 import { useState } from 'react';
 import "@tensorflow/tfjs-react-native/dist/platform_react_native"
+import GLOBAL from './global.js'
 
 export default function AIScreen() {
     
@@ -19,7 +20,6 @@ export default function AIScreen() {
 
         const model = await tf
         .loadGraphModel(bundleResourceIO(modelJSON, modelWeights))
-        .catch((e) => {console.log(e)})
         return(model);
     };
 
@@ -33,26 +33,16 @@ export default function AIScreen() {
 
     function predictionFunction() {
         const predict = async (model) => {  
-            try {
-                const prediction = model.predict(imageTensor);
-                const predictionArray = prediction.arraySync();
+            const prediction = model.predict(imageTensor);
+            const predictionArray = prediction.arraySync();
 
-                console.log("predictionarray", predictionArray)
-                roundedArray = roundArray(predictionArray[0])
-                console.log("rounded array: ", roundedArray)
+            roundedArray = roundArray(predictionArray[0])
 
-                const materialArray = ['Aluminium', 'Carton', 'Glass', 'Organic Waste', 'Other Plastics', 'Paper and Cardboard', 'Plastic', 'Textiles', 'Wood']
-                const highestPredictionNum = Math.max(...roundedArray)
-                console.log("highest Num: ", highestPredictionNum)
-                const numIndex = roundedArray.indexOf(highestPredictionNum)
-                console.log("num index: ", numIndex)
-                const finalMaterial = materialArray[numIndex]
-                console.log("final material: ", finalMaterial)
-                setAIPrediction("The AI detects it as: "+finalMaterial+" with a strength of: "+highestPredictionNum*100+"%")
-                
-            } catch(error) {
-                console.log("error", error);
-            }
+            const materialArray = ['Aluminium', 'Carton', 'Glass', 'Organic Waste', 'Other Plastics', 'Paper and Cardboard', 'Plastic', 'Textiles', 'Wood']
+            const highestPredictionNum = Math.max(...roundedArray)
+            const numIndex = roundedArray.indexOf(highestPredictionNum)
+            const finalMaterial = materialArray[numIndex]
+            setAIPrediction("The AI detects it as: "+finalMaterial+" with a strength of: "+highestPredictionNum*100+"%")
         }
     
     const runPrediction = async () => {
@@ -66,12 +56,9 @@ export default function AIScreen() {
 
     }
     
-    
     //Camera to get Image
-    
     const [permission, requestPermission] = useCameraPermissions();
     
-
     if (!permission) {
         // Camera permissions are still loading.
         return (<View />);
@@ -88,6 +75,8 @@ export default function AIScreen() {
     }
 
     const pictureTaker = async () => {
+        console.log(GLOBAL.allowGlass)
+        /*
         data = await camera.takePictureAsync();
         setAIPrediction("The AI is processing (this may take a minute)")
 
@@ -107,8 +96,9 @@ export default function AIScreen() {
         const resized = tf.cast(decodedJpeg, 'float32');
         imageTensor = tf.tensor4d(Array.from(resized.dataSync()),[1,256,256,3])
         predictionFunction()
+    */
     }
-
+    
 
     return (
         <View style={styles.container}>
@@ -135,13 +125,13 @@ const styles = StyleSheet.create({
       buttonContainer: {
         flex: 1,
         flexDirection: 'row',
-        margin: 64,
       },
       button: {
         flex: 1,
         alignSelf: 'flex-end',
         alignItems: 'center',
         backgroundColor: 'white',
+        width: 10000,
       },
       text: {
         fontSize: 24,
