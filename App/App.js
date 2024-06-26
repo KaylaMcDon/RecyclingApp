@@ -19,13 +19,11 @@ const Stack = createStackNavigator();
 
 export default function App() {
 
-      function FullApp() {
+      function Information() {
         const route = useRoute();
         return (
           <Tab.Navigator screenOptions={{
-            headerStyle: { elevation: 0, backgroundColor: "#2d61fc", },
-            headerTitleAlign: "center",
-            headerTintColor: "white",
+            headerShown: false,
             cardStyle: { backgroundColor: '#fff' }
           }}>
               <Tab.Screen
@@ -62,8 +60,8 @@ export default function App() {
                   component={Location}
                 />
                 <Stack.Screen
-                  name="FullApp"
-                  component={FullApp}
+                  name="Information"
+                  component={Information}
                 />
           </Stack.Navigator>
       </NavigationContainer>

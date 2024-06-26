@@ -36,13 +36,13 @@ export default function Location({ navigation }) {
               if (reqDiv === null || (reqDiv === "city" && reqCity === null) || (reqDiv === "county" && reqCounty === null)) {
                 setErrorMessage("Please select a city/county");
               } else {
-                reqDivType = reqDiv;
-                if (reqDiv === "city") {reqDivName = reqCity;}
-                else if (reqDiv === "county") {reqDivName = reqCounty;}
-                navigation.navigate("FullApp", { screen: 'Info' ,
+                navigation.navigate("Information", {
+                  screen: 'Info',
                   params: {
-                      reqDivType: reqDivType, reqDivName: reqDivName}
-                  }) 
+                    reqDivType: reqDiv,
+                    reqDivName: reqDiv === "city" ? reqCity : reqCounty
+                  }
+                }) 
               }
               break;
             case "address":
@@ -54,8 +54,11 @@ export default function Location({ navigation }) {
                     .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
                   const results = await response.json();
                   if (results.status === "OK") { 
-                    [reqDivType, reqDivName] = getRegionFromAddress(results);
-                    navigation.navigate("FullApp", { screen: 'Info' , reqDivType: reqDivType, reqDivName: reqDivName});
+                    const [reqDivType, reqDivName] = getRegionFromAddress(results);
+                    navigation.navigate("Information", {
+                      screen: 'Info',
+                      params: { reqDivType: reqDivType, reqDivName: reqDivName }
+                    })
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`);
                   }
@@ -75,9 +78,12 @@ export default function Location({ navigation }) {
                     .catch((error) => {setErrorMessage(`Error getting local region: please check your internet connection and try again.\n${error}`)});
                   const results = await response.json();
                   if (results.status === "OK") {
-                    [reqDivType, reqDivName] = getRegionFromAddress(results);
+                    const [reqDivType, reqDivName] = getRegionFromAddress(results);
                     setErrorMessage("");
-                    navigation.navigate("FullApp", { screen: 'Info' , reqDivType: reqDivType, reqDivName: reqDivName});
+                    navigation.navigate("Information", {
+                      screen: 'Info',
+                      params: { reqDivType: reqDivType, reqDivName: reqDivName }
+                    })
                   } else {
                     setErrorMessage(`Google maps API error: ${error}.`)
                   }
@@ -126,9 +132,7 @@ export default function Location({ navigation }) {
   );
 }
 
-let reqDivType;
-let reqDivName;
-export {reqDivType, reqDivName};
+
 
 const styles = StyleSheet.create({
   goButton: {
