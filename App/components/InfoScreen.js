@@ -258,7 +258,6 @@ export default function InfoScreen({ navigation }) {
     headerBox: {
       backgroundColor: "#2d61fc",
       paddingBottom: 16,
-      height: 100,
     },
     sectionLabel: {
       marginVertical: 10,

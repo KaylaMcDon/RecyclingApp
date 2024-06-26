@@ -140,7 +140,7 @@ export default function Location({ navigation }) {
 const styles = StyleSheet.create({
   header: {
     backgroundColor: "#2d61fc",
-    height: 100,
+    height: 94,
   },
   goButton: {
     marginTop: 20,
