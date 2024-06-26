@@ -3476,7 +3476,10 @@
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
-      "surroundingCounty": "WATAUGA"
+      "surroundingCounty": "WATAUGA",
+      "externalInfo": [
+        {"title": "Beech Mountain Convenience Center", "url": "https://townofbeechmountain.com/convenience-center-recycling/"}
+      ]
     },
     {
       "name": "Belhaven",
@@ -3850,7 +3853,11 @@
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Dual stream drop-off",
-      "surroundingCounty": "GASTON"
+      "surroundingCounty": "GASTON",
+      "externalInfo": [
+        {"title": "Gaston County - Map of Recycling Centers", "url": "https://www.gastongov.com/565/Recycling-Centers"},
+        {"title": "Gaston County - List of Recyclable Items", "url": "https://www.gastongov.com/568/Recycle"}
+      ]
     },
     {
       "name": "Chimney Rock",
@@ -4412,7 +4419,10 @@
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
-      "surroundingCounty": "GASTON"
+      "surroundingCounty": "GASTON",
+      "externalInfo": [
+        {"title": "Gastonia Recycling", "url": "https://gastonianc.gov/recycling.html"}
+      ]
     },
     {
       "name": "Gatesville",
@@ -4599,7 +4609,11 @@
       "facilityName": "Source separated",
       "recyclingType": "Curbside recycling",
       "recyclingCollection": "Curbside curb-sort",
-      "surroundingCounty": "CLAY"
+      "surroundingCounty": "CLAY",
+      "externalInfo": [
+        {"title": "Hayesville Curbside Recycling", "url": "https://www.townofhayesville.com/_files/ugd/6b2cde_44ab1894b7374ced8645c5fc6b3c7c5a.pdf"},
+        {"title": "Clay County Transfer Station", "url": "https://www.claync.us/transfer-station"}
+      ]
     },
     {
       "name": "Hemby Bridge",
@@ -4651,7 +4665,10 @@
       "facilityName": "Source separated",
       "recyclingType": "County-run drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
-      "surroundingCounty": "MACON"
+      "surroundingCounty": "MACON",
+      "externalInfo": [
+        {"title": "Macon County Recycling", "url": "https://maconnc.org/solid-waste-recycling.html"}
+      ]
     },
     {
       "name": "Hildebran",
@@ -5414,7 +5431,10 @@
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
-      "surroundingCounty": "ROWAN"
+      "surroundingCounty": "ROWAN",
+      "externalInfo": [
+        {"title": "Spencer, NC Waste Collection", "url": "https://spencernc.gov/town-government-and-services/waste-collection/"}
+      ]
     },
     {
       "name": "Spencer Mountain",
@@ -6426,7 +6446,11 @@
       "facilityName": "Source separated",
       "recyclingType": "Drop-off recycling",
       "recyclingCollection": "Source-separated drop-off",
-      "surroundingCounty": "DUPLIN"
+      "surroundingCounty": "DUPLIN",
+      "externalInfo": [
+        {"title": "Duplin County Solid Waste and Recycling Dept.", "url": "https://www.duplincountync.com/solid-waste-and-recycling/"},
+        {"title": "List of Collection Sites", "url": "https://www.duplincountync.com/wp-content/uploads/Collection-Sites-2022.pdf"}
+      ]
     },
     {
       "name": "Maiden",
