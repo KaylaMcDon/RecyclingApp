@@ -6,7 +6,7 @@ import { cityData, countyData, recyclingData } from "../data.json"
 import { useRoute } from "@react-navigation/native";
 import GLOBAL from './global.js'
 
-export default function InfoScreen({ navigation }) {
+export default function InfoScreen({ }) {
   const route = useRoute();
 
 
@@ -77,7 +77,9 @@ export default function InfoScreen({ navigation }) {
   }
 
 
-  GLOBAL.allowGlass = divData;
+  GLOBAL.allowGlass = facilityInfo["glass"]!=="Glass is not recyclable at this location";
+  GLOBAL.MRFName = divData.facilityName;
+  
   const [plastic, setPlastic] = useState("More details...");
   const [metal, setMetal] = useState("More details...");
   const [paper, setPaper] = useState("More details...");

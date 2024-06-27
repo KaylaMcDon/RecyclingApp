@@ -1,10 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer, useRoute } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import Location from './components/Location';
 import InfoScreen from './components/InfoScreen';
 import AIScreen from './components/AIScreen'
 import Settings from './components/Settings';
+import PosterScreen from './components/PosterScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -21,6 +22,10 @@ export default function App() {
         <Tab.Screen
           name="Select Location"
           component={Location}
+        />
+        <Tab.Screen
+          name="Poster"
+          component={PosterScreen}
         />
         <Tab.Screen
           name="Info"

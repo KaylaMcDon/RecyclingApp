@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, SafeAreaView, } from "react-native";
+import { View, Text, StyleSheet, TouchableHighlight, SafeAreaView, } from "react-native";
 
 export default function Settings() {
   const questionList = ["How does this app work?", "Where are the recycling symbols/numbers?", "Should I select city or county?"]  
