@@ -1,6 +1,17 @@
 require('dotenv').config();
+const nodemailer = require('nodemailer');
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "ncrecyclingappfeedbackbot@gmail.com",
+    pass: process.env.EMAIL_PASS
+  }
+});
+
 const express = require('express');
 const app = express();
+app.use(express.json());
+
 const port = process.env.PORT || 80;
 
 app.get('/maps-api/autocomplete/:input', async function(req, res) {
@@ -22,6 +33,23 @@ app.get('/maps-api/lookup/:place_id', async function(req, res) {
   const address = await response.json();
   res.set("Access-Control-Allow-Origin", "*");
   res.json(address);
+})
+
+app.post('/feedback', function(req, res) {
+  console.log(req.body);
+  const mailOptions = {
+    from: 'ncrecyclingappfeedbackbot@gmail.com',
+    to: 'ncrecyclingappfeedbackbot@gmail.com',
+    subject: req.body.subject,
+    text: req.body.body
+  };
+  // transporter.sendMail(mailOptions, function(error, info){
+  //   if (error) {
+  //     console.log("Mailing error:", error);
+  //   } else {
+  //     console.log('Email sent: ' + info.response);
+  //   }
+  // });
 })
 
 app.listen(port, () => {

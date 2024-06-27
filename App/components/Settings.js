@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import FeedbackForm from "./FeedbackForm.js";
 
 export default function Settings() {
   const questionList = ["How does this app work?", "Where are the recycling symbols/numbers?", "Should I select city or county?"]  
@@ -9,7 +10,7 @@ export default function Settings() {
 
   const FormatList = ({words}) => {
     const [detailText, setdetailText] = useState("Click to reveal");
-    return (
+    return (<View>
       <TouchableHighlight
         style={styles.box}
         onPress={ () => {
@@ -25,7 +26,7 @@ export default function Settings() {
           <Text style={styles.white}>{detailText}</Text>
         </View>
       </TouchableHighlight>
-    );
+    </View>);
   }
 
   return (
@@ -61,6 +62,10 @@ export default function Settings() {
         </TouchableHighlight>
         {Questions !== "" ? Questions : <View></View>}
         {Questions !== "" ? <View style={[styles.box, {borderBottomLeftRadius: 8, borderBottomRightRadius: 8, height: 25} ]}></View> : <View></View>}
+
+        <View style={{padding: 16}}>
+          <FeedbackForm/>
+        </View>
 
       </ScrollView>
     </SafeAreaView>
