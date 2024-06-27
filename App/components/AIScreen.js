@@ -6,7 +6,7 @@ import { manipulateAsync } from 'expo-image-manipulator';
 import { useState } from 'react';
 import "@tensorflow/tfjs-react-native/dist/platform_react_native"
 import GLOBAL from './global.js'
-
+import { withNavigationFocus } from 'react-navigation';
 
 
 export default function AIScreen() {

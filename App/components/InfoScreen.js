@@ -78,7 +78,6 @@ export default function InfoScreen({ }) {
 
 
   GLOBAL.allowGlass = facilityInfo["glass"]!=="Glass is not recyclable at this location";
-  console.log(facilityInfo)
   GLOBAL.MRFName = facilityInfo.name;
 
   const [plastic, setPlastic] = useState("More details...");

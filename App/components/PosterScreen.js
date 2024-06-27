@@ -5,8 +5,6 @@ import { useIsFocused } from "@react-navigation/native";
 
 export default function PosterScreen({ navigation }) {
     
-
-    console.log(GLOBAL.MRFName)
     const posterDictionary = {
         Curbie: require("../Posters/Curbie.png"),
         ECVC: require("../Posters/ECVC.png"),
