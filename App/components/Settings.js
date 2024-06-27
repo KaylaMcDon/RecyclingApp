@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, Touchable, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-// import GLOBAL from "./global.js";
 
 
 export default function Settings() {  
@@ -111,7 +110,7 @@ export default function Settings() {
                     setIssueTitle("");
                     setIssueBody("");
                     setShowFeedback(false);
-                    fetch(encodeURI(`http://10.50.17.251/feedback/${issueTitle}/${issueBody}`), {
+                    fetch(encodeURI(`https://recyclingappserver.onrender.com/feedback/${issueTitle}/${issueBody}`), {
                       method: 'POST',
                       mode: 'no-cors',
                     });
