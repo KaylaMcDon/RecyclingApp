@@ -52,7 +52,7 @@ export default function InfoScreen({ navigation }) {
   const [facilityInfo, divData] = getFacilityInfo(route.params.reqDivType, route.params.reqDivName);
   if (facilityInfo === null) {
     return (<View>
-      <View style={[styles.headerBox, Platform.OS !== "android" && {paddingTop: 16}]}>
+      <View style={[styles.headerBox, Platform.OS !== "android" && { paddingTop: 16 }]}>
         <Text style={styles.pageTitle}>
           {route.params.reqDivType === "city" ? <Text style={styles.white}>City of {route.params.reqDivName}</Text>
           : <Text style={styles.white}>{route.params.reqDivName[0] + route.params.reqDivName.toLowerCase().slice(1)} County</Text>}
@@ -65,7 +65,7 @@ export default function InfoScreen({ navigation }) {
           <Text style={styles.text}>External Information</Text>
         </View>
         {divData.externalInfo.map( (extLink) => <TouchableHighlight
-          style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d", borderWidth: 0}]}
+          style = {[styles.infoBox, { padding: 8, backgroundColor: "#32b81d", borderWidth: 0 }]}
           underlayColor="#129800"
           onPress={() => {Linking.openURL(extLink.url);}}
         ><View>
@@ -92,7 +92,7 @@ export default function InfoScreen({ navigation }) {
     if (notPresent.length !== 1) {
       return (
         <TouchableHighlight
-          style={[styles.bannedBox, detailText !== "More details..." && {padding: 8}]}
+          style={styles.bannedBox}
           underlayColor="#d00"
           onPress={ () => {
             if (detailText === "More details...") { 
@@ -135,7 +135,7 @@ export default function InfoScreen({ navigation }) {
         </View>
         
         <TouchableHighlight
-          style = {[styles.infoBox, {backgroundColor: "#32b81d"}, plastic !== "More details..." && {padding: 8}]}
+          style = {[styles.infoBox, {backgroundColor: "#32b81d"}]}
           underlayColor="#129800"
           onPress={ () => {
             if (plastic === "More details...") { 
@@ -155,7 +155,7 @@ export default function InfoScreen({ navigation }) {
         </View></TouchableHighlight>
         
         <TouchableHighlight
-          style = {[styles.infoBox, {backgroundColor: "#32b81d"}, metal !== "More details..." && {padding: 8}]}
+          style = {[styles.infoBox, {backgroundColor: "#32b81d"}]}
           underlayColor="#129800"
           onPress={ () => {
             if (metal === "More details...") { 
@@ -175,7 +175,7 @@ export default function InfoScreen({ navigation }) {
         </View></TouchableHighlight>
         
         <TouchableHighlight
-          style = {[styles.infoBox, {backgroundColor: "#32b81d"}, paper !== "More details..." && {padding: 8}]}
+          style = {[styles.infoBox, {backgroundColor: "#32b81d"}]}
           underlayColor="#129800"
           onPress={ () => {
             if (paper === "More details...") { 
@@ -196,7 +196,7 @@ export default function InfoScreen({ navigation }) {
         
         <TouchableHighlight
           style = {[
-            styles.infoBox, glass !== "More details..." && {padding: 8},
+            styles.infoBox,
             facilityInfo["glass"]!=="Glass is not recyclable at this location" ? {backgroundColor: "#32b81d"} : {backgroundColor: "red"},
           ]}
           underlayColor={facilityInfo["glass"]!=="Glass is not recyclable at this location" ? "#129800" : "#d00"}
@@ -223,7 +223,7 @@ export default function InfoScreen({ navigation }) {
           style={[
             styles.bannedBox,
             {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
-            banned === "" ? { borderRadius: 8 } : { padding: 8 }
+            banned === "" && { borderRadius: 8 }
           ]}
           underlayColor="#d00"
           onPress={() => {
@@ -249,7 +249,7 @@ export default function InfoScreen({ navigation }) {
             <Text style={styles.text}>External Information</Text>
           </View>
           {divData.externalInfo.map( (extLink) => <TouchableHighlight
-            style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d", borderWidth: 0}]}
+            style = {[styles.infoBox, { padding: 8, backgroundColor: "#32b81d", borderWidth: 0 }]}
             underlayColor="#129800"
             onPress={() => {Linking.openURL(extLink.url);}}
           ><View>
@@ -274,11 +274,10 @@ export default function InfoScreen({ navigation }) {
     },
     infoBox: {
       margin: 20,
-      borderColor: "gray",
+      borderColor: "black",
       borderWidth: 1.3,
       borderRadius: 8,
-      paddingHorizontal: 8,
-      paddingTop: 8,
+      padding: 8,
 
     },
     bannedBox: {
@@ -286,8 +285,7 @@ export default function InfoScreen({ navigation }) {
       marginHorizontal: 20,
       borderColor: 'black',
       borderWidth: 1.3,
-      paddingHorizontal: 8,
-      paddingTop: 8,
+      padding: 8,
     },
     infoLabel: {
       display: "flex",
