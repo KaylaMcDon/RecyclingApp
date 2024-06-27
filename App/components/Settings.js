@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, Touchable, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-
 export default function Settings() {  
   const [Questions, setQuestions] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
