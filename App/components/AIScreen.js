@@ -3,20 +3,25 @@ import { bundleResourceIO, decodeJpeg } from '@tensorflow/tfjs-react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { Button, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { manipulateAsync } from 'expo-image-manipulator';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import "@tensorflow/tfjs-react-native/dist/platform_react_native"
 import GLOBAL from './global.js'
+import { useFocusEffect } from "@react-navigation/native";
 
 export default function AIScreen() {
     
     
     //AI
+    
     var imageTensor = "temp"
     const [isRecyclable, setIsRecyclable] = useState("")
     const [AIPrediction, setAIPrediction] = useState("Take a picture to recieve an AI prediction");
     const modelJSON = require("../GraphRecyclingModel/model.json")
     const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
     
+    
+    
+
     const loadModel = async () => {
 
         const model = await tf

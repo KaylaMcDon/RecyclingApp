@@ -24,12 +24,12 @@ export default function App() {
           component={Location}
         />
         <Tab.Screen
-          name="Poster"
-          component={PosterScreen}
-        />
-        <Tab.Screen
           name="Info"
           component={InfoScreen}
+        />
+        <Tab.Screen
+          name="Poster"
+          component={PosterScreen}
         />
         <Tab.Screen
           name="Analyze Item"

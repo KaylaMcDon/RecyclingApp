@@ -2,5 +2,5 @@ module.exports = {
     
     allowGlass: null,
 
-    MRFName: null,
+    MRFName: "Curbie",
  };
