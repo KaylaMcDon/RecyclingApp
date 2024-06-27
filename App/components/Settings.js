@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   box: {
-    backgroundColor: "grey",
+    backgroundColor: "white",
     marginHorizontal: 20,
     borderColor: 'black',
     borderWidth: 1.3,
