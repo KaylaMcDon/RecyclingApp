@@ -1,6 +1,4 @@
 module.exports = {
-    
     allowGlass: null,
-
-    MRFName: "Curbie",
+    MRFName: null,
  };
