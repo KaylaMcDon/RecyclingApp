@@ -10,6 +10,7 @@ export default function FeedbackForm() {
     <Text>Report a problem</Text>
     <TextInput
       style={[styles.title]}
+      maxLength={100}
       value={title}
       placeholder="Title..."
       onChangeText={setTitle}
@@ -17,23 +18,19 @@ export default function FeedbackForm() {
     <TextInput
       style={[styles.body]}
       multiline={true}
+      maxLength={600}
       value={body}
-      placeholder="Please describe the issue..."
+      placeholder="Please describe the issue. If possible, include steps to reproduce the issue..."
       onChangeText={setBody}
     />
     <TouchableHighlight
       style={styles.goButton}
+      activeOpacity={1}
+      underlayColor={"#129800"}
       onPress={() => {
-        fetch("http://10.50.17.251/feedback", {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            title: title,
-            body: body
-          })
+        fetch(encodeURI(`http://10.50.17.251/feedback/${title}/${body}`), {
+          method: 'POST',
+          mode: 'no-cors',
         });
       }}
     >
