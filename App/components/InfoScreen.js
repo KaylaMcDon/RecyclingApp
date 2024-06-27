@@ -117,7 +117,7 @@ export default function InfoScreen({ navigation }) {
     }
   }
     
-  return (<>
+  return (
     <SafeAreaView
       style={{backgroundColor: "#2d61fc", flex: 1 }}
       edges={["top"]}
@@ -259,7 +259,7 @@ export default function InfoScreen({ navigation }) {
         </View>}
       </ScrollView>
     </SafeAreaView>
-  </>);
+  );
 }
 
   const styles = StyleSheet.create({

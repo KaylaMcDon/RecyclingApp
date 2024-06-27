@@ -107,7 +107,7 @@ export default function Location({ navigation }) {
     </View>);
   }
 
-  return (<>
+  return (
     <SafeAreaView
       style={{backgroundColor: "#2d61fc", flex: 1}}
       edges={["top"]}
@@ -137,7 +137,7 @@ export default function Location({ navigation }) {
         </View>
       </View>
     </SafeAreaView>
-  </>);
+  );
 }
 
 const styles = StyleSheet.create({

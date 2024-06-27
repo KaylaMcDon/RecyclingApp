@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, SafeAreaView, } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Settings() {
   const questionList = ["How does this app work?", "Where are the recycling symbols/numbers?", "Should I select city or county?"]  
@@ -28,9 +29,14 @@ export default function Settings() {
   }
 
   return (
-    <View style={{flex: 1, backgroundColor: "#2d61fc"}}>
-      <SafeAreaView />
-      <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+    <SafeAreaView
+      style={{ backgroundColor: "#2d61fc", flex: 1 }}
+      edges={["top"]}
+    >
+      <ScrollView
+        contentContainerStyle={{flexGrow: 1}}
+        style={{ backgroundColor: "white" }}
+      >
         <View style={styles.header}>
           <Text style={styles.headerText}>Settings</Text>
         </View>
@@ -55,8 +61,9 @@ export default function Settings() {
         </TouchableHighlight>
         {Questions !== "" ? Questions : <View></View>}
         {Questions !== "" ? <View style={[styles.box, {borderBottomLeftRadius: 8, borderBottomRightRadius: 8, height: 25} ]}></View> : <View></View>}
-      </SafeAreaView>
-    </View>
+
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
