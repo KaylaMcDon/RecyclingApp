@@ -20,6 +20,7 @@ export default function Settings() {
     return (<View>
       <TouchableHighlight
         style={styles.box}
+        underlayColor={"#fff"}
         onPress={ () => {
           if (detailText == "Click to reveal") {
             setdetailText(answerList[questionList.indexOf(words)]);
@@ -54,6 +55,7 @@ export default function Settings() {
             {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
             Questions === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
+        underlayColor={"#fff"}
         onPress={() => {
           if (Questions === "") {
             setQuestions(questionList.map( (item) => <FormatList words={item} key={item}/> ));
@@ -76,6 +78,7 @@ export default function Settings() {
             {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
             showFeedback ? { padding: 8 } : { borderRadius: 8 }
           ]}
+          underlayColor={"#fff"}
           onPress={() => { setShowFeedback(!showFeedback) }}
         >
           <Text style={styles.title}>Report a Problem...</Text>
@@ -142,25 +145,24 @@ const styles = StyleSheet.create({
     color: "white",
   },
   box: {
-    backgroundColor: "white",
+    backgroundColor: "#ddd",
     marginHorizontal: 20,
     borderColor: 'black',
     borderWidth: 1.3,
-    paddingHorizontal: 8,
-    paddingTop: 8,
+    padding: 8,
   },
   title: {
     fontSize: 24,
   },
   titleBox: {
     height: 40,
-    borderWidth: 1,
+    borderWidth: 1.3,
     padding: 10,
     backgroundColor: "aliceblue",
   },
   bodyBox: {
     height: 200,
-    borderWidth: 1,
+    borderWidth: 1.3,
     padding: 10,
     backgroundColor: "aliceblue",
   },
@@ -168,6 +170,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     padding: 10,
     backgroundColor: "aliceblue",
+    borderWidth: 1.3,
     borderRadius: 8,
   },
   goText: {
