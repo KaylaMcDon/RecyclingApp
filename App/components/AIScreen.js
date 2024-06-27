@@ -3,24 +3,29 @@ import { bundleResourceIO, decodeJpeg } from '@tensorflow/tfjs-react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { Button, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { manipulateAsync } from 'expo-image-manipulator';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "@tensorflow/tfjs-react-native/dist/platform_react_native"
 import GLOBAL from './global.js'
-import { withNavigationFocus } from 'react-navigation';
+import { useIsFocused } from "@react-navigation/native"
 
 
 export default function AIScreen() {
     
-    
+
     //AI
-    
     var imageTensor = "temp"
     const [isRecyclable, setIsRecyclable] = useState("")
     const [AIPrediction, setAIPrediction] = useState("Take a picture to recieve an AI prediction");
     const modelJSON = require("../GraphRecyclingModel/model.json")
     const modelWeights = require("../GraphRecyclingModel/group1-shard1of1.bin")
     
-    
+    const isFocused = useIsFocused();
+
+    if ((isFocused == false) && (AIPrediction != "Take a picture to recieve an AI prediction")) {
+        setIsRecyclable("")
+        setAIPrediction("Take a picture to recieve an AI prediction")
+    };
+
     
 
     const loadModel = async () => {
@@ -49,8 +54,9 @@ export default function AIScreen() {
             const highestPredictionNum = Math.max(...roundedArray)
             const numIndex = roundedArray.indexOf(highestPredictionNum)
             const finalMaterial = materialArray[numIndex]
+            
             setAIPrediction("The AI detects it as: "+finalMaterial+" with a strength of: "+highestPredictionNum*100+"%.")
-            //possible results ['', '', 'Glass', 'Organic Waste', 'Other Plastics', ', '', 'Textiles', 'Wood']
+
             if (finalMaterial == "Carton" || finalMaterial == "Aluminum" || finalMaterial == "Plastic" || finalMaterial == "Paper and Cardboard" || (GLOBAL.allowGlass && finalMaterial == "Glass")) {
                 setIsRecyclable("This item is recyclable at your location! However please note that the AI is not always accurate, and that results that seem wrong probaly are.")
             } else {
