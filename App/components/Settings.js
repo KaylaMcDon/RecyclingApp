@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, ScrollView, TouchableHighlight, Platform, Touchable, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+
 export default function Settings() {  
   const [Questions, setQuestions] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
@@ -18,7 +19,7 @@ export default function Settings() {
     return (<View>
       <TouchableHighlight
         style={styles.box}
-        underlayColor={"#fff"}
+        underlayColor={"#ccc"}
         onPress={ () => {
           if (detailText == "Click to reveal") {
             setdetailText(answerList[questionList.indexOf(words)]);
@@ -53,7 +54,7 @@ export default function Settings() {
             {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
             Questions === "" ? { borderRadius: 8 } : { padding: 8 }
         ]}
-        underlayColor={"#fff"}
+        underlayColor={"#ccc"}
         onPress={() => {
           if (Questions === "") {
             setQuestions(questionList.map( (item) => <FormatList words={item} key={item}/> ));
@@ -76,7 +77,7 @@ export default function Settings() {
             {borderTopLeftRadius: 8, borderTopRightRadius: 8, marginTop: 20, },
             showFeedback ? { padding: 8 } : { borderRadius: 8 }
           ]}
-          underlayColor={"#fff"}
+          underlayColor={"#ccc"}
           onPress={() => { setShowFeedback(!showFeedback) }}
         >
           <Text style={styles.title}>Report a Problem...</Text>
@@ -101,7 +102,7 @@ export default function Settings() {
             <TouchableHighlight
               style={styles.goButton}
               activeOpacity={1}
-              underlayColor={"#fff"}
+              underlayColor={"#eee"}
               onPress={() => {
                 if (issueTitle !== "" && issueBody !== "") {
                   if (Date.now() - lastIssueSend > 300000) {
@@ -156,18 +157,18 @@ const styles = StyleSheet.create({
     height: 40,
     borderWidth: 1.3,
     padding: 10,
-    backgroundColor: "aliceblue",
+    backgroundColor: "#fff",
   },
   bodyBox: {
     height: 200,
     borderWidth: 1.3,
     padding: 10,
-    backgroundColor: "aliceblue",
+    backgroundColor: "#fff",
   },
   goButton: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "aliceblue",
+    backgroundColor: "#fff",
     borderWidth: 1.3,
     borderRadius: 8,
   },
