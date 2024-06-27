@@ -3,10 +3,11 @@ import { bundleResourceIO, decodeJpeg } from '@tensorflow/tfjs-react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { Button, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { manipulateAsync } from 'expo-image-manipulator';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import "@tensorflow/tfjs-react-native/dist/platform_react_native"
 import GLOBAL from './global.js'
-import { useFocusEffect } from "@react-navigation/native";
+
+
 
 export default function AIScreen() {
     
