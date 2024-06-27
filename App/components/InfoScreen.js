@@ -58,14 +58,14 @@ export default function InfoScreen({ navigation }) {
           : <Text style={styles.white}>{route.params.reqDivName[0] + route.params.reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
       </View>
-      <Text style = {[styles.infoBox, {backgroundColor: "red"}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
+      <Text style = {[styles.infoBox, styles.text, {backgroundColor: "red", borderWidth: 0}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
 
       {"externalInfo" in divData && <View>
         <View style={styles.sectionLabel}>
           <Text style={styles.text}>External Information</Text>
         </View>
         {divData.externalInfo.map( (extLink) => <TouchableHighlight
-          style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
+          style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d", borderWidth: 0}]}
           underlayColor="#129800"
           onPress={() => {Linking.openURL(extLink.url);}}
         ><View>
@@ -249,7 +249,7 @@ export default function InfoScreen({ navigation }) {
             <Text style={styles.text}>External Information</Text>
           </View>
           {divData.externalInfo.map( (extLink) => <TouchableHighlight
-            style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d"}]}
+            style = {[styles.infoBox, {padding: 8, backgroundColor: "#32b81d", borderWidth: 0}]}
             underlayColor="#129800"
             onPress={() => {Linking.openURL(extLink.url);}}
           ><View>
