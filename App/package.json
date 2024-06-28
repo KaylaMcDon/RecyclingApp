@@ -11,6 +11,7 @@
   "dependencies": {
     "@expo/config-types": "^51.0.1",
     "@expo/metro-runtime": "~3.2.1",
+    "@openspacelabs/react-native-zoomable-view": "^2.1.6",
     "@react-native-masked-view/masked-view": "0.3.1",
     "@react-native/metro-config": "^0.74.84",
     "@react-navigation/bottom-tabs": "^6.5.20",

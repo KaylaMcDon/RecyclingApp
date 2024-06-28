@@ -1,6 +1,7 @@
-import { View, Image, ScrollView} from "react-native";
+import { Image } from "react-native";
 import GLOBAL from './global.js'
 import { useIsFocused } from "@react-navigation/native";
+import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
 
 
 export default function PosterScreen({ navigation }) {
@@ -26,10 +27,12 @@ export default function PosterScreen({ navigation }) {
 
     const finalPoster = posterDictionary[GLOBAL.MRFName]
     return(
-        <View style={{flex: 1, backgroundColor: "darkgreen"}}>
+        <ReactNativeZoomableView style={{flex: 1, backgroundColor: "darkgreen"}} 
+        maxZoom={2}
+        minZoom={1}>
             
                 <Image source={finalPoster} style={{width: "100%", height: "100%", flex: 1, resizeMode: "center"}}/>
             
-        </View>
+        </ReactNativeZoomableView>
     )
 }
