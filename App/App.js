@@ -8,6 +8,9 @@ import Settings from './components/Settings';
 import PosterScreen from './components/PosterScreen';
 import { Feather } from '@expo/vector-icons';
 
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs(true);
+
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 

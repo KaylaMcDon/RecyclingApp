@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableHighlight, } from "react-native";
+import { StyleSheet, View, Text, TouchableHighlight, ScrollView, } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as ExpoLocation from 'expo-location';
 import DivisionSearch, { reqDiv, reqCity, reqCounty } from "./DivisionSearch";
@@ -50,7 +50,7 @@ export default function Location({ navigation }) {
                 setErrorMessage("Please select a valid address/location from the dropdown");
               } else {
                 (async function() {
-                  const response = await fetch(encodeURI("https://recyclingappserver.onrender.com/maps-api/lookup/" + reqPlaceId))
+                  const response = await fetch(encodeURI("http://10.50.17.251/maps-api/lookup/" + reqPlaceId))
                     .catch((error) => {setErrorMessage(`Error looking up address: ${error}.`)});
                   const results = await response.json();
                   if (results.status === "OK") { 
@@ -74,7 +74,7 @@ export default function Location({ navigation }) {
                   if (pos === null) {
                     pos = await ExpoLocation.getCurrentPositionAsync().catch((error) => {setErrorMessage(`Error getting position: ${error}`)});
                   }
-                  const response = await fetch(encodeURI(`https://recyclingappserver.onrender.com/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
+                  const response = await fetch(encodeURI(`http://10.50.17.251/maps-api/geocode/${pos.coords.latitude},${pos.coords.longitude}`))
                     .catch((error) => {setErrorMessage(`Error getting local region: please check your internet connection and try again.\n${error}`)});
                   const results = await response.json();
                   if (results.status === "OK") {
@@ -112,7 +112,7 @@ export default function Location({ navigation }) {
       style={{backgroundColor: "#2d61fc", flex: 1}}
       edges={["top"]}
     >
-      <View style={{backgroundColor: "white", flexGrow: 1}}>
+      <ScrollView style={{backgroundColor: "white", flexGrow: 1}}>
         <View style={[styles.header, {marginTop: 0}]}>
           <Text style={styles.headerText}>Select Location</Text>
         </View>
@@ -135,7 +135,7 @@ export default function Location({ navigation }) {
           <DivisionSearch/>
           <GoButton searchMethod="division"/>
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }

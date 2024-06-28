@@ -110,7 +110,7 @@ export default function Settings() {
                     setIssueTitle("");
                     setIssueBody("");
                     setShowFeedback(false);
-                    fetch(encodeURI(`https://recyclingappserver.onrender.com/feedback/${issueTitle}/${issueBody}`), {
+                    fetch(encodeURI(`http://10.50.17.251/feedback/${issueTitle}/${issueBody}`), {
                       method: 'POST',
                       mode: 'no-cors',
                     });

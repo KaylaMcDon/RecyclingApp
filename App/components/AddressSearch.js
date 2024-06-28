@@ -7,7 +7,7 @@ export default function AddressSearch() {
   const [results, setResults] = useState([]);
 
   async function getPredictions(input) {
-    const response = await fetch(encodeURI("https://recyclingappserver.onrender.com/maps-api/autocomplete/" + "NC " + input));
+    const response = await fetch(encodeURI("http://10.50.17.251/maps-api/autocomplete/" + "NC " + input));
     const predictions = await response.json();
     return predictions;
   }
