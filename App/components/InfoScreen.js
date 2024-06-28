@@ -58,7 +58,9 @@ export default function InfoScreen({ }) {
           : <Text style={styles.white}>{route.params.reqDivName[0] + route.params.reqDivName.toLowerCase().slice(1)} County</Text>}
         </Text>
       </View>
-      <Text style = {[styles.infoBox, styles.text, {backgroundColor: "red", borderWidth: 0}]}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
+      <View style={[styles.infoBox, {backgroundColor: "red", borderWidth: 0}]}>
+        <Text style = {styles.text}>While your location does have a recycling program, we unfortunantly don't know what items it can and cannot take.</Text>
+      </View>
 
       {"externalInfo" in divData && <View>
         <View style={styles.sectionLabel}>

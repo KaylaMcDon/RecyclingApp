@@ -109,6 +109,7 @@ export default function Settings() {
                     setLastIssueSend(Date.now());
                     setIssueTitle("");
                     setIssueBody("");
+                    setIssueErrorMsg("");
                     setShowFeedback(false);
                     fetch(encodeURI(`http://10.50.17.251/feedback/${issueTitle}/${issueBody}`), {
                       method: 'POST',
