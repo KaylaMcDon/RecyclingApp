@@ -3,7 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from "@react-navigation/native";
 import Location from './components/Location';
 import InfoScreen from './components/InfoScreen';
-import AIScreen from './components/AIScreen'
 import Settings from './components/Settings';
 import PosterScreen from './components/PosterScreen';
 import { Feather } from '@expo/vector-icons';
@@ -50,10 +49,6 @@ export default function App() {
         <Tab.Screen
           name="Poster"
           component={PosterScreen}
-        />
-        <Tab.Screen
-          name="Analyze Item"
-          component={AIScreen}
         />
         <Tab.Screen
           name="Settings"
