@@ -117,21 +117,6 @@ export default function Location({ navigation }) {
           <Text style={styles.headerText}>Select Location</Text>
         </View>
         <View style={styles.container}>
-          <GoButton searchMethod="location"/>
-        </View>
-
-        <View style={styles.optionLabel}>
-          <Text style={styles.text}>Search by Address</Text>
-        </View>
-        <View style={styles.container}>
-          <AddressSearch/>
-          <GoButton searchMethod="address"/>
-        </View>
-
-        <View style={styles.optionLabel}>
-          <Text style={styles.text}>Search by City/County</Text>
-        </View>
-        <View style={styles.container}>
           <DivisionSearch/>
           <GoButton searchMethod="division"/>
         </View>
